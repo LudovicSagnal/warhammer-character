@@ -1,0 +1,38 @@
+// @font-face {
+//     font-family: "font-1";
+//     src: url(../fonts/DotsAllForNow.ttf);
+// }
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #dee2e5;
+$color-2: rgba(152, 192, 212, 0.7);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+    font-size: 16px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin center-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-none {
+    display: none;
+}
+
+body {
+    @include center-child;
+}
