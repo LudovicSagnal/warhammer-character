@@ -1,7 +1,7 @@
 
 //////////////////////////////////   Human   /////////////////////////////////
 
-const birthPlace_human = [
+const birthplace_human = [
 
     //////// Empire
     {name: 'Altdorf', origin: 'empire'},
@@ -14,12 +14,26 @@ const birthPlace_human = [
     {name: 'Wissenburg', origin: 'empire'},
     {name: 'Bechafen', origin: 'empire'},
     {name: 'Dietershafen ', origin: 'empire'},
+    {name: 'Ubersreik ', origin: 'empire'},
+    {name: 'Grunburg ', origin: 'empire'},
+    {name: 'Kemperbad ', origin: 'empire'},
+    {name: 'Carroburg ', origin: 'empire'},
+    {name: 'Aarnau ', origin: 'empire'},
+    {name: 'Norden ', origin: 'empire'},
+    {name: 'Bokenhof ', origin: 'empire'},
+    {name: 'Ferlangen ', origin: 'empire'},
+    {name: 'Wolfenburg ', origin: 'empire'},
+    {name: 'Grenzburg ', origin: 'empire'},
+    {name: 'Grunwald ', origin: 'empire'},
+    {name: 'Wurtbad ', origin: 'empire'},
+    {name: 'Pfeildorf ', origin: 'empire'},
+    {name: 'Gorssel ', origin: 'empire'},
 
     /////// Bretonnia
     {name: 'Couronne', origin: 'bretonien'},
     {name: 'Lyonesse', origin: 'bretonien'},
     {name: 'Bordeleaux', origin: 'bretonien'},
-    {name: 'Artenois', origin: 'bretonien'},
+    {name: 'Larret', origin: 'bretonien'},
     {name: 'Quenelles', origin: 'bretonien'},
     {name: 'Parravon ', origin: 'bretonien'},
     {name: 'Brionne', origin: 'bretonien'},
@@ -29,17 +43,63 @@ const birthPlace_human = [
     {name: 'Bastogne', origin: 'bretonien'},
     {name: 'Aquitaine', origin: 'bretonien'},
     {name: 'Moussillon', origin: 'bretonien'},
+    {name: 'Salignac la Rouge', origin: 'bretonien'},
+    {name: 'Embrun', origin: 'bretonien'},
+    {name: 'Chinon', origin: 'bretonien'},
+    {name: 'Derrevin Libre', origin: 'bretonien'},
+    {name: 'Marguilles', origin: 'bretonien'},
     {name: `L'Anguille`, origin: 'bretonien'},
 
     //////////// Kislev /////////////
-    {name: 'kislev', origin: 'kislévite'},
+    {name: 'Kislev', origin: 'kislévite'},
     {name: 'Erengrad', origin: 'kislévite'},
     {name: 'Praag', origin: 'kislévite'},
+    {name: 'Enisov', origin: 'kislévite'},
+    {name: 'Murmagrad', origin: 'kislévite'},
+    {name: 'Nekoltra', origin: 'kislévite'},
+    {name: 'Krasicyno', origin: 'kislévite'},
+    {name: 'Bolgasgrad', origin: 'kislévite'},
+    {name: 'Volksgrad', origin: 'kislévite'},
+    {name: 'Leblya', origin: 'kislévite'},
+
+    //////////// Estalia /////////////
+    {name: 'Magritta', origin: 'estalien'},
+    {name: 'Bilbali', origin: 'estalien'},
+    {name: 'Diamenterra', origin: 'estalien'},
+    {name: 'Larhgoz', origin: 'estalien'},
+    {name: 'Monteñas', origin: 'estalien'},
+    {name: 'Nerja', origin: 'estalien'},
+    {name: 'Zaragoz', origin: 'estalien'},
+    {name: 'Geulata', origin: 'estalien'},
+    {name: 'Aguilas', origin: 'estalien'},
+
+    //////////// Tilea /////////////
+    {name: 'Tobaro', origin: 'tiléen'},
+    {name: 'Luccini', origin: 'tiléen'},
+    {name: 'Pavona', origin: 'tiléen'},
+    {name: 'Sartosa', origin: 'tiléen'},
+    {name: 'Remas', origin: 'tiléen'},
+    {name: 'Miragliano', origin: 'tiléen'},
+    {name: 'Verezzo', origin: 'tiléen'},
+    {name: 'Trantio', origin: 'tiléen'},
+    {name: 'Urbino', origin: 'tiléen'},
+    
+    //////////// Norsca /////////////
+    {name: 'Stromstaad', origin: 'norse'},
+    {name: 'Aarvik', origin: 'norse'},
+    {name: 'Olricstaad', origin: 'norse'},
+    {name: 'Swerbog', origin: 'norse'},
+    {name: 'Stavgard', origin: 'norse'},
+    {name: 'Iskvard', origin: 'norse'},
+    {name: 'Trolbo', origin: 'norse'},
+    {name: 'Steinvik', origin: 'norse'},
+    {name: 'Thorshafn', origin: 'norse'},
+    {name: 'Skraevold', origin: 'norse'},
 ];
 
 //////////////////////////////////   Elf   /////////////////////////////////
 
-const birthPlace_elf = [
+const birthplace_elf = [
 
     {name: 'Ulthuan'},
     {name: 'Forêt de Laurelorn'},
@@ -53,7 +113,7 @@ const birthPlace_elf = [
 
 //////////////////////////////////   Dwarf   /////////////////////////////////
 
-const birthPlace_dwarf = [
+const birthplace_dwarf = [
 
     {name: 'Karak Norn (Montagnes Grises)'},
     {name: 'Karak Izor (la Voûte'},
@@ -73,3 +133,5 @@ const astral_signs = [
     {name: `Le Trai du Peintre`, desc: `Signe de Précision et de Perfection`},
     {name: `Gnuthus le Buffle`, desc: `Signe du Dévouement et de la Loyauté`},
 ];
+
+export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };

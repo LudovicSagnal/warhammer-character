@@ -3,7 +3,8 @@ import Select from './Select';
 import { races, origins } from '../data/races';
 import { careers } from '../data/carreers';
 import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf } from '../data/names';
-import { physical, eye_colors, hair_colors } from '../data/physical';
+import { physical, eye_colors, hair_colors, distinctive_marks } from '../data/physical';
+import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
 
 const Identity = () => {
@@ -16,13 +17,16 @@ const Identity = () => {
   const [age, setAge] = useState('');
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
+  const [birthplace, setBirthplace] = useState('');
 
   const genderChoice = [
     { value: 'male', label: 'Homme' },
     { value: 'female', label: 'Femme' },
   ];
 
-/////////////////////  Name, Firstname ///////////////////////
+
+/////////////////////////////////////  Name, Firstname ////////////////////////////////////////
+
 
   const getRandomFirstName = (race, origin, gender) => {
     let firstnames;
@@ -62,7 +66,9 @@ const Identity = () => {
     setName(randomName);
   }
 
-////////////////////  Age, height, weight  ////////////////////
+
+////////////////////////////////////  Age, height, weight  ///////////////////////////////////
+
 
 const getRandomAge = (race) => {
   let minAge;
@@ -126,6 +132,29 @@ const handleRandomWeight = () => {
   setWeight(randomWeight);
 };
 
+
+//////////////////////////////////  Birthplace, marks, astral  ///////////////////////////////////
+
+
+const getRandomBirthplace = (race, origin) => {
+  let birthplaces;
+  if (race === 'humain') {
+    birthplaces = birthplace_human.filter(birthplace => birthplace.origin === origin)
+  }else if (race === 'elfe') {
+    birthplaces = birthplace_elf;
+  }else if (race === 'nain') {
+    birthplaces = birthplace_dwarf;
+  }
+  const randomIndex = Math.floor(Math.random() * birthplaces.length);
+  const selectedBirthplace = birthplaces[randomIndex]?.name || '';
+
+  return selectedBirthplace;
+}
+const handleRandomBirthplace = () => {
+  const randomBirthplace = getRandomBirthplace(race, origin);
+  setBirthplace(randomBirthplace);
+};
+
   return (
     <div className='identity'>
       <h2>Identité</h2>
@@ -162,6 +191,11 @@ const handleRandomWeight = () => {
         <input type="number" className="input-with-suffix" name="weight" value={weight} onChange={(e) => setWeight(e.target.value)} />
         <span className="input-suffix">kg</span>
         <RandomBtn onClick={handleRandomWeight}/>      
+      </div>
+      <div>
+        <label htmlFor="birthplace">Lieu de naissance</label>
+        <input type="text" name="birthplace" value={birthplace} onChange={(e) => setBirthplace(e.target.value)} />  
+        <RandomBtn onClick={handleRandomBirthplace}/>      
       </div>
       <Select name="careers" options={careers} onValueChange={(e) => setCareer(e.target.value)} setValue={setCareer} />
     </div>

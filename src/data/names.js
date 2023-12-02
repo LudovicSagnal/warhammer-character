@@ -8,18 +8,33 @@ const firstnames_human = [
     //male
     { value: 'Hans', origin: 'empire', gender: 'male' },
     { value: 'Luthor', origin: 'empire', gender: 'male' },
+    { value: 'Dieter', origin: 'empire', gender: 'male' },
+    { value: 'Félix', origin: 'empire', gender: 'male' },
+    { value: 'Johann', origin: 'empire', gender: 'male' },
+    { value: 'Otto', origin: 'empire', gender: 'male' },
+    { value: 'Siegfried', origin: 'empire', gender: 'male' },
     //female
     { value: 'Hanna', origin: 'empire', gender: 'female' },
     { value: 'Frida', origin: 'empire', gender: 'female' },
+    { value: 'Gretchen', origin: 'empire', gender: 'female' },
+    { value: 'Carlott', origin: 'empire', gender: 'female' },
+    { value: 'Ulrika', origin: 'empire', gender: 'female' },
+    { value: 'Ilsa', origin: 'empire', gender: 'female' },
 
 //Bretonnia
 
     //male
     { value: 'Louis', origin: 'bretonien', gender: 'male' },
     { value: 'Louen', origin: 'bretonien', gender: 'male' },
+    { value: 'Carloman', origin: 'bretonien', gender: 'male' },
+    { value: 'Roland', origin: 'bretonien', gender: 'male' },
+    { value: 'Yonec', origin: 'bretonien', gender: 'male' },
     //female
     { value: 'Jeanne', origin: 'bretonien', gender: 'female' },
     { value: 'Marie', origin: 'bretonien', gender: 'female' },
+    { value: 'Berthe', origin: 'bretonien', gender: 'female' },
+    { value: 'Lisseut', origin: 'bretonien', gender: 'female' },
+    { value: 'Isolde', origin: 'bretonien', gender: 'female' },
 
 //Estalia
 
@@ -44,10 +59,13 @@ const firstnames_human = [
     //male
     { value: 'Ivan', origin: 'kislévite', gender: 'male' },
     { value: 'Dmitri', origin: 'kislévite', gender: 'male' },
+    { value: 'Oleg', origin: 'kislévite', gender: 'male' },
+    { value: 'Vlasi', origin: 'kislévite', gender: 'male' },
     //female
     { value: 'Lena', origin: 'kislévite', gender: 'female' },
     { value: 'Olga', origin: 'kislévite', gender: 'female' },
     { value: 'Ekatarina', origin: 'kislévite', gender: 'female' },
+    { value: 'Pavla', origin: 'kislévite', gender: 'female' },
 
 //Norsca
 
@@ -75,25 +93,27 @@ const names_human = [
 
 //Bretonnia
 
-    { value: 'Louis', origin: 'bretonien' },
-    { value: 'Louen', origin: 'bretonien' },
-    { value: 'Jeanne', origin: 'bretonien' },
-    { value: 'Marie', origin: 'bretonien' },
+    { value: 'Lebel', origin: 'bretonien' },
+    { value: 'Lefol', origin: 'bretonien' },
+    { value: 'Morvyvan', origin: 'bretonien' },
+    { value: 'Du Pont', origin: 'bretonien' },
+    { value: 'De la Marche', origin: 'bretonien' },
+    { value: 'Lefort', origin: 'bretonien' },
 
 //Kislev
 
-    { value: 'Ivan', origin: 'kislévite' },
-    { value: 'Dmitri', origin: 'kislévite' },
-    { value: 'Lena', origin: 'kislévite' },
-    { value: 'Olga', origin: 'kislévite' },
+    { value: 'Mozorov', origin: 'kislévite' },
+    { value: 'Novosi', origin: 'kislévite' },
+    { value: 'Aznabaev', origin: 'kislévite' },
+    { value: 'Vdovyn', origin: 'kislévite' },
 
 //Norsca
 
     //male
-    { value: 'Björn', origin: 'norse' },
-    { value: 'Hakkon', origin: 'norse' },
-    { value: 'Astrid', origin: 'norse' },
-    { value: 'Helga', origin: 'norse' },
+    { value: 'Gudritt', origin: 'norse' },
+    { value: 'Ericksson', origin: 'norse' },
+    { value: 'Hafnard', origin: 'norse' },
+    { value: 'Olafsson', origin: 'norse' },
 
 ];
 
@@ -104,10 +124,14 @@ const firstnames_elf = [
     //male
     { value: 'Torrendil', gender: 'male' },
     { value: 'Lorenor', gender: 'male' },
-    { value: 'Torrendil', gender: 'male' },
+    { value: 'Gildril', gender: 'male' },
+    { value: 'Falandar', gender: 'male' },
+    { value: 'Amendil', gender: 'male' },
     //female
     { value: 'Liandra', gender: 'female' },
     { value: 'Ilona', gender: 'female' },
+    { value: 'Eldril', gender: 'female' },
+    { value: 'Tallana', gender: 'female' },
 ];
 
 const names_elf = [
@@ -125,10 +149,14 @@ const firstnames_dwarf = [
     { value: 'Bardin', gender: 'male' },
     { value: 'Brokk', gender: 'male' },
     { value: 'Durak', gender: 'male' },
+    { value: 'Grundi', gender: 'male' },
+    { value: 'Snorri', gender: 'male' },
     //female
     { value: 'Anika', gender: 'female' },
     { value: 'Dagmar', gender: 'female' },
     { value: 'Sigrun', gender: 'female' },
+    { value: 'Greta', gender: 'female' },
+    { value: 'Thylda', gender: 'female' },
 ];
 
 const names_dwarf = [
