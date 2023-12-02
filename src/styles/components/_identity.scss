@@ -1,0 +1,22 @@
+.identity {
+    @include center-child;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url('./background/back-old-parchment.webp');
+    background-size: cover;
+    font-family: font-1;
+    padding-top: 2rem;
+    input {
+        text-align: center;
+    }
+    .input-container {
+        position: relative;
+        display: inline-block;
+        .input-suffix {
+            position: absolute;
+            top: 60%;
+            right: 30%;
+            transform: translateY(-50%);
+        } 
+    }
+}

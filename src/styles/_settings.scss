@@ -1,7 +1,7 @@
-// @font-face {
-//     font-family: "font-1";
-//     src: url(../fonts/DotsAllForNow.ttf);
-// }
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Moria_DF.TTF);
+}
 
 $font-1: "font-1", sans-serif;
 
@@ -12,7 +12,6 @@ $color-2: rgba(152, 192, 212, 0.7);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
     font-size: 16px;
 }
 html {
@@ -31,8 +30,4 @@ html {
 }
 .d-none {
     display: none;
-}
-
-body {
-    @include center-child;
 }
