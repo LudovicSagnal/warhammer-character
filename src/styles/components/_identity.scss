@@ -6,6 +6,21 @@
     background-size: cover;
     font-family: font-1;
     padding-top: 2rem;
+    h2 {
+        font-size: 1.3rem;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: auto;
+        height: 60px;
+        -webkit-mask: 
+          url('./background/paper-top.webp')
+            top   /auto 20px repeat-x,
+          linear-gradient(white, white) no-repeat
+            center/100% calc(100% - 2*50px),
+          url('./background/paper-bottom.webp')
+           bottom/auto 40px repeat-x;
+    }
     input {
         text-align: center;
     }

@@ -3,7 +3,7 @@ import Select from './Select';
 import { races, origins } from '../data/races';
 import { careers } from '../data/carreers';
 import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf } from '../data/names';
-import { physical, eye_colors, hair_colors, distinctive_marks } from '../data/physical';
+import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
 
@@ -20,6 +20,7 @@ const Identity = () => {
   const [eyeColor, setEyeColor] = useState('');
   const [hairColor, setHairColor] = useState('');
   const [birthplace, setBirthplace] = useState('');
+  const [siblings, setSiblings] = useState('');
   const [marks, setMarks] = useState('');
   const [astral, setAstral] = useState('');
 
@@ -134,32 +135,28 @@ const handleRandomWeight = () => {
   setWeight(randomWeight);
 };
 
-const getRandomEyeColor = () => {
+const handleRandomEyeColor = () => {
 
   let eyeColor = eye_colors;
   const randomIndex = Math.floor(Math.random() * eye_colors.length);
   const selectedEyeColor = eyeColor[randomIndex]?.color || '';
 
+  setEyeColor(selectedEyeColor);
   return selectedEyeColor ;
 }
-const handleRandomEyeColor = () => {
-  setEyeColor(getRandomEyeColor());
-}
 
-const getRandomHairColor = () => {
+const handleRandomHairColor = () => {
 
   let hairColor = hair_colors;
   const randomIndex = Math.floor(Math.random() * hair_colors.length);
   const selectedHairColor = hairColor[randomIndex]?.color || '';
 
+  setHairColor(selectedHairColor);
   return selectedHairColor ;
 }
-const handleRandomHairColor = () => {
-  setHairColor(getRandomHairColor());
-}
 
 
-////////////////////  Birthplace, distinctive marks, astral  ////////////////////////
+////////////////////  Birthplace, siblings, distinctive marks, astral  ////////////////////////
 
 
 const getRandomBirthplace = (race, origin) => {
@@ -181,28 +178,33 @@ const handleRandomBirthplace = () => {
   setBirthplace(randomBirthplace);
 };
 
-const getRandomMarks = () => {
+const handleRandomSiblings = () => {
+  const selectedRace = siblings_number.find(sibling => sibling.race === race);
+  const numbersForRace = selectedRace?.number || [0];
+  const randomIndex = Math.floor(Math.random() * numbersForRace.length);
+  const selectedSiblingsNumber = numbersForRace[randomIndex];
+
+  setSiblings(selectedSiblingsNumber);
+};
+
+const handleRandomMarks = () => {
 
   let marks = distinctive_marks;
   const randomIndex = Math.floor(Math.random() * distinctive_marks.length);
   const selectedMarks = marks[randomIndex] || '';
 
+  setMarks(selectedMarks)
   return selectedMarks ;
 }
-const handleRandomMarks = () => {
-  setMarks(getRandomMarks());
-}
 
-const getRandomAstral = () => {
+const handleRandomAstral = () => {
 
   let astral = astral_signs;
   const randomIndex = Math.floor(Math.random() * astral_signs.length);
   const selectedAstral = astral[randomIndex]?.name || '';
 
+  setAstral(selectedAstral);
   return selectedAstral ;
-}
-const handleRandomAstral = () => {
-  setAstral(getRandomAstral());
 }
 
 
@@ -210,14 +212,17 @@ const handleRandomAstral = () => {
 
   return (
     <div className='identity'>
-      <h2>Identité</h2>
-      <Select name="race" options={races} label={'Choisissez une race'} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
-      {race === 'humain' && (
-        <Select name="origin" options={origins} label={'Choisissez une origine'} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
-      )}
-      <Select name="gender" options={genderChoice} label={'Choisissez un genre'} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />
+      <h2>Personnage</h2>
+      <div className='test'>
+        <Select name="race" options={races} label={'Choisissez une race'} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
+        {race === 'humain' && (
+          <Select name="origin" options={origins} label={'Choisissez une origine'} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
+        )}
+        <Select name="gender" options={genderChoice} label={'Choisissez un genre'} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />        
+      </div>
 
-      <h2>Détails du personnage</h2>
+
+      <h2>Détails personnels</h2>
       <div>
         <label htmlFor="name">Nom</label>
         <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />   
@@ -264,6 +269,11 @@ const handleRandomAstral = () => {
         <label htmlFor="astral">Signe astrologique</label>
         <input type="text" astral="hair" value={astral} onChange={(e) => setAstral(e.target.value)} />  
         <RandomBtn onClick={handleRandomAstral}/>      
+      </div>
+      <div>
+        <label htmlFor="sibling">Nombre de frères et soeurs</label>
+        <input type="text" astral="sibling" value={siblings} onChange={(e) => setSiblings(e.target.value)} />  
+        <RandomBtn onClick={handleRandomSiblings}/>      
       </div>
       <div>
         <label htmlFor="birthplace">Lieu de naissance</label>

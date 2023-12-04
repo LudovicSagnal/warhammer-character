@@ -2,6 +2,7 @@ import React from 'react';
 import "./styles/index.scss";
 import Header from './components/Header';
 import Identity from './components/Identity';
+import Profil from './components/Profil';
 
 const App = () => {
   
@@ -10,6 +11,7 @@ const App = () => {
       <Header/>
       <div>
         <Identity/>
+        <Profil/>
       </div>
     </>
   );
