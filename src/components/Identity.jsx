@@ -17,7 +17,11 @@ const Identity = () => {
   const [age, setAge] = useState('');
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
+  const [eyeColor, setEyeColor] = useState('');
+  const [hairColor, setHairColor] = useState('');
   const [birthplace, setBirthplace] = useState('');
+  const [marks, setMarks] = useState('');
+  const [astral, setAstral] = useState('');
 
   const genderChoice = [
     { value: 'male', label: 'Homme' },
@@ -67,7 +71,7 @@ const Identity = () => {
   }
 
 
-////////////////////////////////////  Age, height, weight  ///////////////////////////////////
+///////////////////////////  Age, height, weight, eyes, hairs  //////////////////////////
 
 
 const getRandomAge = (race) => {
@@ -108,7 +112,6 @@ const getRandomHeight = (race, gender) => {
   
   return randomHeight.toFixed(2);
 };
-
 const handleRandomHeight = () => {
   const randomHeight = getRandomHeight(race, gender);
   setHeight(randomHeight);
@@ -126,14 +129,37 @@ const getRandomWeight = (race) => {
   
   return randomWeight;
 };
-
 const handleRandomWeight = () => {
   const randomWeight = getRandomWeight(race);
   setWeight(randomWeight);
 };
 
+const getRandomEyeColor = () => {
 
-//////////////////////////////////  Birthplace, marks, astral  ///////////////////////////////////
+  let eyeColor = eye_colors;
+  const randomIndex = Math.floor(Math.random() * eye_colors.length);
+  const selectedEyeColor = eyeColor[randomIndex]?.color || '';
+
+  return selectedEyeColor ;
+}
+const handleRandomEyeColor = () => {
+  setEyeColor(getRandomEyeColor());
+}
+
+const getRandomHairColor = () => {
+
+  let hairColor = hair_colors;
+  const randomIndex = Math.floor(Math.random() * hair_colors.length);
+  const selectedHairColor = hairColor[randomIndex]?.color || '';
+
+  return selectedHairColor ;
+}
+const handleRandomHairColor = () => {
+  setHairColor(getRandomHairColor());
+}
+
+
+////////////////////  Birthplace, distinctive marks, astral  ////////////////////////
 
 
 const getRandomBirthplace = (race, origin) => {
@@ -154,6 +180,33 @@ const handleRandomBirthplace = () => {
   const randomBirthplace = getRandomBirthplace(race, origin);
   setBirthplace(randomBirthplace);
 };
+
+const getRandomMarks = () => {
+
+  let marks = distinctive_marks;
+  const randomIndex = Math.floor(Math.random() * distinctive_marks.length);
+  const selectedMarks = marks[randomIndex] || '';
+
+  return selectedMarks ;
+}
+const handleRandomMarks = () => {
+  setMarks(getRandomMarks());
+}
+
+const getRandomAstral = () => {
+
+  let astral = astral_signs;
+  const randomIndex = Math.floor(Math.random() * astral_signs.length);
+  const selectedAstral = astral[randomIndex]?.name || '';
+
+  return selectedAstral ;
+}
+const handleRandomAstral = () => {
+  setAstral(getRandomAstral());
+}
+
+
+
 
   return (
     <div className='identity'>
@@ -191,6 +244,26 @@ const handleRandomBirthplace = () => {
         <input type="number" className="input-with-suffix" name="weight" value={weight} onChange={(e) => setWeight(e.target.value)} />
         <span className="input-suffix">kg</span>
         <RandomBtn onClick={handleRandomWeight}/>      
+      </div>
+      <div>
+        <label htmlFor="eye">Couleur des yeux</label>
+        <input type="text" name="eye" value={eyeColor} onChange={(e) => setEyeColor(e.target.value)} />  
+        <RandomBtn onClick={handleRandomEyeColor}/>      
+      </div>
+      <div>
+        <label htmlFor="hair">Couleur des cheveux</label>
+        <input type="text" name="hair" value={hairColor} onChange={(e) => setHairColor(e.target.value)} />  
+        <RandomBtn onClick={handleRandomHairColor}/>      
+      </div>
+      <div>
+        <label htmlFor="marks">Signe distinctif</label>
+        <input type="text" name="marks" value={marks} onChange={(e) => setMarks(e.target.value)} />  
+        <RandomBtn onClick={handleRandomMarks}/>      
+      </div>
+      <div>
+        <label htmlFor="astral">Signe astrologique</label>
+        <input type="text" astral="hair" value={astral} onChange={(e) => setAstral(e.target.value)} />  
+        <RandomBtn onClick={handleRandomAstral}/>      
       </div>
       <div>
         <label htmlFor="birthplace">Lieu de naissance</label>

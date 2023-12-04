@@ -31,12 +31,12 @@ const hair_colors = [
 
     { color: 'Argenté' },
     { color: 'Blond cendré' },
-    { color: 'Paille' },
     { color: 'Blond' },
     { color: 'Auburn' },
     { color: 'Roux' },
     { color: 'Châtain clair' },
     { color: 'Châtain' },
+    { color: 'Châtain foncé' },
     { color: 'Brun' },
     { color: 'Noir' },
 ];
