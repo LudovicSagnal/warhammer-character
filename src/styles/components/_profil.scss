@@ -1,50 +1,7 @@
 .profil {
 
     .main-profil {
-        display: grid; 
-        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-        gap: 5px 0px; 
-        grid-template-areas: 
-        ". cc ct f e ag int fm soc"
-        "base base-cc base-ct base-f base-e base-ag base-int base-fm base-soc"
-        "advanced adv-cc adv-ct adv-f adv-e adv-ag adv-int adv-fm adv-soc"
-        "current current-cc current-ct current-f current-e current-ag current-int current-fm current-soc";
-        .base { grid-area: base; }
-        .advanced { grid-area: advanced; }
-        .current { grid-area: current; }
-        .cc { grid-area: cc; }
-        .ct { grid-area: ct; }
-        .f { grid-area: f; }
-        .e { grid-area: e; }
-        .ag { grid-area: ag; }
-        .int { grid-area: int; }
-        .fm { grid-area: fm; }
-        .soc { grid-area: soc; }
-        .base-cc { grid-area: base-cc; }
-        .base-ct { grid-area: base-ct; }
-        .base-f { grid-area: base-f; }
-        .base-e { grid-area: base-e; }
-        .base-ag { grid-area: base-ag; }
-        .base-int { grid-area: base-int; }
-        .base-fm { grid-area: base-fm; }
-        .base-soc { grid-area: base-soc; }
-        .adv-cc { grid-area: adv-cc; }
-        .adv-ct { grid-area: adv-ct; }
-        .adv-f { grid-area: adv-f; }
-        .adv-e { grid-area: adv-e; }
-        .adv-ag { grid-area: adv-ag; }
-        .adv-int { grid-area: adv-int; }
-        .adv-fm { grid-area: adv-fm; }
-        .adv-soc { grid-area: adv-soc; }
-        .current-cc { grid-area: current-cc; }
-        .current-ct { grid-area: current-ct; }
-        .current-f { grid-area: current-f; }
-        .current-e { grid-area: current-e; }
-        .current-ag { grid-area: current-ag; }
-        .current-int { grid-area: current-int; }
-        .current-fm { grid-area: current-fm; }
-        .current-soc { grid-area: current-soc; }
+        
     }
 }
 

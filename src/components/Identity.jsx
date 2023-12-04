@@ -6,9 +6,12 @@ import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dw
 import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
+import { useContext } from 'react';
+import { RaceContext } from '../App';
 
 const Identity = () => {
-  const [race, setRace] = useState('humain');
+
+  const { race, setRace } = useContext(RaceContext);
   const [origin, setOrigin] = useState('empire');
   const [gender, setGender] = useState('male');
   const [career, setCareer] = useState('');
