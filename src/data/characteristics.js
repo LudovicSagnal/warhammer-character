@@ -132,13 +132,21 @@ const base_secondary_characteristics = [
      name: `Magie`,
      short_name: `Mag`,
      desc: `Cette caractéristique représente l'aptitude magique de votre personnage.`,
-     stats: 0,
+     stats: {
+        humain: 0,
+        elfe: 0,
+        nain: 0,
+      },
     },
     {
      name: `Points de Folie`,
      short_name: `PF`,
      desc: `Cette caractéristique représente le statut de la santé mentale de votre personnage. Les PJ débutent avec 0 Point de Folie mais ils peuvent acquérir en cours de partie à la suite d'expériences traumatisantes ou de souffrances particulièrement insupportables.`,
-     stats: 0,
+     stats: {
+        humain: 0,
+        elfe: 0,
+        nain: 0,
+      },
     },
     {
      name: `Points de Destin`,

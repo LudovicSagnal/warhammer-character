@@ -1,6 +1,4 @@
 import React from 'react';
-import { careers } from '../data/carreers';
-import { useState } from 'react';
 import Table from './Table';
 import { useContext } from 'react';
 import { RaceContext } from '../App';

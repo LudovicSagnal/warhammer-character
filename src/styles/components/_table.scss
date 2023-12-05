@@ -1,8 +1,39 @@
 table {
     border-collapse: collapse;
     margin: 1rem ;
-    th, td {
+    th, .stat-box {
         border: 1px solid black;
         padding: 5px;
+        position: relative;
+        .base-stat {
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+            &:hover + .base-stat-popup {
+                display: block;
+            }
+        }
+        .base-stat-popup {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            padding: 5px;
+            transform: translate(-50%);
+            background-color: aqua;
+            display: none;
+        }
+        .modified-stat {
+            @include center-child;
+            height: 60px;
+            width: 150px;
+            font-size: 1.6rem;
+        }
+        .random-btn {
+            display: block;
+            margin: auto;
+        }            
+        
+
     }
 }
