@@ -6,7 +6,7 @@ const firstnames_human = [
 //Empire
 
     //male
-    { value: 'Hans', origin: 'empire', gender: 'male' },
+    { value: 'Hans', origin: 'empire', gender: 'male', },
     { value: 'Luthor', origin: 'empire', gender: 'male' },
     { value: 'Dieter', origin: 'empire', gender: 'male' },
     { value: 'Félix', origin: 'empire', gender: 'male' },
@@ -59,7 +59,7 @@ const firstnames_human = [
     { value: 'Giovanni', origin: 'tiléen', gender: 'male' },
     { value: 'Agnolo', origin: 'tiléen', gender: 'male' },
     { value: 'Bertolo', origin: 'tiléen', gender: 'male' },
-    { value: 'Fantino²  éuyéaz² QW<', origin: 'tiléen', gender: 'male' },
+    { value: 'Fantino', origin: 'tiléen', gender: 'male' },
     { value: 'Gilo', origin: 'tiléen', gender: 'male' },
     //female
     { value: 'Lucia', origin: 'tiléen', gender: 'female' },

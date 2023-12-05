@@ -87,7 +87,7 @@ const Table = ({ race }) => {
                 {mainCharacteristics.map((item) => {
                     return <th key={item.short_name}>{item.short_name}</th>;
                 })}
-                <th>Change tout</th>
+                <th>Générer</th>
             </tr>
         </thead>
         <tbody>
