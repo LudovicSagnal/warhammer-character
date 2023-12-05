@@ -39,20 +39,35 @@ const firstnames_human = [
 //Estalia
 
     //male
-    { value: 'Diego', origin: 'estalien', gender: 'male' },
+    { value: 'Diago', origin: 'estalien', gender: 'male' },
     { value: 'Ramon', origin: 'estalien', gender: 'male' },
+    { value: 'Pedro', origin: 'estalien', gender: 'male' },
+    { value: 'Argilo', origin: 'estalien', gender: 'male' },
+    { value: 'Tello', origin: 'estalien', gender: 'male' },
+    { value: 'Gelmiro', origin: 'estalien', gender: 'male' },
     //female
     { value: 'Consuela', origin: 'estalien', gender: 'female' },
     { value: 'Maria', origin: 'estalien', gender: 'female' },
+    { value: 'Isabella', origin: 'estalien', gender: 'female' },
+    { value: 'Valeria', origin: 'estalien', gender: 'female' },
+    { value: 'Camila', origin: 'estalien', gender: 'female' },
 
 //Tilea
 
     //male
     { value: 'Vincenzo', origin: 'tiléen', gender: 'male' },
     { value: 'Giovanni', origin: 'tiléen', gender: 'male' },
+    { value: 'Agnolo', origin: 'tiléen', gender: 'male' },
+    { value: 'Bertolo', origin: 'tiléen', gender: 'male' },
+    { value: 'Fantino²  éuyéaz² QW<', origin: 'tiléen', gender: 'male' },
+    { value: 'Gilo', origin: 'tiléen', gender: 'male' },
     //female
     { value: 'Lucia', origin: 'tiléen', gender: 'female' },
     { value: 'Giulia', origin: 'tiléen', gender: 'female' },
+    { value: 'Lucrezia', origin: 'tiléen', gender: 'female' },
+    { value: 'Sofia', origin: 'tiléen', gender: 'female' },
+    { value: 'Carabella', origin: 'tiléen', gender: 'female' },
+    { value: 'Milia', origin: 'tiléen', gender: 'female' },
 
 //Kislev
 
@@ -99,6 +114,34 @@ const names_human = [
     { value: 'Du Pont', origin: 'bretonien' },
     { value: 'De la Marche', origin: 'bretonien' },
     { value: 'Lefort', origin: 'bretonien' },
+    { value: 'Gaudaron', origin: 'bretonien' },
+    { value: 'Malvoisin', origin: 'bretonien' },
+    { value: 'Legros', origin: 'bretonien' },
+    { value: 'Laroche', origin: 'bretonien' },
+    { value: 'de Beaumarchais', origin: 'bretonien' },
+    { value: 'Outremer', origin: 'bretonien' },
+
+//Estalia
+    { value: 'Roja', origin: 'estalien' },
+    { value: 'Estragon', origin: 'estalien' },
+    { value: 'Gorge', origin: 'estalien' },
+    { value: 'Cardonzo', origin: 'estalien' },
+    { value: 'Souza', origin: 'estalien' },
+    { value: 'Mendoza', origin: 'estalien' },
+    { value: 'Hernando', origin: 'estalien' },
+
+//Tilea
+
+    { value: 'Gilliani', origin: 'tiléen' },
+    { value: 'Pantaleon', origin: 'tiléen' },
+    { value: 'Marsillach', origin: 'tiléen' },
+    { value: 'Gottio', origin: 'tiléen' },
+    { value: 'Lanfranchi', origin: 'tiléen' },
+    { value: 'Tollucci', origin: 'tiléen' },
+    { value: 'Lupo', origin: 'tiléen' },
+    { value: 'Udolpho', origin: 'tiléen' },
+    { value: 'Sardus', origin: 'tiléen' },
+    { value: 'DeGrutti', origin: 'tiléen' },
 
 //Kislev
 
