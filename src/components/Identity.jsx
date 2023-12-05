@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Select from './Select';
 import { races, origins } from '../data/races';
 import { careers } from '../data/carreers';
@@ -6,7 +6,6 @@ import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dw
 import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
-import { useContext } from 'react';
 import { RaceContext } from '../App';
 
 const Identity = () => {
@@ -211,17 +210,49 @@ const handleRandomAstral = () => {
 }
 
 
+////////////////////////////////// Random All /////////////////////////////////
 
+
+const handleRandomAll = () => {
+  const randomGender = genderChoice[Math.floor(Math.random() * genderChoice.length)].value;
+  setGender(randomGender);
+  const randomRace = races[Math.floor(Math.random() * races.length)].value;
+  setRace(randomRace);
+  if (randomRace === 'humain') {
+    const randomOrigin = origins[Math.floor(Math.random() * origins.length)].value;
+    setOrigin(randomOrigin);
+}
+};
+useEffect(() => {
+  handleRandomName();
+  handleRandomFirstName();
+  handleAge();
+  handleRandomHeight();
+  handleRandomWeight();
+  handleRandomEyeColor();
+  handleRandomHairColor();
+  handleRandomMarks();
+  handleRandomAstral();
+  handleRandomSiblings();
+  handleRandomBirthplace();
+}, [race, gender, origin]);
+
+console.log(race, gender, origin);
 
   return (
     <div className='identity'>
       <h2>Personnage</h2>
-      <div className='test'>
-        <Select name="race" options={races} label={'Choisissez une race'} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
-        {race === 'humain' && (
-          <Select name="origin" options={origins} label={'Choisissez une origine'} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
-        )}
-        <Select name="gender" options={genderChoice} label={'Choisissez un genre'} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />        
+      <div className='character-base'>
+      <div className='select-container'>
+  <Select name="race" options={races} label={'Choisissez une race'} value={race} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
+  {race === 'humain' ? (
+    <Select name="origin" options={origins} label={'Choisissez une origine'} value={origin} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
+  ) : (
+    <p>Pas d'origine selectionnable</p>
+  )}
+  <Select name="gender" options={genderChoice} label={'Choisissez un genre'} value={gender} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />  
+</div>
+        <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
       </div>
 
 

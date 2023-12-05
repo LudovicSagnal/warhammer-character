@@ -11,7 +11,7 @@ const App = () => {
   const [race, setRace] = useState('humain');
   
   return (
-    <>
+    <main>
       <Header/>
       <RaceContext.Provider value={{ race, setRace }}>
       <div>
@@ -19,7 +19,7 @@ const App = () => {
         <Profil />
       </div>
     </RaceContext.Provider>
-    </>
+    </main>
   );
 };
 

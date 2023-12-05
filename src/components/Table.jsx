@@ -79,7 +79,8 @@ const Table = ({ race }) => {
   let toughnessBonus = Math.floor(firstDigitE / 10);
 
   return (
-    <div>
+    <div className='profils-container'>
+      <h2>Profil principal</h2>
       <table className="main-profil">
         <thead>
             <tr>
@@ -103,6 +104,7 @@ const Table = ({ race }) => {
           </tr>
         </tbody>
       </table>
+      <h2>Profil secondaire</h2>
       <table className="secondary-profil">
         <thead>
             <tr>
