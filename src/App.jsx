@@ -11,11 +11,12 @@ const App = () => {
   const [race, setRace] = useState('humain');
   const [origin, setOrigin] = useState('empire');
   const [gender, setGender] = useState('male');
+  const [career, setCareer] = useState('');
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer }}>
       <div>
         <Identity />
         <Profil />
