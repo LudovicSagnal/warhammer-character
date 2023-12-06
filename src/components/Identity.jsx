@@ -11,8 +11,8 @@ import { RaceContext } from '../App';
 const Identity = () => {
 
   const { race, setRace } = useContext(RaceContext);
-  const [origin, setOrigin] = useState('empire');
-  const [gender, setGender] = useState('male');
+  const { origin, setOrigin } = useContext(RaceContext);
+  const { gender, setGender } = useContext(RaceContext);
   const [career, setCareer] = useState('');
   const [name, setName] = useState('');
   const [firstname, setFirstname] = useState('');
@@ -222,7 +222,7 @@ const handleRandomAll = () => {
   if (randomRace === 'humain') {
     const randomOrigin = origins[Math.floor(Math.random() * origins.length)].value;
     setOrigin(randomOrigin);
-}
+  };
 };
 useEffect(() => {
   handleRandomName();
@@ -237,6 +237,20 @@ useEffect(() => {
   handleRandomSiblings();
   handleRandomBirthplace();
 }, [race, gender, origin]);
+
+const handleRandomAllWithSelect = () => {
+    handleRandomName();
+    handleRandomFirstName();
+    handleAge();
+    handleRandomHeight();
+    handleRandomWeight();
+    handleRandomEyeColor();
+    handleRandomHairColor();
+    handleRandomMarks();
+    handleRandomAstral();
+    handleRandomSiblings();
+    handleRandomBirthplace();
+};
 
 
   return (
@@ -258,6 +272,7 @@ useEffect(() => {
         <p>{genderLabel}</p>
       </div>
         <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
+        <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>    
       </div>
 
 

@@ -9,11 +9,13 @@ export const RaceContext = React.createContext();
 const App = () => {
 
   const [race, setRace] = useState('humain');
+  const [origin, setOrigin] = useState('empire');
+  const [gender, setGender] = useState('male');
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender }}>
       <div>
         <Identity />
         <Profil />
