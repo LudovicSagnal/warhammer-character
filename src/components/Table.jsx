@@ -80,22 +80,22 @@ const Table = ({ race }) => {
 
   return (
     <div className='profils-container'>
-      <h2>Profil principal</h2>
+      <h3>Profil principal</h3>
       <table className="main-profil">
         <thead>
             <tr>
+              <th className='empty-head'></th>
                 {mainCharacteristics.map((item) => {
-                    return <th key={item.short_name}>{item.short_name}</th>;
+                    return <th className='stat-short' key={item.short_name}>{item.short_name}</th>;
                 })}
-                <th>Générer</th>
+                <th className='stat-short'>Générer</th>
             </tr>
         </thead>
         <tbody>
           <tr>
+            <td className='descriptive-box'>Base</td>
             {mainCharacteristics.map((item, index) => (
               <td className="stat-box" key={item.short_name + index}>
-                <p className='base-stat'>?</p>
-                <p className='base-stat-popup'>{item.stats[race]} + 2d10</p>
                 <p className="modified-stat">{item.value}</p>
                 <RandomBtn onClick={() => handleRandomUniqueStat(index)} />
               </td>
@@ -104,17 +104,19 @@ const Table = ({ race }) => {
           </tr>
         </tbody>
       </table>
-      <h2>Profil secondaire</h2>
+      <h3>Profil secondaire</h3>
       <table className="secondary-profil">
         <thead>
             <tr>
+              <th className='empty-head'></th>
                 {secondaryCharacteristics.map((item) => {
-                    return <th key={item.short_name}>{item.short_name}</th>;
+                    return <th className='stat-short' key={item.short_name}>{item.short_name}</th>;
                 })}
             </tr>
         </thead>
         <tbody>
           <tr>
+          <td className='descriptive-box'>Base</td>
             {secondaryCharacteristics.map((item, index) => (
               <td className="stat-box" key={item.short_name + index}>
                 {item.short_name === 'B' || item.short_name === 'PD' ? (

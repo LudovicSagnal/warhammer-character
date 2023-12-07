@@ -1,25 +1,25 @@
 import React, { useContext } from 'react';
 import { careers } from '../data/carreers';
 import { skills } from '../data/skills';
+import { talents } from '../data/talents';
 import { RaceContext } from '../App';
 
-const Skills = () => {
+const Talents = () => {
 
     const { race } = useContext(RaceContext);
     const { career, setCareer } = useContext(RaceContext);
 
     return (
-        <div className='skills'>
-            <h2>Compétences</h2>
-            {skills.map(skill =>
+        <div className='talents'>
+            <h2>Talents</h2>
+            {talents.map(talent =>
                 <div>
-                    <h3>{skill.name}</h3>
-                    <p>{skill.description}</p>
+                    <h3>{talent.name}</h3>
+                    <p>{talent.description}</p>
                 </div>
             )};
-
         </div>
     );
 };
 
-export default Skills;
+export default Talents;

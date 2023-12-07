@@ -1,11 +1,17 @@
 .profils-container {
-    h2 {
-        // display: inline-block;
-        width: fit-content;
-    }
     table {
         border-collapse: collapse;
         margin: 1rem 0;
+        .empty-head {
+            border: none;
+        }
+        .stat-short {
+            background-color: rgb(120, 61, 15);
+            color: whitesmoke;
+        }
+        .descriptive-box {
+            border: 1px solid black;
+        }
         th, .stat-box {
             border: 1px solid black;
             padding: 5px;
@@ -15,18 +21,6 @@
                 width: 100%;
                 text-align: center;
                 font-size: 1.2rem;
-                &:hover + .base-stat-popup {
-                    display: block;
-                }
-            }
-            .base-stat-popup {
-                position: absolute;
-                top: 5%;
-                left: 50%;
-                padding: 5px;
-                transform: translate(-50%);
-                background-color: aqua;
-                display: none;
             }
             .modified-stat {
                 @include center-child;

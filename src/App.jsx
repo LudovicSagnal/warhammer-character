@@ -3,6 +3,9 @@ import "./styles/index.scss";
 import Header from './components/Header';
 import Identity from './components/Identity';
 import Profil from './components/Profil';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
+import Talents from './components/Talents';
 
 export const RaceContext = React.createContext();
 
@@ -17,11 +20,14 @@ const App = () => {
     <main>
       <Header/>
       <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer }}>
-      <div>
-        <Identity />
-        <Profil />
-      </div>
-    </RaceContext.Provider>
+        <section className='main-section'>
+          <Identity />
+          <Profil />
+          <Skills/>
+          <Talents/>
+        </section>
+        <Footer/>
+      </RaceContext.Provider>
     </main>
   );
 };

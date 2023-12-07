@@ -2,41 +2,41 @@ const talents = [
 
     {
         name: `Acrobatie équestre`,
-        description: `vous êtes capable de prouesses quand vous êtes à cheval. Vous pouvez faire de l'équilibre sur une monture lancée au galop, sauter d'un cheval sur un autre, etc. Dans les circonstances les plus extrêmes, il vous suffit de réussir un test d'Équitation, et même alors, vous bénéficiez d'un bonus de +10%.`,
+        description: `Vous êtes capable de prouesses quand vous êtes à cheval. Vous pouvez faire de l'équilibre sur une monture lancée au galop, sauter d'un cheval sur un autre, etc. Dans les circonstances les plus extrêmes, il vous suffit de réussir un test d'Équitation, et même alors, vous bénéficiez d'un bonus de +10%.`,
     },
     {
         name: `Acuité auditive`,
-        description: `vous disposez d'une ouïe exceptionnelle. Vous bénéficiez d'un bonus de +20% aux tests de Perception impliquant l'ouïe.`,
+        description: `Vous disposez d'une ouïe exceptionnelle. Vous bénéficiez d'un bonus de +20% aux tests de Perception impliquant l'ouïe.`,
     },
     {
         name: `Acuité visuelle`,
-        description: `vous avez des yeux de lynx.Vous bénéficiez d'un bonus
+        description: `Vous avez des yeux de lynx.Vous bénéficiez d'un bonus
         de +10% aux tests de Perception liés à la vue et aux tests de Lecture sur
         les lèvres.`,
     },
     {
         name: `Adresse au tir`,
-        description: `vous visez avec une précision stupéfiante. Lors d'un
+        description: `Vous visez avec une précision stupéfiante. Lors d'un
         combat, si vous recourez à l'action visée, votre prochaine attaque à
         distance bénéficie d'un bonus de +20% en Capacité de Tir au lieu
         de +10%.`,
     },
     {
         name: `Ambidextre`,
-        description: `vous savez parfaitement vous servir de vos deux mains.
+        description: `Vous savez parfaitement vous servir de vos deux mains.
         Vous ne subissez pas le malus de -20% en CC ou en CT quand vous
         utilisez une arme avec votre main non directrice.`,
     },
     {
         name: `Armes naturelles`,
-        description: `: vous avez des griffes ou des dents pointues qui vous
+        description: `: Vous avez des griffes ou des dents pointues qui vous
         permettent de déchirer les chairs de vos adversaires. Quand vous
         réalisez une attaque à mains nues, on considère que vous maniez une
         arme à une main.Vous ne pouvez pas parer à l'aide de vos armes naturelles. Évidemment, vous ne pouvez pas non plus être désarmé.`,
     },
     {
         name: `Calcul mental`,
-        description: `vous avez un don pour les chiffres, et vous pouvez
+        description: `Vous avez un don pour les chiffres, et vous pouvez
         trouver la solution de presque n'importe quel problème mathématique, du moment qu'on vous laisse un peu de temps.Vous bénéficiez
         d'un bonus de +10% aux tests de Jeu et d'Orientation, ainsi que d'un
         bonus de +20% aux tests de Perception liés à une estimation.`,
@@ -79,7 +79,8 @@ const talents = [
     },
     {
         name: `Contorsionniste`,
-V    },
+        description: `Vous pouvez déformer votre corps au-delà des limites physiques possibles au commun des mortels. Vous bénéficiez d'un bonus de +10% aux tests d'Expression artistique en rapport avec ce talent, ainsi que d'un bonus de +20% aux tests d'Agilité destinés à vous libérer de liens serrés, à passer par de petites ouvertures, etc.`
+    },
     {
         name: `Coups assommants`,
         description: `Quand vous réussissez une attaque de corps à corps, vous pouvez tenter d'assommer votre adversaire au lieu d'infliger des dégâts. Vous devez tout d'abord effectuer un test de Force. En cas de succès, votre adversaire doit effectuer un test d'Endurance bénéficiant d'un bonus de +10% pour chaque PA à la tête. S'il échoue, votre adversaire est assommé pour 1d10 rounds. Les personnages assommés ne peuvent entreprendre aucune action et ne peuvent pas esquiver.`,

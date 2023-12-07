@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Select from './Select';
 import { races, origins } from '../data/races';
+import { careers } from '../data/carreers';
 import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf } from '../data/names';
 import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
@@ -12,6 +13,7 @@ const Identity = () => {
   const { race, setRace } = useContext(RaceContext);
   const { origin, setOrigin } = useContext(RaceContext);
   const { gender, setGender } = useContext(RaceContext);
+  const { career, setCareer } = useContext(RaceContext);
   const [name, setName] = useState('');
   const [firstname, setFirstname] = useState('');
   const [age, setAge] = useState('');
