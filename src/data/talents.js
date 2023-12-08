@@ -154,24 +154,24 @@ const talents = [
         description: `Vous avez une bonne oreille en ce qui concerne les voix et les accents, et vous savez les reproduire fidèlement. Vous bénéficiez d'un bonus de +10% aux tests de Déguisement si vous devez imiter une voix dans le but de vous faire passer pour autrui, aux tests d'Expression artistique (acteur, bouffon, clown, comédien et conteur) et aux tests de Langue quand vous essayez de faire croire que vous êtes originaire d'un autre pays en en parlant la langue.`,
     },
     {
-        name: "Incantation de bataille",
-        description: "Vos prières vous aident à lancer des sorts facilement même si vous portez une armure. Le malus au jet d'incantation est réduit de 3 points quand vous lancez des sorts divins tout en portant une armure.",
+        name: `Incantation de bataille`,
+        description: `Vos prières vous aident à lancer des sorts facilement même si vous portez une armure. Le malus au jet d'incantation est réduit de 3 points quand vous lancez des sorts divins tout en portant une armure.`,
     },
     {
-        name: "Inspiration divine",
-        description: "Votre dévouement envers votre divinité est tel que vos prières peuvent donner lieu à des miracles et de puissants effets magiques. L'Inspiration divine est un talent particulier car il n'est pas unique, il en existe différentes formes. Toutefois, la concentration et la difficulté des études spirituelles nécessaires sont telles qu'on ne peut en maîtriser qu'une seule forme. Chaque talent d'Inspiration divine correspond à la maîtrise d'une forme de magie, cette spécialité étant indiquée entre parenthèses. Par exemple, Inspiration divine (Sigmar) est différent d'Inspiration divine (Ulric). Les Inspirations divines les plus répandues correspondent aux divinités majeures du Vieux Monde: Grungni, Manann, Morr, Myrmidia, Ranald, Sigmar, Shallya, Taal/Rhya, Ulric, et Verena. Si vous connaissez une Inspiration divine, vous pouvez tenter de lancer n'importe quel sort dépendant de cette forme de magie. N'oubliez pas que vous ne pouvez maîtriser qu'un seul domaine divin à la fois.",
+        name: `Inspiration divine`,
+        description: `Votre dévouement envers votre divinité est tel que vos prières peuvent donner lieu à des miracles et de puissants effets magiques. L'Inspiration divine est un talent particulier car il n'est pas unique, il en existe différentes formes. Toutefois, la concentration et la difficulté des études spirituelles nécessaires sont telles qu'on ne peut en maîtriser qu'une seule forme. Chaque talent d'Inspiration divine correspond à la maîtrise d'une forme de magie, cette spécialité étant indiquée entre parenthèses. Par exemple, Inspiration divine (Sigmar) est différent d'Inspiration divine (Ulric). Les Inspirations divines les plus répandues correspondent aux divinités majeures du Vieux Monde: Grungni, Manann, Morr, Myrmidia, Ranald, Sigmar, Shallya, Taal/Rhya, Ulric, et Verena. Si vous connaissez une Inspiration divine, vous pouvez tenter de lancer n'importe quel sort dépendant de cette forme de magie. N'oubliez pas que vous ne pouvez maîtriser qu'un seul domaine divin à la fois.`,
     },
     {
-        name: "Intelligent",
-        description: "Vous bénéficiez d'un bonus permanent de +5% en Intelligence. Modifiez votre profil de départ en conséquence.",
+        name: `Intelligent`,
+        description: `Vous bénéficiez d'un bonus permanent de +5% en Intelligence. Modifiez votre profil de départ en conséquence.`,
     },
     {
-        name: "Intrigant",
-        description: "Vous êtes passé maître dans l'art des intrigues personnelles. Vous bénéficiez d'un bonus de +10% aux tests de Charisme liés aux intrigues et aux tests de Force Mentale destinés à résister au Charisme d'autrui.",
+        name: `Intrigant`,
+        description: `Vous êtes passé maître dans l'art des intrigues personnelles. Vous bénéficiez d'un bonus de +10% aux tests de Charisme liés aux intrigues et aux tests de Force Mentale destinés à résister au Charisme d'autrui.`,
     },
     {
-        name: ``,
-        description: ``,
+        name: `Lévitation`,
+        description: `Vous avez une affinité particulière pour les langues étrangères. Vous bénéficiez d'un bonus de +10% aux tests de Lire/écrire et de Langue.`,
     },
 ];
 
