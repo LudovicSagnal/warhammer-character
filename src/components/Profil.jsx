@@ -3,7 +3,7 @@ import Table from './Table';
 import Select from './Select';
 import { useContext } from 'react';
 import { RaceContext } from '../App';
-import { careers } from '../data/carreers';
+import { careers } from '../data/careers';
 
 const Profil = () => {
 

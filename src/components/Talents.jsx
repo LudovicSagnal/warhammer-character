@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { careers } from '../data/carreers';
+import { careers } from '../data/careers';
 import { skills } from '../data/skills';
 import { talents } from '../data/talents';
 import { RaceContext } from '../App';

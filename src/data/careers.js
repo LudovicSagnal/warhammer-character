@@ -678,6 +678,155 @@ const careers = [
         }
     },
     {
+        name: `Cocher`,
+        description: `Si l’Empire est une puissante nation, ses terres sont loin d’être sûres. En effet, de vastes régions ne sont pas cultivées et n’ont jamais été pacifiées. Un système de routes des plus précaires relie les villages et les villes, ce qui permet aux Cochers de gagner leur vie en travaillant pour l’une des nombreuses compagnies de diligence impériales. Souvent, les routes sont en mauvais état ou sous la menace de gobelins, d’hommesbêtes et de brigands. Les Cochers n’en risquent cependant pas moins leur vie pour conduire passagers et marchandises à destination en empruntant les routes impériales. Chaque jour qui passe est une course visant à atteindre le village ou le relais suivant avant la tombée de la nuit. En effet, nul ne souhaite passer la nuit dehors,surtout quand la lune du Chaos fait son apparition dans le ciel`,
+        skills: {
+            mandatory: [
+                `Alphabet secret (rôdeur)`,
+                `Conduite d'attelages`,
+                `Orientation`,
+                `Perception`,
+                `Soins des animaux`
+            ],
+            choice: [
+                {
+                    options: [`Commérage`, `Marchandage`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Equitation`, `Soins`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`],
+                    quantity: 1,
+                },
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Maîtrise (armes à feu)`,
+            ],
+            choice: [
+                {
+                    options: [`Grand voyageur`, `Sur ses gardes`],
+                    quantity: 1,
+                }
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Tromblon avec poudre et munitions pour 10 tirs`,
+                `Armure moyenne (gilet de mailles et veste de cuir)`,
+                `Instrument de musique (corne de cocher)`,
+            ],
+        },
+        access: [`Eclaireur`, `Messager`],
+        advanced: [`Bandit de grand chemin`, `Collecteur de taxes`, `Contrebandier`, `Hors-la-loi`, `Passeur`, `Patrouilleur`, `Pisteur`],
+        stats: {
+            CC: `+5%`,
+            CT: `+10%`,
+            Ag: `+10%`,
+            FM: `+5%`,
+            Soc: `+5%`,
+            B: `+2`,
+        }
+    },
+    {
+        name: ``,
+        description: ``,
+        skills: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        talents: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        dotation: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        access: [],
+        advanced: [],
+        stats: {
+            CC: `+5%`,
+            CT: `+5%`,
+            Ag: `+5%`,
+            Int: `+10%`,
+            Soc: `+10%`,
+            B: `+2`,
+        }
+    },
+    {
+        name: ``,
+        description: ``,
+        skills: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        talents: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        dotation: {
+            mandatory: [
+                ``,
+            ],
+            choice: [
+                {
+                    options: [``, ``],
+                    quantity: 1,
+                }
+            ],
+        },
+        access: [],
+        advanced: [],
+        stats: {
+            CC: `+5%`,
+            CT: `+5%`,
+            Ag: `+5%`,
+            Int: `+10%`,
+            Soc: `+10%`,
+            B: `+2`,
+        }
+    },
+    {
         name: ``,
         description: ``,
         skills: {
