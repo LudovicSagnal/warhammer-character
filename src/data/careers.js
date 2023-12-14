@@ -733,50 +733,104 @@ const careers = [
         }
     },
     {
-        name: ``,
-        description: ``,
+        name: `Collecteur de taxes`,
+        description: `La collecte d’argent pour le compte du gouvernement est un travail ingrat, mais le faire en milieu sauvage est synonyme de peine de mort. Les Collecteurs de taxes vivent dans de petites maisons isolées,sur le bord des routes, et encaissent l’argent des voyageurs. L’argent perçu est alloué à l’entretien des routes, mais cela n’empêche pas les voyageurs de protester, de frapper ou de tuer les Collecteurs de taxes qui tentent simplement de faire leur travail. Comme si cela ne suffisait pas, leurs maisons font des cibles de choix pour les bandits. La vie de Collecteur de taxes présente tellement de dangers que peu d’individus s’attardent à ce poste malgré le salaire élevé qu’il propose`,
         skills: {
             mandatory: [
-                ``,
+                `Esquive`,
+                `Evaluation`,
+                `Fouille`,
+                `Lire/écrire`,
+                `Perception`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Commérage`, `Marchandage`],
                     quantity: 1,
                 }
             ],
         },
         talents: {
-            mandatory: [
-                ``,
-            ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Réflexes éclairs`, `Tireur d'élite`],
                     quantity: 1,
                 }
             ],
         },
         dotation: {
             mandatory: [
-                ``,
+                `Coffre`,
+                `Arbalète et 10 carreaux`,
+                `Armure moyenne (gilet de mailles et gilet de cuir)`,
+                `Bouclier`,
+                `1d10 co`,
+            ],
+        },
+        access: [`Cocher`, `Patrouilleur`, `Régisseur`],
+        advanced: [`Bandit de grand chemin`, `Hors-la-loi`, `Passeur`, `Politicien`, `Sentinelle halfling`, `Soldat`, `Voleur`],
+        stats: {
+            CC: `+10%`,
+            CT: `+5%`,
+            F: `+5%`,
+            E: `+10%`,
+            Ag: `+5%`,
+            FM: `+10%`,
+            B: `+2`,
+        }
+    },
+    {
+        name: `Combattant des tunnels`,
+        description: `Au fil des siècles, les incursions du Chaos et des peaux-vertes ont balayé de nombreuses forteresses naines des Montagnes du Bord du Monde. Pour protéger leurs dernières cités fortifiées, les nains ont formé des soldats d’élite spécialisés dans le combat en souterrain. Ces hommes, les Combattants des tunnels, sont de vaillants guerriers qui cherchent à juguler l’avancée du mal et à protéger leur peuple. Bien que la plupart des Combattants des tunnels soient nains, des membres d’autres races se joignent parfois à leurs rangs en échange d’or. De jeunes nains de l’Empire entreprennent souvent cette carrière afin de prouver leur courage et de montrer leur solidarité vis-à-vis de leurs cousins des montagnes.`,
+        skills: {
+            mandatory: [
+                `Escalade`,
+                `Esquive`,
+                `Filature`,
+                `Orientation`,
+                `Perception`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups assommants`,
+                `Coups précis`,
+                `Coups puissants`,
+                `Sens de l'orientation`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Acuité auditive`, `Sang-froid`],
                     quantity: 1,
                 }
             ],
         },
-        access: [],
-        advanced: [],
+        dotation: {
+            mandatory: [
+                `Arbalète et 10 carreaux`,
+                `Armure moyenne (manteau de mailles, veste de cuir et jambières de cuir)`,
+                `Bouclier`,
+                `Grappin, 10 mètres de corde,`,
+                `Outre`,
+            ],
+        },
+        access: [`Contrebandier`, `Kossar kislévite`, `Mercenaire`, `Mineur`, `Pilleur de tombes`, `Porterune`, `Ratier`],
+        advanced: [`Contrebandier`, `Gladiateur`, `Pilleur de tombes`, `Porterune`, `Sergent`, `Vétéran`],
         stats: {
-            CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+5%`,
-            Int: `+10%`,
-            Soc: `+10%`,
+            CC: `+10%`,
+            F: `+5%`,
+            E: `+5%`,
+            Ag: `+10%`,
+            FM: `+5%`,
+            A: `+1`,
             B: `+2`,
+        },
+        races: {
+            name: `nain`,
         }
     },
     {
