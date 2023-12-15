@@ -679,7 +679,7 @@ const careers = [
     },
     {
         name: `Cocher`,
-        description: `Si l’Empire est une puissante nation, ses terres sont loin d’être sûres. En effet, de vastes régions ne sont pas cultivées et n’ont jamais été pacifiées. Un système de routes des plus précaires relie les villages et les villes, ce qui permet aux Cochers de gagner leur vie en travaillant pour l’une des nombreuses compagnies de diligence impériales. Souvent, les routes sont en mauvais état ou sous la menace de gobelins, d’hommesbêtes et de brigands. Les Cochers n’en risquent cependant pas moins leur vie pour conduire passagers et marchandises à destination en empruntant les routes impériales. Chaque jour qui passe est une course visant à atteindre le village ou le relais suivant avant la tombée de la nuit. En effet, nul ne souhaite passer la nuit dehors,surtout quand la lune du Chaos fait son apparition dans le ciel`,
+        description: `Si l'Empire est une puissante nation, ses terres sont loin d'être sûres. En effet, de vastes régions ne sont pas cultivées et n'ont jamais été pacifiées. Un système de routes des plus précaires relie les villages et les villes, ce qui permet aux Cochers de gagner leur vie en travaillant pour l'une des nombreuses compagnies de diligence impériales. Souvent, les routes sont en mauvais état ou sous la menace de gobelins, d'hommesbêtes et de brigands. Les Cochers n'en risquent cependant pas moins leur vie pour conduire passagers et marchandises à destination en empruntant les routes impériales. Chaque jour qui passe est une course visant à atteindre le village ou le relais suivant avant la tombée de la nuit. En effet, nul ne souhaite passer la nuit dehors,surtout quand la lune du Chaos fait son apparition dans le ciel`,
         skills: {
             mandatory: [
                 `Alphabet secret (rôdeur)`,
@@ -734,7 +734,7 @@ const careers = [
     },
     {
         name: `Collecteur de taxes`,
-        description: `La collecte d’argent pour le compte du gouvernement est un travail ingrat, mais le faire en milieu sauvage est synonyme de peine de mort. Les Collecteurs de taxes vivent dans de petites maisons isolées,sur le bord des routes, et encaissent l’argent des voyageurs. L’argent perçu est alloué à l’entretien des routes, mais cela n’empêche pas les voyageurs de protester, de frapper ou de tuer les Collecteurs de taxes qui tentent simplement de faire leur travail. Comme si cela ne suffisait pas, leurs maisons font des cibles de choix pour les bandits. La vie de Collecteur de taxes présente tellement de dangers que peu d’individus s’attardent à ce poste malgré le salaire élevé qu’il propose`,
+        description: `La collecte d'argent pour le compte du gouvernement est un travail ingrat, mais le faire en milieu sauvage est synonyme de peine de mort. Les Collecteurs de taxes vivent dans de petites maisons isolées,sur le bord des routes, et encaissent l'argent des voyageurs. L'argent perçu est alloué à l'entretien des routes, mais cela n'empêche pas les voyageurs de protester, de frapper ou de tuer les Collecteurs de taxes qui tentent simplement de faire leur travail. Comme si cela ne suffisait pas, leurs maisons font des cibles de choix pour les bandits. La vie de Collecteur de taxes présente tellement de dangers que peu d'individus s'attardent à ce poste malgré le salaire élevé qu'il propose`,
         skills: {
             mandatory: [
                 `Esquive`,
@@ -785,7 +785,7 @@ const careers = [
     },
     {
         name: `Combattant des tunnels`,
-        description: `Au fil des siècles, les incursions du Chaos et des peaux-vertes ont balayé de nombreuses forteresses naines des Montagnes du Bord du Monde. Pour protéger leurs dernières cités fortifiées, les nains ont formé des soldats d’élite spécialisés dans le combat en souterrain. Ces hommes, les Combattants des tunnels, sont de vaillants guerriers qui cherchent à juguler l’avancée du mal et à protéger leur peuple. Bien que la plupart des Combattants des tunnels soient nains, des membres d’autres races se joignent parfois à leurs rangs en échange d’or. De jeunes nains de l’Empire entreprennent souvent cette carrière afin de prouver leur courage et de montrer leur solidarité vis-à-vis de leurs cousins des montagnes.`,
+        description: `Au fil des siècles, les incursions du Chaos et des peaux-vertes ont balayé de nombreuses forteresses naines des Montagnes du Bord du Monde. Pour protéger leurs dernières cités fortifiées, les nains ont formé des soldats d'élite spécialisés dans le combat en souterrain. Ces hommes, les Combattants des tunnels, sont de vaillants guerriers qui cherchent à juguler l'avancée du mal et à protéger leur peuple. Bien que la plupart des Combattants des tunnels soient nains, des membres d'autres races se joignent parfois à leurs rangs en échange d'or. De jeunes nains de l'Empire entreprennent souvent cette carrière afin de prouver leur courage et de montrer leur solidarité vis-à-vis de leurs cousins des montagnes.`,
         skills: {
             mandatory: [
                 `Escalade`,
@@ -834,47 +834,56 @@ const careers = [
         }
     },
     {
-        name: ``,
-        description: ``,
+        name: `Contrebandier`,
+        description: `La plupart des routes et des mers du Vieux Monde sont soumises à des droits et autres impôts. Les collecteurs de taxes impériaux, les agents de recouvrement locaux, les petits seigneurs et quelques gros bras fixent des frais sur les mouvements de marchandises. Les taxes légales sont déjà élevées, mais de nombreux pirates et chefs de bande exigent une part du gâteau en échange d'un passage sans encombres. Dans les ports de grande taille comme Marienburg, presque tout ce qui entre ou sort est taxé. Étant donné la situation, la contrebande est une activité lucrative. Bien qu'elle soit illégale, la plupart des citoyens de l'Empire n'hésitent pas à y recourir et à rogner sur les taxes. À leurs yeux, les percepteurs et les bureaucrates sont les vrais voleurs.`,
         skills: {
             mandatory: [
-                ``,
+                `Canotage`,
+                `Conduite d'attelages`,
+                `Déplacement silencieux`,
+                `Évaluation`,
+                `Fouille`,
+                `Marchandage`,
+                `Natation`,
+                `Perception`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Alphabet secret (voleur)`, `Langue (bretonnien)`, `Langue (kislévien)`],
                     quantity: 1,
-                }
+                },
+                {
+                    options: [`Alphabet secret (voleur)`, `Commérage`],
+                    quantity: 1,
+                },
             ],
         },
         talents: {
-            mandatory: [
-                ``,
-            ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Code de la rue`, `Dur en affaires`],
                     quantity: 1,
                 }
             ],
         },
         dotation: {
             mandatory: [
-                ``,
+                `Armure légère (veste de cuir)`,
+                `2 torches`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Mule et carriole`, `Bâteau à rames`],
                     quantity: 1,
                 }
             ],
         },
-        access: [],
-        advanced: [],
+        access: [`Aubergiste`, `Batelier`, `Chiffonnier`, `Cocher`, `Combattant des tunnels`, `Ingénieur`, `Marin`, `Matelot`, `Mercanti`, `Mineur`, `Passeur`, `Régisseur`],
+        advanced: [`Batelier`, `Charlatan`, `Combattant des tunnels`, `Marin`, `Passeur`, `Receleur`, `Voleur`],
         stats: {
             CC: `+5%`,
             CT: `+5%`,
-            Ag: `+5%`,
+            Ag: `+10%`,
             Int: `+10%`,
             Soc: `+10%`,
             B: `+2`,
