@@ -890,6 +890,110 @@ const careers = [
         }
     },
     {
+        name: `Coupe-jarret`,
+        description: `Dans les milieux criminels, force et brutalité sont des vertus appréciées et aucune profession ne les illustre mieux que le Coupe-jarret. Quand il s'agit de récupérer de l'argent, de faire taire un agitateur ou d'empêcher des rivaux d'aller trop loin, on fait appel au Coupe-jarret. Quelques coups de bâton suffisent généralement à faire passer le message, mais les cas les plus sensibles ont droit à la totale. Dans ce cas, mieux vaut prendre la poudre d'escampette, d'autant que les cimetières sont pleins de ceux qui pensaient s'en sortir grâce à leur jugeote.Toutes les guildes de voleurs et les organisations criminelles abritent des Coupe-jarrets.`,
+        skills: {
+            mandatory: [
+                `Esquive`,
+                `Intimidation`,
+                `Jeu`,
+                `Langage secret (langage des voleurs)`,
+                `Résistance à l'alcool`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups assomants`,
+                `Désarmement`,
+            ],
+            choice: [
+                {
+                    options: [`Coups précis`, `Lutte`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Réflexes éclair`, `Sang-froid`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Résistance aux poisons`, `Sur ses gardes`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Coups-de-poing`,
+                `Armure moyenne (gilet de mailles et gilet de cuir)`,
+            ],
+        },
+        access: [`Matelot`, `Spadassin`],
+        advanced: [`Bourreau`, `Garde du corps`, `Gladiateur`, `Mercenaire`, `Racketteur`],
+        stats: {
+            CC: `+10%`,
+            F: `+5%`,
+            E: `+5%`,
+            FM: `+5%`,
+            Soc: `+5%`,
+            A: `+1`,
+            B: `+2`,
+        }
+    },
+    {
+        name: `Diestro estalien`,
+        description: `Les Royaumes Estaliens se situent au sud-est de l'Empire, où la menace du Chaos semble lointaine. En effet, les Désolations du Chaos se dressent bien loin de cette contrée ensoleillée qui, contrairement à l'Empire et à Kislev, n'a jamais été confrontée aux hordes sanguinaires. Son peuple s'attache à d'autres activités, de la science à l'art du crime et de la vendetta en passant par l'érudition. Les Estaliens adorent croiser le fer. Du reste, les villes du pays abritent de nombreuses écoles d'escrime, chacune enseignant un style différent des autres. Nombre de ces styles découlent directement des enseignements de maître Figueroa, épéiste légendaire qui appliquait diverses théories scientifiques à son jeu, pour un résultat spectaculaire. Les disciples du style Figueroa, connus sous le nom de Diestro, se battent en duel à travers tout le pays. Certains, las de leur patrie, cherchent l'aventure ailleurs, plus particulièrement en Tilée et en Bretonnie. Les plus courageux se rendent dans le nord de l'Empire pour mesurer leur rapière à des adversaires de valeur, mais également pour voir à quoi ressemble une région située aux avant-postes de la lutte contre le Chaos.`,
+        skills: {
+            mandatory: [
+                `Connaissances académiques (science)`,
+                `Connaissances générales (Estalie)`,
+                `Esquive`,
+                `Langue (estalien)`,
+                `Lire/écrire`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups puissants`,
+                `Maîtrise (armes d'escrime)`,
+                ``,
+            ],
+            choice: [
+                {
+                    options: [`Combattant virevoltant`, `Réflexes éclair`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Coups précis`, `Sur ses gardes`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Beaux atours`,
+                `Parfum`,
+                `Potion de soins`,
+            ],
+            choice: [
+                {
+                    options: [`Fleuret`, `Rapière`],
+                    quantity: 1,
+                }
+            ],
+        },
+        access: [`aucun`],
+        advanced: [`Bandit de grand chemin`, `Duelliste`, `Escroc`, `Garde du corps`, `Spadassin`],
+        stats: {
+            CC: `+15%`,
+            F: `+5%`,
+            E: `+5%`,
+            Ag: `+10%`,
+            Int: `+5%`,
+            A: `+1`,
+            B: `+2`,
+        }
+    },
+    {
         name: ``,
         description: ``,
         skills: {
