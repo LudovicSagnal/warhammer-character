@@ -181,7 +181,7 @@ const careers = [
         talents: {
             choice: [
                 {
-                    options: [ `Acrobatie équestre`, `Adresse au tir`, `Eloquence`, `Force accrue`, `Imitation`, `Lutte`, `Maîtrise (armes de jet)`, `Réflexes éclairs`, `Sur ses gardes`],
+                    options: [ `Acrobatie équestre`, `Adresse au tir`, `Eloquence`, `Force accrue`, `Imitation`, `Lutte`, `Maîtrise (armes de jet)`, `Réflexes éclair`, `Sur ses gardes`],
                     quantity: 2
                 },
             ]
@@ -757,7 +757,7 @@ const careers = [
         talents: {
             choice: [
                 {
-                    options: [`Réflexes éclairs`, `Tireur d'élite`],
+                    options: [`Réflexes éclair`, `Tireur d'élite`],
                     quantity: 1,
                 }
             ],
