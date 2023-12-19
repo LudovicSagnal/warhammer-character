@@ -994,49 +994,59 @@ const careers = [
         }
     },
     {
-        name: ``,
-        description: ``,
+        name: `Eclaireur`,
+        description: `Les Éclaireurs sont habitués à évoluer en extérieur et effectuent des missions de reconnaissance pour l'armée, les caravanes et autres voyageurs. Constamment à l'affût d'embuscades et autres dangers, ce sont leurs yeux et leurs oreilles. Opérant en aval du groupe qu'ils accompagnent, ils doivent faire montre d'autonomie et de jugement. Il leur faut faire confiance à leur instinct et savoir prendre les bonnes décisions, d'autant qu'ils n'ont personne vers qui se tourner quand ils évoluent seuls dans une région sauvage. Les Éclaireurs travaillent dans leur région natale et tirent le meilleur parti de leurs connaissances. Certains font figure de pionniers et s'aventurent sur des terres inconnues ou hostiles. Ces Éclaireurs gagnent alors plus d'argent, mais leur espérance de vie s'en trouve réduite d'autant.`,
         skills: {
             mandatory: [
-                ``,
-            ],
-            choice: [
-                {
-                    options: [``, ``],
-                    quantity: 1,
-                }
+                `Déplacement silencieux`,
+                `Equitation`,
+                `Fouille`,
+                `Orientation`,
+                `Perception`,
+                `Pistage`,
+                `Soins des animaux`,
+                `Survie`,
             ],
         },
         talents: {
             mandatory: [
-                ``,
+                `Maîtrise (armes paralysantes)`,
+                `Sens de l'orientation`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Force accrue`, `Sang-froid`],
                     quantity: 1,
                 }
             ],
         },
         dotation: {
             mandatory: [
-                ``,
+                `Filet`,
+                `Armure légère (veste de cuir)`,
+                `Bouclier`,
+                `10 mètres de corde`,
+                `Cheval de selle avec selle et harnais`,
             ],
             choice: [
                 {
-                    options: [``, ``],
+                    options: [`Arc et 10 flèches`, `Arbalète et 10 carreaux`],
                     quantity: 1,
-                }
+                },
+                {
+                    options: [`Fouet`, `Lasso`],
+                    quantity: 1,
+                },
             ],
         },
-        access: [],
-        advanced: [],
+        access: [`Gardien tribal`, `Messager`, `Patrouilleur`, `Soldat`],
+        advanced: [`Bandit de grand chemin`, `Cocher`, `Mercenaire`, `Patrouilleur`, `Pisteur`],
         stats: {
             CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+5%`,
+            CT: `+10%`,
+            Ag: `+10%`,
             Int: `+10%`,
-            Soc: `+10%`,
+            FM: `+5%`,
             B: `+2`,
         }
     },
