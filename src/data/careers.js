@@ -1050,6 +1050,59 @@ const careers = [
             B: `+2`,
         }
     },
+    {
+        name: `Ecuyer`,
+        description: `Les Écuyers sont des chevaliers en cours de formation. Souvent de noble extraction, ils assistent les chevaliers, à la ville comme au champ de bataille. Bien qu'ils ne soient parfois rien de plus que des domestiques,servant à manger et à boire à leur seigneur ou s'occupant de l'armure et du cheval de celuici, ce travail éreintant est censé les endurcir et les préparer à la chevalerie. En retour, leurs seigneurs doivent leur apprendre à se battre, mais certains semblent faire montre de laxisme en la matière. Les enfants chéris des nobles entreprennent cette carrière pendant quelques mois au pire, mais les moins fortunés s'y embourbent pendant des années avant de pouvoir faire leurs preuves.`,
+        skills: {
+            mandatory: [
+                `Dressage`,
+                `Equitation`,
+                `Esquive`,
+                `Soins des animaux`,
+            ],
+            choice: [
+                {
+                    options: [`Charisme`, `Commérage`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances générales (Bretonnie)`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Langue (bretonnien)`, `Langue (reikspiel)`],
+                    quantity: 1,
+                },
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups puissants`,
+                `Etiquette`,
+                `Maîtrise (armes de cavalerie)`,
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Demi-lance`,
+                `Armure moyenne (gilet de mailles, cagoule de mailles et veste de cuir)`,
+                `Bouclier`,
+                `Cheval de selle avec selle et harnais`,
+            ],
+        },
+        access: [`Héraut`, `Noble`, `Valet`],
+        advanced: [`Chevalier`, `, Hors-la-loi`, `Noble`, `Sergent`, `Vétéran`],
+        stats: {
+            CC: `+10%`,
+            CT: `+5%`,
+            F: `+5%`,
+            E: `+5%`,
+            Ag: `+5%`,
+            Soc: `+5%`,
+            A: `+1`,
+            B: `+2`,
+        }
+    },
 
 ];
 
