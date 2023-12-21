@@ -1155,6 +1155,74 @@ const careers = [
             name: `elfe`,
         }
     },
+    {
+        name: `Escroc`,
+        description: `Si les Escrocs avaient un proverbe, ce serait le suivant: ne travaille pas honnêtement si tu peux l'éviter. Ces arnaqueurs à la langue bien pendue recourent à leur charisme et à leur chance pour se tailler une place dans le monde. Certains exercent le métier d'entremetteur, qui consiste à guider les clients dans les repaires du vice et de l'iniquité qu'abrite toute ville. Les autres sont des joueurs ou des conteurs professionnels.Tous les Escrocs préfèrent user de leur cervelle que de leur épée, ce qui explique qu'ils ont toujours une bonne histoire au bord des lèvres. Bien que les Escrocs élisent souvent domicile en ville, certains n'hésitent pas à voyager, tirant profit de machinations complexes avant de changer d'air. Les Escrocs les plus talentueux ne se font jamais prendre. Leurs mensonges sont tellement convaincants que même leurs victimes ne réalisent pas l'arnaque.`,
+        skills: {
+            mandatory: [
+                `Baratin`,
+                `Charisme`,
+                `Evaluation`,
+                `Langage (reikspiel)`,
+                `Perception`,
+            ],
+            choice: [
+                {
+                    options: [`Alphabet secret (voleur)`, `Jeu`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Commérage`, `Marchandage`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Expression artistique (acteur)`, `Expression artistique (conteur)`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Fouille`, `Langage secret (langage des voleurs)`],
+                    quantity: 1,
+                },
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Eloquence`,
+            ],
+            choice: [
+                {
+                    options: [`Chance`, `Sixième sens`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Code de la rue`, `Fuite`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `1d10 co`,
+            ],
+            choice: [
+                {
+                    options: [`Beaux atours`, `Dés (os)`, `Paquet de cartes`],
+                    quantity: 1,
+                },
+            ],
+        },
+        access: [`Agitateur`, `Assassin`, `Bateleur`, `Diestro estalien`, `Duelliste`, `Emissaire elfe`, `Marin`, `Noble`, `Valet`, `Voleur`],
+        advanced: [`Bateleur`, `Charlatan`, `Démagogue`, `Hors-la-loi`, `Serviteur`, `Voleur`],
+        stats: {
+            CC: `+5%`,
+            CT: `+5%`,
+            Ag: `+10%`,
+            Int: `+5%`,
+            FM: `+5%`,
+            Soc: `+10%`,
+            B: `+2`,
+        },
+    },
 
 ];
 
