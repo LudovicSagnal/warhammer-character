@@ -1091,7 +1091,7 @@ const careers = [
             ],
         },
         access: [`Héraut`, `Noble`, `Valet`],
-        advanced: [`Chevalier`, `, Hors-la-loi`, `Noble`, `Sergent`, `Vétéran`],
+        advanced: [`Chevalier`, `Hors-la-loi`, `Noble`, `Sergent`, `Vétéran`],
         stats: {
             CC: `+10%`,
             CT: `+5%`,
@@ -1101,6 +1101,58 @@ const careers = [
             Soc: `+5%`,
             A: `+1`,
             B: `+2`,
+        }
+    },
+    {
+        name: `Emissaire elfe`,
+        description: `Les doyens des grandes familles marchandes elfes sont à des lieues des affaires qui agitent l'Empire au quotidien. À leurs yeux, les humains ont une espérance de vie si courte qu'il leur est difficile de rester au courant des orientations politiques du Vieux Monde. Quand il leur faut réactualiser leurs informations, ils ont recours aux services d'Émissaires. Ces jeunes elfes constituent en quelque sorte la façade des maisons marchandes. Ils sont chargés de négocier les contrats, de conclure les affaires et de maintenir la paix avec les humains des grands comptoirs commerciaux comme Altdorf, Nuln et Marienburg. Cependant, la patience des elfes a ses limites et beaucoup d'Émissaires finissent par quitter leur famille pour mener une vie d'aventurier.`,
+        skills: {
+            mandatory: [
+                `Charisme`,
+                `Commérage`,
+                `Evaluation`,
+                `Langage secret (langage de guilde)`,
+                `Lire/écrire`,
+                `Marchandage`,
+                `Métier (marchand)`,
+                `Natation`,
+                `Perception`,
+            ],
+            choice: [
+                {
+                    options: [`Connaissances générales (Empire)`, `Connaissances générales (Pays Perdu)`],
+                    quantity: 1,
+                },
+            ],
+        },
+        talents: {
+            choice: [
+                {
+                    options: [`Dur en affaires`, `Grand voyageur`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Armure légère (veste de cuir)`,
+                `2 vêtements confortables`,
+                `Accessoires de calligraphie`,
+            ],
+        },
+        access: [`Artisan`, `Etudiant`],
+        advanced: [`Charlatan`, `Escroc`, `Etudiant`, `Marchand`, `Marin`, `Vagabond`],
+        stats: {
+            CC: `+5%`,
+            CT: `+5%`,
+            Ag: `+5%`,
+            Int: `+10%`,
+            FM: `+5%`,
+            Soc: `+10%`,
+            B: `+2`,
+        },
+        races: {
+            name: `elfe`,
         }
     },
 
