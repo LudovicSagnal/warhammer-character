@@ -1,7 +1,5 @@
 .profil {
-
-    .main-profil {
-        
-    }
+    @include center-child;
+    flex-direction: column;
 }
 
