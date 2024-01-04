@@ -258,25 +258,26 @@ const handleRandomAllWithSelect = () => {
     <div className='identity'>
       <h2>Personnage</h2>
       <div className='character-base'>
-      <div className='select-container'>
-        <Select name="race" options={races} label={'Choisissez une race'} value={race} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
-        <p>{race}</p>
-        {race === 'humain' ? (
-          <>
-            <Select name="origin" options={origins} label={'Choisissez une origine'} value={origin} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
-            <p>{origin}</p>          
-          </>
-        ) : (
-          <p>Pas d'origine selectionnable</p>
-        )}
-        <Select name="gender" options={genderChoice} label={'Choisissez un genre'} value={gender} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />
-        <p>{genderLabel}</p>
+        <div className='select-container'>
+          <Select name="race" options={races} label={'Choisissez une race'} value={race} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
+          <p>{race}</p>
+          {race === 'humain' ? (
+            <>
+              <Select name="origin" options={origins} label={'Choisissez une origine'} value={origin} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
+              <p>{origin}</p>          
+            </>
+          ) : (
+            <p>Pas d'origine selectionnable</p>
+          )}
+          <Select name="gender" options={genderChoice} label={'Choisissez un genre'} value={gender} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />
+          <p>{genderLabel}</p>
+        </div>
+        <div className='character-btn'>
+          <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
+          <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>  
+        </div>
+        <Portrait gender={gender}/>  
       </div>
-        <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
-        <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>    
-      </div>
-      <Portrait gender={gender}/>
-
 
       <h2>Détails personnels</h2>
       <div>

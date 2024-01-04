@@ -9,9 +9,24 @@
         .select-container {
 
         }
-        .random-all-btn {
-            background-color: aqua;
+        .character-btn {
+            @include center-child;
+            flex-direction: column;
+            .random-all-btn {
+                background-color: aqua;
+            }            
         }
+        .portrait-frame {
+            @include center-child;
+            .frame {
+                z-index: 5;
+            }
+            .avatar {
+                position: absolute;
+                z-index: 1;
+            }
+        }
+
     }
     input {
         text-align: center;
