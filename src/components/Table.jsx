@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import RandomBtn from './RandomBtn';
 import { base_main_characteristics, base_secondary_characteristics } from '../data/characteristics';
 
-const Table = ({ race }) => {
+const Table = ({ race, selectedCareer }) => {
   const [mainCharacteristics, setMainCharacteristics] = useState(base_main_characteristics);
   const [secondaryCharacteristics, setSecondaryCharacteristics] = useState(base_secondary_characteristics);
 
   function roll2d10() {
     return Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 10) + 1;
   }
+
+  console.log(selectedCareer);
 
   const handleRandomUniqueStat = (index) => {
     setMainCharacteristics((prevCharacteristics) => {
@@ -78,6 +80,13 @@ const Table = ({ race }) => {
   let forceBonus = Math.floor(firstDigitF / 10);
   let toughnessBonus = Math.floor(firstDigitE / 10);
 
+  const careerModifier = (statName) => {
+    if (selectedCareer && selectedCareer.stats[statName]) {
+      return selectedCareer.stats[statName];
+    }
+    return '';
+  };
+
   return (
     <div className='profils-container'>
       <h3>Profil principal</h3>
@@ -101,6 +110,14 @@ const Table = ({ race }) => {
               </td>
             ))}
             <td className='stat-box'><RandomBtn onClick={ handleRandomAllStats }/></td>
+          </tr>
+          <tr>
+            <td className="descriptive-box">Carrière</td>
+            {mainCharacteristics.map((stat, index) => (
+              <td className="stat-box" key={stat.short_name + index}>
+                <p>{careerModifier(stat.short_name)}</p>
+              </td>
+            ))}
           </tr>
         </tbody>
       </table>
@@ -131,6 +148,14 @@ const Table = ({ race }) => {
                 ) : (
                   <p className="modified-stat">{Array.isArray(item.stats[race]) ? item.stats[race][0] : item.stats[race]}</p>
                 )}
+              </td>
+            ))}
+          </tr>
+          <tr>
+            <td className="descriptive-box">Carrière</td>
+            {secondaryCharacteristics.map((stat, index) => (
+              <td className="stat-box" key={stat.short_name + index}>
+                <p>{careerModifier(stat.short_name)}</p>
               </td>
             ))}
           </tr>

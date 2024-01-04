@@ -23,8 +23,8 @@ const App = () => {
         <section className='main-section'>
           <Identity />
           <Profil />
-          <Skills/>
-          <Talents/>
+          {/* <Skills/>
+          <Talents/> */}
         </section>
         <Footer/>
       </RaceContext.Provider>
