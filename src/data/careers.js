@@ -1223,7 +1223,64 @@ const careers = [
             B: `+2`,
         },
     },
-
+    {
+        name: `Etudiant`,
+        description: `Les grandes villes de l'Empire abritent un certain nombre d'universités. À l'instar de l'école impériale des ingénieurs, la plupart sont financées par l'État. La première université de l'Empire fut fondée à Nuln, ville aujourd'hui encore réputée pour ses institutions pédagogiques (et, ironie du sort, pour l'école impériale d'artillerie). Les Étudiants de l'Empire ont le choix entre de nombreux cours, de l'histoire à l'anatomie en passant par la science. Évidemment, beaucoup préfèrent s'amuser avec leurs camarades dans les tavernes aux alentours de l'université et se font recaler en moins d'un an. Les Étudiants elfes ne se rendent pas aux universités impériales mais apprennent auprès de leurs propres maîtres. Les Étudiants halflings sont tolérés dans les universités en raison d'une obscure ordonnance impériale demandée par l'Ancien du Moot il y a bien longtemps de cela.`,
+        skills: {
+            mandatory: [
+                `Connaissances académiques (une au choix)`,
+                `Langue (classique)`,
+                `Langage (reikspiel)`,
+                `Lire/écrire`,
+                `Perception`,
+            ],
+            choice: [
+                {
+                    options: [`Charisme`, `Résistance à l'alcool`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Commérage`, `Connaissances académiques (une au choix)`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Fouille`, `Soins`],
+                    quantity: 1,
+                },
+            ],
+        },
+        talents: {
+            choice: [
+                {
+                    options: [`Calcul mental`, `Grand voyageur`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Etiquette`, `Linguistique`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Intelligent`, `Sociable`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Deux livres scolaires correspondant aux compétences de Connaissances choisies`,
+                `Accessoires de calligraphie`,
+            ],
+        },
+        access: [`Emissaire elfe`, `Ménestrel`, `Noble`, `Pilleur de tombes`, `Valet`],
+        advanced: [`Agitateur`, `Apprenti sorcier`, `Chirurgien barbier`, `Emissaire elfe`, `Érudit`, `Ingénieur`, `Initié`, `Médecin`],
+        stats: {
+            Ag: `+10%`,
+            Int: `+10%`,
+            FM: `+5%`,
+            Soc: `+10%`,
+            B: `+2`,
+        },
+    },
 ];
 
 
