@@ -7,6 +7,7 @@ import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number }
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
 import { RaceContext } from '../App';
+import Portrait from './Portrait';
 
 const Identity = () => {
 
@@ -274,6 +275,7 @@ const handleRandomAllWithSelect = () => {
         <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
         <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>    
       </div>
+      <Portrait gender={gender}/>
 
 
       <h2>Détails personnels</h2>
