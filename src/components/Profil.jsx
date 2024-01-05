@@ -13,8 +13,8 @@ const Profil = () => {
     return (
         <div className='profil'>
             <h2>Profil</h2>
-            <div>
-                <h3>Carrières</h3>
+            <div className='career-profil-selector'>
+                <h3>Carrière</h3>
                 <CareerSelection careers={careers} selectedCareer={selectedCareer} setSelectedCareer={setSelectedCareer} />
             </div>
             <Table race={race} selectedCareer={selectedCareer} />

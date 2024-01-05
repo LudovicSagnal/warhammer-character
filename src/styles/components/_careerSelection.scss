@@ -1,9 +1,9 @@
-.profil {
+.career-selector {
     @include center-child;
     flex-direction: column;
-    .career-profil-selector {
+    .selected-career {
         @include center-child;
         flex-direction: column;
+        width: 60%;
     }
 }
-

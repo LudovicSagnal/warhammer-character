@@ -4,20 +4,23 @@
     gap: 10px;
     padding-top: 2rem;
     .character-base {
-        @include center-child;
-        gap: 50px;
-        .select-container {
-
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 2fr 2fr; 
+        gap: 5px 0px; 
+        .select-container, .display-container, .character-btn, .portrait-frame {
+            @include center-child;
+            flex-direction: column
+        }
+        .display-container {
+    
         }
         .character-btn {
-            @include center-child;
-            flex-direction: column;
             .random-all-btn {
                 background-color: aqua;
             }            
         }
         .portrait-frame {
-            @include center-child;
             .frame {
                 z-index: 5;
             }

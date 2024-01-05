@@ -258,23 +258,30 @@ const handleRandomAllWithSelect = () => {
     <div className='identity'>
       <h2>Personnage</h2>
       <div className='character-base'>
+        <div className='character-btn'>
+          <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
+          <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>  
+        </div>
         <div className='select-container'>
           <Select name="race" options={races} label={'Choisissez une race'} value={race} onValueChange={(e) => setRace(e.target.value)} setValue={setRace} />
-          <p>{race}</p>
           {race === 'humain' ? (
             <>
-              <Select name="origin" options={origins} label={'Choisissez une origine'} value={origin} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />
-              <p>{origin}</p>          
+              <Select name="origin" options={origins} label={'Choisissez une origine'} value={origin} onValueChange={(e) => setOrigin(e.target.value)} setValue={setOrigin} />      
             </>
           ) : (
             <p>Pas d'origine selectionnable</p>
           )}
           <Select name="gender" options={genderChoice} label={'Choisissez un genre'} value={gender} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />
-          <p>{genderLabel}</p>
+
         </div>
-        <div className='character-btn'>
-          <button className='random-all-btn' onClick={handleRandomAll}>Générer un personnage</button>    
-          <button className='random-all-btn' onClick={handleRandomAllWithSelect}>Générer un personnage en gardant les select</button>  
+        <div className='display-container'>
+          <p>{race}</p>
+          {race === 'humain' ? (
+            <p>{origin}</p>          
+            ) : (
+            <p>Pas d'origine selectionnable</p>
+          )}
+          <p>{genderLabel}</p>          
         </div>
         <Portrait gender={gender}/>  
       </div>

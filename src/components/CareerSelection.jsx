@@ -13,7 +13,7 @@ const CareerSelection = ({ careers, selectedCareer, setSelectedCareer }) => {
   };
 
   return (
-    <div>
+    <div className='career-selector'>
       <select onChange={handleCareerSelection}>
         <option value="-1">Choisis une carrière</option>
         {careers.map((career, index) => (
@@ -24,7 +24,7 @@ const CareerSelection = ({ careers, selectedCareer, setSelectedCareer }) => {
       </select>
 
       {selectedCareer && (
-        <div>
+        <div className='selected-career'>
           <h3>{selectedCareer.name}</h3>
           <p>{selectedCareer.description}</p>
           <h3>Compétences</h3>
