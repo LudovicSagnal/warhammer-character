@@ -47,12 +47,12 @@ const careers = [
         access: [`Bandit de grand chemin`, `Bourgeois`, `Capitaine`, `Étudiant`, `Fanatique`, `Héraut`, `Scribe`, `Serviteur`],
         advanced: [`Charlatan`, `Démagogue`, `Escroc`, `Fanatique`, `Hors-la-loi`, `Politicien`],
         stats: {
-            CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+5%`,
-            Int: `+10%`,
-            Soc: `+10%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 5%`,
+            Ag: `+ 5%`,
+            Int: `+ 10%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
         }
     },
     {
@@ -95,12 +95,12 @@ const careers = [
         access: [ `Érudit`, `Étudiant`, `Scribe`, `Sorcier de village` ],
         advanced: [ `Compagnon sorcier`, `Érudit`, `Scribe` ],
         stats: {
-            Ag: `+5%`,
-            Int: `+10%`,
-            FM: `+15%`,
-            Soc: `+5%`,
-            B: `+2`,
-            Mag: `+1`,
+            Ag: `+ 5%`,
+            Int: `+ 10%`,
+            FM: `+ 15%`,
+            Soc: `+ 5%`,
+            B: `+ 2`,
+            Mag: `+ 1`,
         },
         races: {
             name: `humain`,
@@ -144,12 +144,12 @@ const careers = [
         access: [ `Bourgeois`, `Chirurgien barbier`, `Garde`, `Mercanti`, `Paysan`],
         advanced: [ `Émissaire elfe`, `Fanatique`, `Ingénieur`, `Maître-artisan`, `Marchand`, `Milicien` ],
         stats: {
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+10%`,
-            Int: `+5%`,
-            FM: `+10%`,
-            B: `+2`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 5%`,
+            FM: `+ 10%`,
+            B: `+ 2`,
         }
     },
     {
@@ -204,12 +204,12 @@ const careers = [
         access: [`Escroc`, `Héraut`, `Vagabond`, `Voleur`],
         advanced: [`Charlatan`, `Escroc`, `Ménestrel`, `Vagabond`, `Voleur`],
         stats: {
-            CC: `+5%`,
-            CT: `+10%`,
-            Ag: `+10%`,
-            FM: `+5%`,
-            Soc: `+10%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 10%`,
+            Ag: `+ 10%`,
+            FM: `+ 5%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
         }
     },
     {
@@ -254,13 +254,13 @@ const careers = [
         access: [`Contrebandier`, `Passeur`],
         advanced: [`Contrebandier`, `Marin`, `Matelot`, `Navigateur`, `Pêcheur`],
         stats: {
-            CC: `+10%`,
-            CT: `+5%`,
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+10%`,
-            Int: `+5%`,
-            B: `+2`,
+            CC: `+ 10%`,
+            CT: `+ 5%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 5%`,
+            B: `+ 2`,
         }
     },
     {
@@ -299,11 +299,11 @@ const careers = [
         access: [`Aucun`],
         advanced: [`Gladiateur`, `Marin`, `Mercenaire`, `Sergent`, `Vétéran`],
         stats: {
-            CC: `+15%`,
-            F: `+15%`,
-            E: `+10%`,
-            FM: `+10%`,
-            B: `+2`,
+            CC: `+ 15%`,
+            F: `+ 15%`,
+            E: `+ 10%`,
+            FM: `+ 10%`,
+            B: `+ 2`,
         },
         races: {
             name: `humain`, origin: `norse`,
@@ -357,12 +357,12 @@ const careers = [
         access: [`Aubergiste`, `Serviteur`],
         advanced: [`Agriculteur`, `Artisan`, `Aubergiste`, `Marchand`, `Milicien`, `Receleur`, `Valet`],
         stats: {
-            CC: `+5%`,
-            Ag: `+5%`,
-            Int: `+10%`,
-            FM: `+5%`,
-            Soc: `+5%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            Ag: `+ 5%`,
+            Int: `+ 10%`,
+            FM: `+ 5%`,
+            Soc: `+ 5%`,
+            B: `+ 2`,
         }
     },
     {
@@ -404,11 +404,11 @@ const careers = [
         access: [`Charbonnier`, `Vagabond`],
         advanced: [`Chasseur`, `Hors-la-loi`, `Milicien`, `Pisteur`, `Vagabond`],
         stats: {
-            CC: `+10%`,
-            F: `+10%`,
-            Ag: `+5%`,
-            FM: `+10%`,
-            B: `+3`,
+            CC: `+ 10%`,
+            F: `+ 10%`,
+            Ag: `+ 5%`,
+            FM: `+ 10%`,
+            B: `+ 3`,
         }
     },
     {
@@ -455,14 +455,14 @@ const careers = [
         access: [`Chasseur`, `Mercanti`, `Mineur`, `Paysan`],
         advanced: [`Bûcheron`, `Chasseur`, `Mineur`, `Pisteur`, `Vagabond`],
         stats: {
-            CC: `+5%`,
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+5%`,
-            Int: `+5%`,
-            FM: `+5%`,
-            Soc: `+5%`,
-            B: `+2`
+            CC: `+ 5%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 5%`,
+            Int: `+ 5%`,
+            FM: `+ 5%`,
+            Soc: `+ 5%`,
+            B: `+ 2`
         },
     },
     {
@@ -516,11 +516,11 @@ const careers = [
         access: [`Bûcheron`, `Charbonnier`, `Gardien tribal`],
         advanced: [`Charbonnier`, `Chasseur de primes`, `Franc-archer`, `Gardien tribal`, `Mineur`, `Pisteur`, `Sentinelle halfling`, `Soldat`],
         stats: {
-            CT: `+15%`,
-            E: `+5%`,
-            Ag: `+10%`,
-            Int: `+5%`,
-            B: `+3`
+            CT: `+ 15%`,
+            E: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 5%`,
+            B: `+ 3`
         }
     },
     {
@@ -565,12 +565,12 @@ const careers = [
         access: [`Chasseur`, `Garde du corps`, `Gladiateur`, `Kossar kislevite`, `Mercenaire`, `Sentinelle halfling`],
         advanced: [`Chasseur de vampires`, `Franc-archer`, `Mercenaire`, `Pisteur`, `Spadassin`],
         stats: {
-            CC: `+5%`,
-            CT: `+10%`,
-            F: `+5%`,
-            Ag: `+10%`,
-            FM: `+5%`,
-            B: `+2`
+            CC: `+ 5%`,
+            CT: `+ 10%`,
+            F: `+ 5%`,
+            Ag: `+ 10%`,
+            FM: `+ 5%`,
+            B: `+ 2`
         }
     },
     {
@@ -614,13 +614,13 @@ const careers = [
         access: [`Paysan`, `Ratier`, `Vagabond`],
         advanced: [`Contrebandier`, `Mercanti`, `Monte-en-l'air`, `Receleur`, `Trafiquant de cadavres`],
         stats: {
-            CC: `+5%`,
-            F: `+5%`,
-            E: `+10%`,
-            Ag: `+5%`,
-            FM: `+5%`,
-            Soc: `+5%`,
-            B: `+2`
+            CC: `+ 5%`,
+            F: `+ 5%`,
+            E: `+ 10%`,
+            Ag: `+ 5%`,
+            FM: `+ 5%`,
+            Soc: `+ 5%`,
+            B: `+ 2`
         }
     },
     {
@@ -669,12 +669,12 @@ const careers = [
         access: [`Étudiant`, `Initié`],
         advanced: [`Artisan`, `Bourreau`, `Médecin`, `Trafiquant de cadavres`, `Vagabond`],
         stats: {
-            CC: `+5%`,
-            Ag: `+10%`,
-            Int: `+10%`,
-            FM: `+10%`,
-            Soc: `+5%`,
-            B: `+2`
+            CC: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 10%`,
+            FM: `+ 10%`,
+            Soc: `+ 5%`,
+            B: `+ 2`
         }
     },
     {
@@ -724,12 +724,12 @@ const careers = [
         access: [`Eclaireur`, `Messager`],
         advanced: [`Bandit de grand chemin`, `Collecteur de taxes`, `Contrebandier`, `Hors-la-loi`, `Passeur`, `Patrouilleur`, `Pisteur`],
         stats: {
-            CC: `+5%`,
-            CT: `+10%`,
-            Ag: `+10%`,
-            FM: `+5%`,
-            Soc: `+5%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 10%`,
+            Ag: `+ 10%`,
+            FM: `+ 5%`,
+            Soc: `+ 5%`,
+            B: `+ 2`,
         }
     },
     {
@@ -774,13 +774,13 @@ const careers = [
         access: [`Cocher`, `Patrouilleur`, `Régisseur`],
         advanced: [`Bandit de grand chemin`, `Hors-la-loi`, `Passeur`, `Politicien`, `Sentinelle halfling`, `Soldat`, `Voleur`],
         stats: {
-            CC: `+10%`,
-            CT: `+5%`,
-            F: `+5%`,
-            E: `+10%`,
-            Ag: `+5%`,
-            FM: `+10%`,
-            B: `+2`,
+            CC: `+ 10%`,
+            CT: `+ 5%`,
+            F: `+ 5%`,
+            E: `+ 10%`,
+            Ag: `+ 5%`,
+            FM: `+ 10%`,
+            B: `+ 2`,
         }
     },
     {
@@ -821,13 +821,13 @@ const careers = [
         access: [`Contrebandier`, `Kossar kislévite`, `Mercenaire`, `Mineur`, `Pilleur de tombes`, `Porterune`, `Ratier`],
         advanced: [`Contrebandier`, `Gladiateur`, `Pilleur de tombes`, `Porterune`, `Sergent`, `Vétéran`],
         stats: {
-            CC: `+10%`,
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+10%`,
-            FM: `+5%`,
-            A: `+1`,
-            B: `+2`,
+            CC: `+ 10%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 10%`,
+            FM: `+ 5%`,
+            A: `+ 1`,
+            B: `+ 2`,
         },
         races: {
             name: `nain`,
@@ -881,12 +881,12 @@ const careers = [
         access: [`Aubergiste`, `Batelier`, `Chiffonnier`, `Cocher`, `Combattant des tunnels`, `Ingénieur`, `Marin`, `Matelot`, `Mercanti`, `Mineur`, `Passeur`, `Régisseur`],
         advanced: [`Batelier`, `Charlatan`, `Combattant des tunnels`, `Marin`, `Passeur`, `Receleur`, `Voleur`],
         stats: {
-            CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+10%`,
-            Int: `+10%`,
-            Soc: `+10%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 10%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
         }
     },
     {
@@ -930,13 +930,13 @@ const careers = [
         access: [`Matelot`, `Spadassin`],
         advanced: [`Bourreau`, `Garde du corps`, `Gladiateur`, `Mercenaire`, `Racketteur`],
         stats: {
-            CC: `+10%`,
-            F: `+5%`,
-            E: `+5%`,
-            FM: `+5%`,
-            Soc: `+5%`,
-            A: `+1`,
-            B: `+2`,
+            CC: `+ 10%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            FM: `+ 5%`,
+            Soc: `+ 5%`,
+            A: `+ 1`,
+            B: `+ 2`,
         }
     },
     {
@@ -984,13 +984,13 @@ const careers = [
         access: [`aucun`],
         advanced: [`Bandit de grand chemin`, `Duelliste`, `Escroc`, `Garde du corps`, `Spadassin`],
         stats: {
-            CC: `+15%`,
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+10%`,
-            Int: `+5%`,
-            A: `+1`,
-            B: `+2`,
+            CC: `+ 15%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 5%`,
+            A: `+ 1`,
+            B: `+ 2`,
         }
     },
     {
@@ -1042,12 +1042,12 @@ const careers = [
         access: [`Gardien tribal`, `Messager`, `Patrouilleur`, `Soldat`],
         advanced: [`Bandit de grand chemin`, `Cocher`, `Mercenaire`, `Patrouilleur`, `Pisteur`],
         stats: {
-            CC: `+5%`,
-            CT: `+10%`,
-            Ag: `+10%`,
-            Int: `+10%`,
-            FM: `+5%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 10%`,
+            Ag: `+ 10%`,
+            Int: `+ 10%`,
+            FM: `+ 5%`,
+            B: `+ 2`,
         }
     },
     {
@@ -1093,14 +1093,14 @@ const careers = [
         access: [`Héraut`, `Noble`, `Valet`],
         advanced: [`Chevalier`, `Hors-la-loi`, `Noble`, `Sergent`, `Vétéran`],
         stats: {
-            CC: `+10%`,
-            CT: `+5%`,
-            F: `+5%`,
-            E: `+5%`,
-            Ag: `+5%`,
-            Soc: `+5%`,
-            A: `+1`,
-            B: `+2`,
+            CC: `+ 10%`,
+            CT: `+ 5%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 5%`,
+            Soc: `+ 5%`,
+            A: `+ 1`,
+            B: `+ 2`,
         }
     },
     {
@@ -1143,13 +1143,13 @@ const careers = [
         access: [`Artisan`, `Etudiant`],
         advanced: [`Charlatan`, `Escroc`, `Etudiant`, `Marchand`, `Marin`, `Vagabond`],
         stats: {
-            CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+5%`,
-            Int: `+10%`,
-            FM: `+5%`,
-            Soc: `+10%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 5%`,
+            Ag: `+ 5%`,
+            Int: `+ 10%`,
+            FM: `+ 5%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
         },
         races: {
             name: `elfe`,
@@ -1214,13 +1214,13 @@ const careers = [
         access: [`Agitateur`, `Assassin`, `Bateleur`, `Diestro estalien`, `Duelliste`, `Emissaire elfe`, `Marin`, `Noble`, `Valet`, `Voleur`],
         advanced: [`Bateleur`, `Charlatan`, `Démagogue`, `Hors-la-loi`, `Serviteur`, `Voleur`],
         stats: {
-            CC: `+5%`,
-            CT: `+5%`,
-            Ag: `+10%`,
-            Int: `+5%`,
-            FM: `+5%`,
-            Soc: `+10%`,
-            B: `+2`,
+            CC: `+ 5%`,
+            CT: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 5%`,
+            FM: `+ 5%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
         },
     },
     {
@@ -1274,11 +1274,62 @@ const careers = [
         access: [`Emissaire elfe`, `Ménestrel`, `Noble`, `Pilleur de tombes`, `Valet`],
         advanced: [`Agitateur`, `Apprenti sorcier`, `Chirurgien barbier`, `Emissaire elfe`, `Érudit`, `Ingénieur`, `Initié`, `Médecin`],
         stats: {
-            Ag: `+10%`,
-            Int: `+10%`,
-            FM: `+5%`,
-            Soc: `+10%`,
-            B: `+2`,
+            Ag: `+ 10%`,
+            Int: `+ 10%`,
+            FM: `+ 5%`,
+            Soc: `+ 10%`,
+            B: `+ 2`,
+        },
+    },
+    {
+        name: `Fanatique`,
+        description: `Les Fanatiques ont tout perdu. Peutêtre leur famille a-t-elle été massacrée par des hommes-bêtes, peut-être leur village a-t-il été rasé par des orques. Mais il est également possible que leur entreprise ait été anéantie par un marchand ou que leurs filles aient été enlevées par un noble envieux. Quel que soit le cas, ces hommes et ces femmes n'ont plus rien si ce n'est la religion. Ils ont trouvé le salut dans les sermons enflammés des prêtresguerriers de Sigmar ou d'Ulric.Aujourd'hui, ils parcourent l'Empire vêtus de guenilles, cherchant à punir les minions du mal et du Chaos. Ils souhaitent trouver la rédemption dans le sang, qu'il s'agisse du leur ou de celui de leurs ennemis. Ils n'ont pas l'entraînement de soldats, mais la flamme de la foi couve en eux et il s'agit assurément d'une arme puissante.`,
+        skills: {
+            mandatory: [
+                `Charisme`,
+                `Connaissances académiques (théologie)`,
+                `Connaissances générales (Empire)`,
+                `Intimidation`,
+                `Lire/écrire`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Éloquence`,
+                `Maîtrise (fléaux)`,
+            ],
+            choice: [
+                {
+                    options: [`Dur à cuire`, `Sociable`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Force accrue`, `Sang-froid`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Armure légère (veste de cuir)`,
+                `Bouteille d'alcool fort de bonne qualité`,
+            ],
+            choice: [
+                {
+                    options: [`Fléau d'armes`, `Morgenstern`],
+                    quantity: 1,
+                },
+            ],
+        },
+        access: [`Agitateur`, `Artisan`, `Champion de justice`, `Initié`, `Paysan`],
+        advanced: [`Agitateur`, `Flagellant`, `Hors-la-loi`, `Initié`, `Moine`],
+        stats: {
+            CC: `+ 10%`,
+            F: `+ 5%`,
+            E: `+ 10%`,
+            FM: `+ 10%`,
+            Soc: `+ 5%`,
+            B: `+ 2`,
         },
     },
 ];
