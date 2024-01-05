@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Select from './Select';
 import { races, origins } from '../data/races';
-import { careers } from '../data/careers';
 import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf } from '../data/names';
 import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
 import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
 import RandomBtn from './RandomBtn';
 import { RaceContext } from '../App';
 import Portrait from './Portrait';
+import PortraitDisplayer from './PortraitDisplayer';
 
 const Identity = () => {
 
@@ -26,6 +26,7 @@ const Identity = () => {
   const [siblings, setSiblings] = useState('');
   const [marks, setMarks] = useState('');
   const [astral, setAstral] = useState('');
+  const [modal, setModal] = useState(false);
 
   const genderChoice = [
     { value: 'male', label: 'homme' },
@@ -33,6 +34,14 @@ const Identity = () => {
   ];
   const selectedGender = genderChoice.find((option) => option.value === gender);
   const genderLabel = selectedGender ? selectedGender.label : '';
+  
+  const defaultPortrait = gender === 'female' ? 'default_woman.webp' : 'default_man.webp';
+  const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
+
+  const handleModalPortrait = () => {
+    setModal(!modal);
+  };
+
 
 /////////////////////////////////////  Name, Firstname ////////////////////////////////////////
 
@@ -276,14 +285,18 @@ const handleRandomAllWithSelect = () => {
         <div className='display-container'>
           <p>Race : {race}</p>
           {race === 'humain' ? (
-            <p>Région d'origine : {origin}</p>          
+            <p>Origine : {origin}</p>          
             ) : (
             <p>Pas d'origine selectionnable</p>
           )}
           <p>Genre : {genderLabel}</p>          
         </div>
-        <Portrait gender={gender}/>  
+        <div className='avatar-container' onClick={handleModalPortrait}>
+          <Portrait gender={gender} choosenPortrait={choosenPortrait} setChoosenPortrait={setChoosenPortrait}/>           
+        </div>
       </div>
+      {modal && <PortraitDisplayer gender={gender} choosenPortrait={choosenPortrait} setChoosenPortrait={setChoosenPortrait}/> }
+
 
       <h2>Détails personnels</h2>
       <div>

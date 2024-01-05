@@ -8,7 +8,7 @@
         grid-auto-columns: 1fr; 
         grid-template-columns: 1fr 2fr 2fr; 
         gap: 5px 0px; 
-        .select-container, .display-container, .character-btn, .portrait-frame {
+        .select-container, .display-container, .character-btn, .avatar-container, .portrait-frame {
             @include center-child;
             flex-direction: column;
             gap: 10px;
@@ -24,15 +24,22 @@
             }
         }
         .portrait-frame {
+            overflow: hidden;
+            height: 500px;
+            width: 380px;
+            border-radius: 50%;
             .frame {
-                z-index: 5;
-            }
-            .avatar {
                 position: absolute;
-                z-index: 1;
             }
         }
 
+    }
+    .modal-portrait {
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
     }
     input {
         text-align: center;
