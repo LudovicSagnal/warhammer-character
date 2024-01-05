@@ -31,13 +31,13 @@ const CareerSelection = ({ careers, selectedCareer, setSelectedCareer }) => {
           <p>
             {selectedCareer.skills.mandatory && selectedCareer.skills.mandatory.join(', ')}
           </p>
-          <p>
+          <ul>
             {selectedCareer.skills.choice && selectedCareer.skills.choice.map((choice, index) => (
-              <p key={index}>
+              <li key={index}>
                 {choice.options.join(' ou ')}
-              </p>
+              </li>
             ))}
-          </p>
+          </ul>
           <h3>Talents</h3>
           <p>
             {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}

@@ -6,19 +6,22 @@
     .character-base {
         display: grid; 
         grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr 1fr 2fr 2fr; 
+        grid-template-columns: 1fr 2fr 2fr; 
         gap: 5px 0px; 
         .select-container, .display-container, .character-btn, .portrait-frame {
             @include center-child;
-            flex-direction: column
-        }
-        .display-container {
-    
+            flex-direction: column;
+            gap: 10px;
         }
         .character-btn {
             .random-all-btn {
                 background-color: aqua;
             }            
+        }
+        .display-container {
+            p {
+                font-size: 1.5rem;
+            }
         }
         .portrait-frame {
             .frame {

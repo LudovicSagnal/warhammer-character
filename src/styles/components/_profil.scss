@@ -1,9 +1,4 @@
-.profil {
+.profil, .career-profil-selector {
     @include center-child;
     flex-direction: column;
-    .career-profil-selector {
-        @include center-child;
-        flex-direction: column;
-    }
 }
-

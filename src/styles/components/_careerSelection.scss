@@ -1,9 +1,8 @@
-.career-selector {
+.career-selector, .selected-career {
     @include center-child;
     flex-direction: column;
+    gap: 10px;
     .selected-career {
-        @include center-child;
-        flex-direction: column;
         width: 60%;
     }
 }

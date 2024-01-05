@@ -105,7 +105,7 @@ const Table = ({ race, selectedCareer }) => {
             <td className='descriptive-box'>Base</td>
             {mainCharacteristics.map((item, index) => (
               <td className="stat-box" key={item.short_name + index}>
-                <p className="modified-stat">{item.value}</p>
+                <p className="modified-stat">{item.value} %</p>
                 <RandomBtn onClick={() => handleRandomUniqueStat(index)} />
               </td>
             ))}
@@ -115,7 +115,7 @@ const Table = ({ race, selectedCareer }) => {
             <td className="descriptive-box">Carrière</td>
             {mainCharacteristics.map((stat, index) => (
               <td className="stat-box" key={stat.short_name + index}>
-                <p>{careerModifier(stat.short_name)}</p>
+                <p className="modified-stat">{careerModifier(stat.short_name)}</p>
               </td>
             ))}
           </tr>
@@ -155,7 +155,7 @@ const Table = ({ race, selectedCareer }) => {
             <td className="descriptive-box">Carrière</td>
             {secondaryCharacteristics.map((stat, index) => (
               <td className="stat-box" key={stat.short_name + index}>
-                <p>{careerModifier(stat.short_name)}</p>
+                <p className="modified-stat">{careerModifier(stat.short_name)}</p>
               </td>
             ))}
           </tr>

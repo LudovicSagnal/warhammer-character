@@ -35,8 +35,10 @@ main {
     gap: 10px;
     background-image: url('./background/back-old-parchment.webp');
     background-size: cover;
-    // font-family: font-1;
     padding-top: 2rem;
+    h1, h2, h3 {
+        font-family: font-1;
+    }
     h2 {
         font-size: 1.3rem;
         color: white;
