@@ -1332,6 +1332,56 @@ const careers = [
             B: `+ 2`,
         },
     },
+    {
+        name: `Garde`,
+        description: `À l'origine, les villes étaient responsables du recrutement et de l'entraînement de leur guet, mais la corruption était telle que l'Empereur confia cette tâche à l'armée régulière. Aujourd'hui, certains régiments menant une vie de garnison font office de guet. Cela a eu pour effet de réduire sensiblement la corruption, mais l'armée elle-même n'est pas à l'abri de ce genre de tentation. Les Gardes sont responsables du maintien de l'ordre et ont le droit de procéder à des arrestations. Dans les petites villes, ils jouent également le rôle de soldats du feu. Pour certains soldats, le guet est une affectation temporaire. Pour d'autres, cela devient la carrière de toute une vie.`,
+        skills: {
+            mandatory: [
+                `Commérage`,
+                `Connaissances académiques (droit)`,
+                `Esquive`,
+                `Fouille`,
+                `Intimidation`,
+                `Perception`,
+                `Pistage`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups assommants`,
+                `Coups puissants`,
+            ],
+            choice: [
+                {
+                    options: [`Combat de rue`, `Désarmement`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Intelligent`, `Sang-froid`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Armure légère (veste de cuir)`,
+                `Lanterne et perche`,
+                `Huile pour lampe`,
+                `Uniforme`,
+            ],
+        },
+        access: [`Geôlier`, `Soldat`],
+        advanced: [`Artisan`, `Mercenaire`, `Racketteur`, `Sergent`, `Soldat`],
+        stats: {
+            CC: `+ 10%`,
+            CT: `+ 5%`,
+            F: `+ 5%`,
+            Ag: `+ 5%`,
+            Int: `+ 10%`,
+            Soc: `+ 5%`,
+            B: `+ 2`,
+        },
+    },
 ];
 
 
