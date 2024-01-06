@@ -7,7 +7,7 @@
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-template-columns: 1fr 2fr 2fr; 
-        gap: 5px 0px; 
+        gap: 5px 0px;
         .select-container, .display-container, .character-btn, .avatar-container, .portrait-frame {
             @include center-child;
             flex-direction: column;
@@ -26,7 +26,7 @@
         .portrait-frame {
             overflow: hidden;
             height: 500px;
-            width: 380px;
+            width: 360px;
             border-radius: 50%;
             .frame {
                 position: absolute;
@@ -35,10 +35,24 @@
 
     }
     .modal-portrait {
+        position: absolute;
+        @include center-child;
+        background-color: rgba(black, 0.9);
+        border-radius: 40px;
+        border: 2px solid black;
+        padding: 20px;
+        width: 50%;
+        right: 35%;
+        top: 10%;
+        flex-wrap: wrap;
+        gap: 5px;
+        z-index: 10;
         img {
             border-radius: 50%;
             width: 100px;
             height: 100px;
+            cursor: pointer;
+            border: 2px solid black;
         }
     }
     input {
