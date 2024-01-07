@@ -295,7 +295,7 @@ const handleRandomAllWithSelect = () => {
           <Portrait gender={gender} choosenPortrait={choosenPortrait} setChoosenPortrait={setChoosenPortrait}/>           
         </div>
       </div>
-      {modal && <PortraitDisplayer gender={gender} choosenPortrait={choosenPortrait} setChoosenPortrait={setChoosenPortrait}/> }
+      {modal && <PortraitDisplayer gender={gender} choosenPortrait={choosenPortrait} setChoosenPortrait={setChoosenPortrait} handleModalPortrait={handleModalPortrait}/> }
 
 
       <h2>Détails personnels</h2>
