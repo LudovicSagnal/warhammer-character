@@ -7,8 +7,7 @@ import { careers } from '../data/careers';
 
 const Profil = () => {
 
-    const { race } = useContext(RaceContext);
-    const [selectedCareer, setSelectedCareer] = useState(null);
+    const { race, selectedCareer, setSelectedCareer } = useContext(RaceContext);
 
     return (
         <div className='profil'>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 
-const CareerSelection = ({ careers, selectedCareer, setSelectedCareer }) => {
+const CareerSelection = ({ careers, setSelectedCareer }) => {
 
   const handleCareerSelection = (event) => {
     const selectedIndex = parseInt(event.target.value);
@@ -22,35 +21,6 @@ const CareerSelection = ({ careers, selectedCareer, setSelectedCareer }) => {
           </option>
         ))}
       </select>
-
-      {selectedCareer && (
-        <div className='selected-career'>
-          <h3>{selectedCareer.name}</h3>
-          <p>{selectedCareer.description}</p>
-          <h3>Compétences</h3>
-          <p>
-            {selectedCareer.skills.mandatory && selectedCareer.skills.mandatory.join(', ')}
-          </p>
-          <ul>
-            {selectedCareer.skills.choice && selectedCareer.skills.choice.map((choice, index) => (
-              <li key={index}>
-                {choice.options.join(' ou ')}
-              </li>
-            ))}
-          </ul>
-          <h3>Talents</h3>
-          <p>
-            {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}
-          </p>
-          <p>
-            {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
-              <p key={index}>
-                {choice.options.join(' ou ')}
-              </p>
-            ))}
-          </p>
-        </div>
-      )}
     </div>
   );
 };

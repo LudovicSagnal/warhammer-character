@@ -7,6 +7,8 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Talents from './components/Talents';
 import PersonnalDetails from './components/PersonnalDetails';
+import CareerInfo from './components/CareerInfo';
+import { careers } from './data/careers';
 
 export const RaceContext = React.createContext();
 
@@ -27,17 +29,21 @@ const App = () => {
   const [siblings, setSiblings] = useState('');
   const [marks, setMarks] = useState('');
   const [astral, setAstral] = useState('');
+  const [selectedCareer, setSelectedCareer] = useState(null);
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer }}>
         <section className='main-section'>
           <Identity />
-          <Profil />
+          <div className='detail-profil-container'>
+            <PersonnalDetails />
+            <Profil />            
+          </div>
+          <CareerInfo selectedCareer={selectedCareer} />
           {/* <Skills/>
           <Talents/> */}
-          <PersonnalDetails />
         </section>
         <Footer/>
       </RaceContext.Provider>

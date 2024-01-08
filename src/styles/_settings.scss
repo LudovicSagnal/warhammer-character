@@ -57,6 +57,11 @@ main {
     }
     .main-section {
         padding-left: 2rem;
+        .detail-profil-container {
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 2fr; 
+        }
     }
     p {
         font-size: 0.8rem;
