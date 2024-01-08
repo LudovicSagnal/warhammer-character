@@ -10,8 +10,6 @@ const Table = ({ race, selectedCareer }) => {
     return Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 10) + 1;
   }
 
-  console.log(selectedCareer);
-
   const handleRandomUniqueStat = (index) => {
     setMainCharacteristics((prevCharacteristics) => {
       const updatedCharacteristics = [...prevCharacteristics];
