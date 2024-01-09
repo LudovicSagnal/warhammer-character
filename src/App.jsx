@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Talents from './components/Talents';
 import PersonnalDetails from './components/PersonnalDetails';
 import CareerInfo from './components/CareerInfo';
-import { careers } from './data/careers';
+import PDFDocument from './components/PDFDocument';
 
 export const RaceContext = React.createContext();
 
@@ -30,11 +30,13 @@ const App = () => {
   const [marks, setMarks] = useState('');
   const [astral, setAstral] = useState('');
   const [selectedCareer, setSelectedCareer] = useState(null);
+  const defaultPortrait = gender === 'female' ? 'default_woman.webp' : 'default_man.webp';
+  const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait }}>
         <section className='main-section'>
           <Identity />
           <div className='detail-profil-container'>
@@ -46,6 +48,7 @@ const App = () => {
           <Talents/> */}
         </section>
         <Footer/>
+        <PDFDocument/> 
       </RaceContext.Provider>
     </main>
   );

@@ -8,12 +8,9 @@ import randomFunctions from '../functions/randomFunctions';
 
 const Identity = () => {
 
-  const { race, setRace, origin, setOrigin, gender, setGender } = useContext(RaceContext);
+  const { race, setRace, origin, setOrigin, gender, setGender, choosenPortrait, setChoosenPortrait } = useContext(RaceContext);
   const [modal, setModal] = useState(false);
   const { handleRandomAll, handleRandomAllWithSelect, genderChoice, genderLabel } = randomFunctions();
-
-  const defaultPortrait = gender === 'female' ? 'default_woman.webp' : 'default_man.webp';
-  const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
 
   const handleModalPortrait = () => {
     setModal(!modal);
