@@ -1,48 +1,46 @@
 import { useContext, useRef } from 'react';
 import { RaceContext } from '../App';
-import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 const PDFDocument = () => {
+  const {
+    race, origin, gender, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait } = useContext(RaceContext);
 
-  const { race, origin, gender, career, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait } = useContext(RaceContext);
-  const portraitPath = './portraits-PDF/';
+    const canvasRef = useRef(null);
 
-  const pdfRef = useRef();
+    const PNGPortrait = choosenPortrait.replace(/\.webp$/, '.png');
+    const portraitPath = './portraits-PDF/';
 
-  const downloadPDF = () => {
-    const input = pdfRef.current;
-    html2canvas(input).then((canvas) => {
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4', true);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-      const imgWidth = canvas.width;
-      const imgHeight = canvas.height;
-      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-      const imgX = (pdfWidth - imgWidth * ratio / 2);
-      const imgY = 30;
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio);
-      pdf.save('character.pdf');
-    });
-
-
+    console.log(selectedCareerName);
+  
+    const addMultipleLines = (pdf, lines, x, y, lineHeight) => {
+      lines.forEach((line) => {
+        pdf.text(line, x, y);
+        y += lineHeight;
+      });
+    };
+  
+    const downloadPDF = () => {
+      const pdf = new jsPDF();
+      const lineHeight = 10;
+      let verticalPosition = 20;
+  
+      pdf.setFont('helvetica');
+      pdf.setFontSize(12);
+  
+      const lines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`, `Origine: ${origin}`, `Carrière : ${selectedCareerName}`];
+  
+      addMultipleLines(pdf, lines, 20, verticalPosition, lineHeight);
+  
+      pdf.save(`${firstname}-${name}.pdf`);
+    };
+  
+    return (
+      <>
+        <canvas ref={canvasRef} style={{ display: 'none' }}></canvas>
+        <button onClick={downloadPDF}>Télécharge le PDF</button>
+      </>
+    );
   };
-
-  return (
-
-    <>
-      <div ref={pdfRef}>
-        {/* <img src={portraitPath+choosenPortrait} alt="" /> */}
-        <p>Prénom : {firstname}</p>
-        <p>Nom : {name}</p>
-        <p>Race : {race}</p>
-        <p>{origin}</p>
-      </div>  
-      <button onClick={downloadPDF}>Télécharge le PDF</button>
-    </>
-  )
-
-};
-
-export default PDFDocument;
+  
+  export default PDFDocument;

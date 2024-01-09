@@ -30,13 +30,14 @@ const App = () => {
   const [marks, setMarks] = useState('');
   const [astral, setAstral] = useState('');
   const [selectedCareer, setSelectedCareer] = useState(null);
+  const [selectedCareerName, setSelectedCareerName] = useState('Aucune');
   const defaultPortrait = gender === 'female' ? 'default_woman.webp' : 'default_man.webp';
   const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait, selectedCareerName, setSelectedCareerName }}>
         <section className='main-section'>
           <Identity />
           <div className='detail-profil-container'>
@@ -47,8 +48,8 @@ const App = () => {
           {/* <Skills/>
           <Talents/> */}
         </section>
+        <PDFDocument/>
         <Footer/>
-        <PDFDocument/> 
       </RaceContext.Provider>
     </main>
   );

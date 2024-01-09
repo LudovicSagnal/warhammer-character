@@ -1,11 +1,13 @@
 
-const CareerSelection = ({ careers, setSelectedCareer }) => {
+const CareerSelection = ({ careers, setSelectedCareer, setSelectedCareerName }) => {
 
   const handleCareerSelection = (event) => {
     const selectedIndex = parseInt(event.target.value);
     if (selectedIndex >= 0) {
       const selected = careers[selectedIndex];
+      const selectedCareerName = careers[selectedIndex].name;
       setSelectedCareer(selected);
+      setSelectedCareerName(selectedCareerName);
     } else {
       setSelectedCareer(null);
     }

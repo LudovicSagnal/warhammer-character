@@ -22,13 +22,11 @@ const CareerInfo = ({ selectedCareer }) => {
                     <p>
                         {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}
                     </p>
-                    <p>
-                        {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
-                        <p key={index}>
-                            {choice.options.join(' ou ')}
-                        </p>
-                        ))}
+                    {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
+                    <p key={index}>
+                        {choice.options.join(' ou ')}
                     </p>
+                    ))}
                 </div>
             )}
         </div>
