@@ -1,3 +1,5 @@
+import { races } from "./races";
+
 const careers = [
     { 
         name: `Agitateur`, 
@@ -1381,6 +1383,111 @@ const careers = [
             Soc: `+ 5%`,
             B: `+ 2`,
         },
+    },
+    {
+        name: `Garde du corps`,
+        description: `Selon les habitants du Vieux Monde, les marchands d'Altdorf sont tellement malhonnêtes qu'il leur faut louer les services de Gardes du corps pour veiller sur leur vie et leurs intérêts. Bien évidemment, le Vieux Monde est une région dangereuse et les villes qu'il abrite ne font pas exception à la règle. En effet, il n'est pas rare de se faire poignarder dans les rues bondées de métropoles comme Nuln ou Middenheim. Les nantis ont donc recours aux services de Gardes du corps pour les protéger des voleurs et autres bandits. Si beaucoup ont tout l'air de canailles, d'autres arborent les couleurs du noble ou du marchand qui les emploie. Certaines compagnies de Gardes du corps ont pris une importance telle qu'il s'agit quasiment d'armées privées.`,
+        skills: {
+            mandatory: [
+                `Esquive`,
+                `Intimidation`,
+                `Perception`,
+                `Soins`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Combat de rue`,
+                `Coups assommants`,
+                `Maîtrise (armes de jet)`,
+                `Maîtrise (armes de parade)`,
+            ],
+            choice: [
+                {
+                    options: [`Désarmement`, `Sur ses gardes`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Forece accrue`, `Résistance accrue`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Armure légère (veste de cuir)`,
+                `Rondache`,
+                `Coups-de-poing`,
+            ],
+            choice: [
+                {
+                    options: [`2 haches de jet`, `2 dagues de jet`],
+                    quantity: 1,
+                },
+            ],
+        },
+        access: [`Coupe-jarret`, `Diestro estalien`, `Geôlier`, `Mercenaire`],
+        advanced: [`Bourreau`, `Chasseur de primes`, `Geôlier`, `Mercenaire`, `Racketteur`, `Régisseur`, `Spadassin`],
+        stats: {
+            CC: `+ 10%`,
+            F: `+ 5%`,
+            E: `+ 5%`,
+            Ag: `+ 5%`,
+            A: `+ 1`,
+            B: `+ 3`,
+        },
+    },
+    {
+        name: `Gardien tribal`,
+        description: `Certains elfes vivent dans des clairières reculées, au sein de grandes forêts. Pendant que les forces du Chaos grandissaient dans le Vieux Monde, les terres des elfes n'ont fait que décliner. De fait, il ne reste plus beaucoup de communautés elfes au sein de l'Empire, la plus grande étant celle de Laurelorn. Sous les branches de la forêt des elfes se joue une bataille de l'ombre contre les hommes-bêtes et autres créatures nées de la corruption. De petites unités de combattants, les Gardiens tribaux,se portent à la rencontre de l'ennemi. Ces soldats sont issus de familles plus ou moins proches et combattant sous la même bannière de clan. Ce sont des archers expérimentés qui protègent les tribus elfes des créatures de la forêt. Dans cette quête visant à empêcher la disparition des derniers elfes de l'Empire, chaque arc bandé est une lueur d'espoir.`,
+        skills: {
+            mandatory: [
+                `Déplacement silencieux`,
+                `Dissimulation`,
+                `Escalade`,
+                `Esquive`,
+                `Perception`,
+                `Pistage`,
+                `Survie`,
+            ],
+            choice: [
+                {
+                    options: [`Fouille`, `Soins`],
+                    quantity: 1,
+                }
+            ]
+        },
+        talents: {
+            choice: [
+                {
+                    options: [`Camouflage rural`, `Tireur d'élite`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Guerrier né`, `Rechargement rapide`],
+                    quantity: 1,
+                },
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Armure légère (veste de cuir)`,
+                `Arc elfique et 10 flèches`,
+            ],
+        },
+        access: [`Chasseur`, `Messager`],
+        advanced: [`Chasseur`, `Eclaireur`, `Pisteur`, `Vagabond`, `Vétéran`],
+        stats: {
+            CC: `+ 5%`,
+            CT: `+ 5%`,
+            Ag: `+ 10%`,
+            Int: `+ 10%`,
+            FM: `+ 5%`,
+            B: `+ 2`,
+        },
+        races: {
+            name: `elfe`,
+        }
     },
 ];
 
