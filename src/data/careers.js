@@ -1489,6 +1489,55 @@ const careers = [
             name: `elfe`,
         }
     },
+    {
+        name: `Geôlier`,
+        description: `L'Empire est un état de droit, ce qui signifie qu'il abrite de nombreuses prisons. Malgré les efforts que déploie le clergé de Verena, la déesse de la justice, des innocents ont autant de chance de finir au cachot que les criminels. En effet,selon la loi, mieux vaut faire montre de sévérité que de laxisme. Les geôles impériales sont des cachots nauséabonds où règne en permanence une odeur infecte d'excréments et de sueur rance. Usant de brutalité et d'humiliation, les Geôliers maintiennent l'ordre sur leurs terres. Généralement, ils sont dépourvus de tout sens de la justice et de la miséricorde. En outre, ils semblent totalement hermétiques aux supplications mais n'ont rien contre un bon pot-devin. Les pires sont de véritables sadiques qui exultent à la simple pensée du pouvoir qu'ils exercent sur leurs détenus.`,
+        skills: {
+            mandatory: [
+                `Commandement`,
+                `Esquive`,
+                `Fouille`,
+                `Intimidation`,
+                `Perception`,
+                `Résistance à l'alcool`,
+            ],
+            choice: [
+                {
+                    options: [`Escamotage`, `Soins`],
+                    quantity: 1,
+                }
+            ]
+        },
+        talents: {
+            mandatory: [
+                `Lutte`,
+                `Maîtrise (armes paralysantes)`,
+                `Résistance aux maladies`,
+                `Résistance aux poisons`,
+            ],
+        },
+        dotation: {
+            mandatory: [
+                `Bouteille de vin de table`,
+                `Chope`,
+            ],
+            choice: [
+                {
+                    options: [`Bolas`, `Lasso`, `Filet`],
+                    quantity: 1,
+                }
+            ]
+        },
+        access: [`Garde du corps`, `Ratier`],
+        advanced: [`Bourreau`, `Garde`, `Garde du corps`, `Ratier`, `Régisseur`],
+        stats: {
+            CC: `+ 10%`,
+            F: `+ 10%`,
+            E: `+ 10%`,
+            FM: `+ 5%`,
+            B: `+ 3`,
+        },
+    },
 ];
 
 
