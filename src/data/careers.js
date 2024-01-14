@@ -1538,6 +1538,63 @@ const careers = [
             B: `+ 3`,
         },
     },
+    {
+        name: `Gladiateur`,
+        description: `Selon les rumeurs, le sport auquel les Gladiateurs se livrent trouverait son origine dans les royaumes ogres situés à l'est de l'Empire. En effet, il n'est pas bien difficile de croire qu'une race aussi sauvage a offert ces types de combat à mort à la culture du Vieux Monde. Jadis, la plupart des Gladiateurs étaient des criminels et des prisonniers de guerre. On les jetait dans une arène avec une poignée d'armes et seul le gagnant avait la vie sauve.Aujourd'hui, il existe des Gladiateurs professionnels qui combattent aux côtés des condamnés. Ces individus en quête de gloire et d'adrénaline n'y gagnent généralement qu'une mort brutale sous les hurlements d'une foule surexcitée par la vue du sang. Les meilleurs Gladiateurs deviennent rapidement riches (grâce à leurs trophées et aux paris dont ils font l'objet), ce qui permet à certains esclaves d'acheter leur liberté.`,
+        skills: {
+            mandatory: [
+                `Esquive`,
+                `Intimidation`,
+            ],
+        },
+        talents: {
+            mandatory: [
+                `Coups puissants`,
+                `Maîtrise (armes lourdes)`,
+                `Maîtrise (armes de parade)`,
+                `Maîtrise (fléaux)`,
+            ],
+            choice: [
+                {
+                    options: [`Coups précis`, `Sur ses gardes`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Désarmement`, `Lutte`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Force accrue`, `Sain d'esprit`],
+                    quantity: 1,
+                },
+            ]
+        },
+        dotation: {
+            mandatory: [
+                `Coups-de-poing`,
+                `Armure moyenne (gilet de mailles et veste de cuir)`,
+            ],
+            choice: [
+                {
+                    options: [`Fléau d'armes`, `Arme à deux mains`],
+                    quantity: 1,
+                },
+                {
+                    options: [`Bouclier`, `Rondache`],
+                    quantity: 1,
+                },
+            ]
+        },
+        access: [`Berserk norse`, `Combattant des tunnels`, `Coupe-jarret`, `Spadassin`],
+        advanced: [`Chasseur de primes`, `Mercenaire`, `Spadassin`, `Tueur de trolls`, `Vétéran`],
+        stats: {
+            CC: `+ 15%`,
+            E: `+ 10%`,
+            Ag: `+ 10%`,
+            FM: `+ 10%`,
+            B: `+ 2`,
+        },
+    },
 ];
 
 
