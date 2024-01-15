@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import RandomBtn from './RandomBtn';
 import { base_main_characteristics, base_secondary_characteristics } from '../data/characteristics';
 
-const Table = ({ race, selectedCareer }) => {
+const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondaryStats }) => {
   const [mainCharacteristics, setMainCharacteristics] = useState(base_main_characteristics);
   const [secondaryCharacteristics, setSecondaryCharacteristics] = useState(base_secondary_characteristics);
 
@@ -23,6 +23,7 @@ const Table = ({ race, selectedCareer }) => {
           const updatedSecCharacteristics = [...prevSecCharacteristics];
           const newForceBonus = Number(String(randomValue)[0]);
           updatedSecCharacteristics.find((item) => item.short_name === 'BF').value = newForceBonus;
+          updateModifiedSecondaryStats(updatedSecCharacteristics);
           return updatedSecCharacteristics;
         });
       } else if (updatedCharacteristics[index].short_name === 'E') {
@@ -30,10 +31,11 @@ const Table = ({ race, selectedCareer }) => {
           const updatedSecCharacteristics = [...prevSecCharacteristics];
           const newToughnessBonus = Number(String(randomValue)[0]);
           updatedSecCharacteristics.find((item) => item.short_name === 'BE').value = newToughnessBonus;
+          updateModifiedSecondaryStats(updatedSecCharacteristics);
           return updatedSecCharacteristics;
         });
       }
-
+      updateModifiedStats(updatedCharacteristics);
       return updatedCharacteristics;
     });
   };
@@ -47,16 +49,16 @@ const Table = ({ race, selectedCareer }) => {
         if (shortName === 'B') {
           const statsArray = updatedCharacteristics[index].stats[race];
           const randomIndex = Math.floor(Math.random() * statsArray.length);
-          const randomValue = statsArray[randomIndex] + Math.floor(Math.random() * 10) + 1; // Add 1d10 to B
+          const randomValue = statsArray[randomIndex] + Math.floor(Math.random() * 10) + 1;
           updatedCharacteristics[index].value = randomValue;
         } else if (shortName === 'PD') {
           const statsArray = updatedCharacteristics[index].stats[race];
           const randomIndex = Math.floor(Math.random() * statsArray.length);
           const randomValue = statsArray[randomIndex];
           updatedCharacteristics[index].value = randomValue;
-        }
-      }
-
+        };
+      };
+      updateModifiedStats(updatedCharacteristics);
       return updatedCharacteristics;
     });
   };
@@ -71,6 +73,15 @@ const Table = ({ race, selectedCareer }) => {
         handleRandomUniqueSecondaryStat(secondaryCharacteristics[i].short_name);
       }
     }
+  };
+
+  const updateModifiedStats = () => {
+    const updatedStats = mainCharacteristics.map((char) => char.value);
+    setModifiedStats(updatedStats);
+  };
+  const updateModifiedSecondaryStats = () => {
+    const updatedSecondaryStats = secondaryCharacteristics.map((char) => char.value);
+    setModifiedSecondaryStats(updatedSecondaryStats);
   };
 
   let firstDigitF  = mainCharacteristics.find((char) => char.short_name === 'F').value;
@@ -88,7 +99,7 @@ const Table = ({ race, selectedCareer }) => {
   return (
     <div className='profils-container'>
       <h3>Profil principal</h3>
-      <table className="main-profil">
+      <table className="main-profil" id='profil-stats'>
         <thead>
             <tr>
               <th className='empty-head'></th>
