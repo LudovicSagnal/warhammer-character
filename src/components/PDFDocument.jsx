@@ -10,8 +10,7 @@ const PDFDocument = () => {
 
     const PNGPortrait = choosenPortrait.replace(/\.webp$/, '.png');
     const portraitPath = './portraits-PDF/';
-
-    console.log(selectedCareerName);
+    const portraitToExport = portraitPath+PNGPortrait;
   
     const addMultipleLines = (pdf, lines, x, y, lineHeight) => {
       lines.forEach((line) => {
@@ -27,8 +26,10 @@ const PDFDocument = () => {
   
       pdf.setFont('helvetica');
       pdf.setFontSize(12);
+
+      pdf.addImage(portraitToExport, 'PNG', 100, 10, 50, 50, 'portrait', 'MEDIUM', 0)
   
-      const lines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`, `Origine: ${origin}`, `Carrière : ${selectedCareerName}`];
+      const lines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`, `Origine: ${origin}`,`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Carrière : ${selectedCareerName}`];
   
       addMultipleLines(pdf, lines, 20, verticalPosition, lineHeight);
   
