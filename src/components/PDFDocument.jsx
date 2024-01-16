@@ -1,7 +1,7 @@
 import { useContext, useRef } from 'react';
 import { RaceContext } from '../App';
 import jsPDF from 'jspdf';
-import autoTable from 'jspdf-autotable'
+import autoTable from 'jspdf-autotable';
 
 const PDFDocument = () => {
   const {
@@ -35,7 +35,10 @@ const PDFDocument = () => {
   
       addMultipleLines(pdf, lines, 20, verticalPosition, lineHeight);
 
-      pdf.autoTable({ html: '#profil-stats'});
+      pdf.autoTable({ html: '#profil-stats', styles:
+        { margin: { top: 100 }}
+      });
+      pdf.autoTable({ html: '#profil-secondary-stats', styles: { fillColor: [0, 255, 255] } });
   
       pdf.save(`${firstname}-${name}.pdf`);
     };

@@ -131,7 +131,7 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
         </tbody>
       </table>
       <h3>Profil secondaire</h3>
-      <table className="secondary-profil">
+      <table className="secondary-profil" id='profil-secondary-stats'>
         <thead>
             <tr>
               <th className='empty-head'></th>
