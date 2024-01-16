@@ -27,6 +27,23 @@ const CareerInfo = ({ selectedCareer }) => {
                         {choice.options.join(' ou ')}
                     </p>
                     ))}
+                    <h3>Equipement</h3>
+                    <p>
+                        {selectedCareer.dotation.mandatory && selectedCareer.dotation.mandatory.join(', ')}
+                    </p>
+                    {selectedCareer.dotation.choice && selectedCareer.dotation.choice.map((dotation, index) => (
+                    <p key={index}>
+                        {dotation.options.join(' ou ')}
+                    </p>
+                    ))}
+                    <h3>Accès</h3>
+                    <p>
+                        {selectedCareer.access && selectedCareer.access.join(', ')}
+                    </p>
+                    <h3>Débouchés</h3>
+                    <p>
+                        {selectedCareer.access && selectedCareer.advanced.join(', ')}
+                    </p>
                 </div>
             )}
         </div>
