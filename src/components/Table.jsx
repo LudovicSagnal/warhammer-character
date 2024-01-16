@@ -98,6 +98,11 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
 
   return (
     <div className='profils-container'>
+      <div>
+        <span className='stat-short'>Générer des stats aléatoires : </span>
+        <RandomBtn onClick={ handleRandomAllStats }/>
+      </div>
+      <br />
       <h3>Profil principal</h3>
       <table className="main-profil" id='profil-stats'>
         <thead>
@@ -106,7 +111,6 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
                 {mainCharacteristics.map((item) => {
                     return <th className='stat-short' key={item.short_name}>{item.short_name}</th>;
                 })}
-                <th className='stat-short'>Générer</th>
             </tr>
         </thead>
         <tbody>
@@ -118,7 +122,6 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
                 <RandomBtn onClick={() => handleRandomUniqueStat(index)} />
               </td>
             ))}
-            <td className='stat-box'><RandomBtn onClick={ handleRandomAllStats }/></td>
           </tr>
           <tr>
             <td className="descriptive-box">Carrière</td>

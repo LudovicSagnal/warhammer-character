@@ -30,15 +30,20 @@ const PDFDocument = () => {
 
       pdf.addImage(backgroundToExport, 'WEBP', 0, 0, 210, 297);
       pdf.addImage(portraitToExport, 'WEBP', 100, 10, 50, 50)
+
+      const career = [`Carrière : ${selectedCareerName}`];
   
       const lines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`, `Origine: ${origin}`,`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Carrière : ${selectedCareerName}`];
   
       addMultipleLines(pdf, lines, 20, verticalPosition, lineHeight);
+      pdf.text(career, 100, 70)
 
-      pdf.autoTable({ html: '#profil-stats', styles:
-        { margin: { top: 100 }}
-      });
-      pdf.autoTable({ html: '#profil-secondary-stats', styles: { fillColor: [0, 255, 255] } });
+      pdf.autoTable({ html: '#profil-stats', theme: 'grid', margin: {top: 80, left: 70}, headStyles: {
+        fillColor: [120,61,15],
+      }});
+      pdf.autoTable({ html: '#profil-secondary-stats', theme: 'grid', margin: {left: 70}, headStyles: {
+        fillColor: [120,61,15],
+      }});
   
       pdf.save(`${firstname}-${name}.pdf`);
     };
