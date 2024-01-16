@@ -35,9 +35,6 @@ const App = () => {
   const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
   const [modifiedStats, setModifiedStats] = useState([]);
   const [modifiedSecondaryStats, setModifiedSecondaryStats] = useState([]);
-
-  console.log('Premier:'+modifiedStats);
-  console.log('Deuxième :'+modifiedSecondaryStats);
   
   return (
     <main>

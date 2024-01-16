@@ -132,6 +132,8 @@ const astral_signs = [
     {name: `La Grande Croix`, desc: `Signe de Clairvoyance`},
     {name: `Le Trai du Peintre`, desc: `Signe de Précision et de Perfection`},
     {name: `Gnuthus le Buffle`, desc: `Signe du Dévouement et de la Loyauté`},
+    {name: `Dragomas le Dragon`, desc: `Signe de Bravoure`},
+    {name: `Le Crépuscule`, desc: `Signe d'Illusion et de Mystère`},
 ];
 
 export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };

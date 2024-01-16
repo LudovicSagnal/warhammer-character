@@ -5,7 +5,10 @@ import autoTable from 'jspdf-autotable';
 
 const PDFDocument = () => {
   const {
-    race, origin, gender, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait } = useContext(RaceContext);
+    race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait } = useContext(RaceContext);
+
+    // console.log(selectedCareer);
+    (selectedCareer != null && console.log(selectedCareer.skills.mandatory));
 
     const canvasRef = useRef(null);
 
@@ -34,7 +37,10 @@ const PDFDocument = () => {
       const profilLines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`];
 
       const careerLine = [`Carrière : ${selectedCareerName}`];
+
       const infoLines = [`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Lieu de naissance : ${birthplace}`, `Nb de frères et soeurs : ${siblings}`, `Signes distinctifs : ${marks}`, `Signe astral : ${astral}`];
+
+      const skillsLines = [`Compétences : ${selectedCareer.skills.mandatory}`]
 
       addMultipleLines(pdf, profilLines, 10, verticalPosition, lineHeight);
       if (race === 'humain') {
@@ -45,6 +51,8 @@ const PDFDocument = () => {
       pdf.setFontSize(8);
 
       addMultipleLines(pdf, infoLines, 10, 60, lineHeight-5);
+
+      (selectedCareer != null && addMultipleLines(pdf, skillsLines, 10, 140));
 
       pdf.autoTable({ html: '#profil-stats', theme: 'grid', margin: {top: 80, left: 70}, headStyles: {
         fillColor: [120,61,15],
