@@ -115,13 +115,13 @@ const birthplace_elf = [
 
 const birthplace_dwarf = [
 
-    {name: 'Karak Norn (Montagnes Grises)'},
-    {name: 'Karak Izor (la Voûte'},
-    {name: 'Karak Hirn (Montagnes Noires)'},
-    {name: 'Karak Kadrin (Montagnes du Bord du Monde)'},
-    {name: 'Karaz-a-Karak (Montagnes du Bord du Monde)'},
-    {name: 'Zhufbar (Montagnes du Bord du Monde)'},
-    {name: 'Barak Varr (Golfe noir)'},
+    {name: 'Karak Norn'},
+    {name: 'Karak Izor'},
+    {name: 'Karak Hirn'},
+    {name: 'Karak Kadrin'},
+    {name: 'Karaz-a-Karak'},
+    {name: 'Zhufbar'},
+    {name: 'Barak Varr'},
 ];
 
 ///////////////////////////////////   Astral Signs //////////////////////////////
