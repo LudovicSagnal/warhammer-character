@@ -134,6 +134,7 @@ const astral_signs = [
     {name: `Gnuthus le Buffle`, desc: `Signe du Dévouement et de la Loyauté`},
     {name: `Dragomas le Dragon`, desc: `Signe de Bravoure`},
     {name: `Le Crépuscule`, desc: `Signe d'Illusion et de Mystère`},
+    {name: `Le Fourreau de Grungni`, desc: `Signe des Armes et de la Guerre`},
 ];
 
 export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };
