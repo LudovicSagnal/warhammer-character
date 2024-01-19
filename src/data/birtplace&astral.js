@@ -135,6 +135,7 @@ const astral_signs = [
     {name: `Dragomas le Dragon`, desc: `Signe de Bravoure`},
     {name: `Le Crépuscule`, desc: `Signe d'Illusion et de Mystère`},
     {name: `Le Fourreau de Grungni`, desc: `Signe des Armes et de la Guerre`},
+    {name: `Mammit le Sage`, desc: `Signe de Sagesse`},
 ];
 
 export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };
