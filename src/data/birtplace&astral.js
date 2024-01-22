@@ -138,6 +138,8 @@ const astral_signs = [
     {name: `Mammit le Sage`, desc: `Signe de Sagesse`},
     {name: `Mummit le Fou`, desc: `Signe d'Intuition`},
     {name: `Les Deux Bœufs`, desc: `Signe de la Terre`},
+    {name: `Le Danseur`, desc: `Signe de Séduction et d'Amour`},
+    {name: `Le Tambour`, desc: `Signe du Plaisir et des Excès`},
 ];
 
 export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };
