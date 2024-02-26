@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { RaceContext } from '../App';
 
-const CareerInfo = ({ selectedCareer }) => {
+const CareerInfo = () => {
 
+    const { selectedCareer, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment } = useContext(RaceContext);
     const [containerClass, setContainerClass] = useState('career-blank');
 
     useEffect(() => {
@@ -26,6 +28,20 @@ const CareerInfo = ({ selectedCareer }) => {
                         {selectedCareer.skills.choice && selectedCareer.skills.choice.map((choice, index) => (
                         <li key={index}>
                             {choice.options.join(' ou ')}
+                        </li>
+                        ))}
+                    </ul>
+                    <h3>TEST</h3>
+                    <ul>
+                        {selectedCareer.talents.choice.map((choice, index) => (
+                        <li key={index}>
+                            {choice.options.map((option, optionIndex) => (
+                            <label key={`${index}-${optionIndex}`}>
+                                <input type="checkbox"  />
+                                {option}
+                                {optionIndex !== choice.options.length - 1 && ' OU '}
+                            </label>
+                            ))}
                         </li>
                         ))}
                     </ul>

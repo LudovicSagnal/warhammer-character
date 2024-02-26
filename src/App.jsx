@@ -35,18 +35,21 @@ const App = () => {
   const [choosenPortrait, setChoosenPortrait] = useState(defaultPortrait);
   const [modifiedStats, setModifiedStats] = useState([]);
   const [modifiedSecondaryStats, setModifiedSecondaryStats] = useState([]);
+  const [selectedSkills, setSelectedSkills] = useState([]);
+  const [selectedTalents, setSelectedTalents] = useState([]);
+  const [selectedEquipment, setSelectedEquipment] = useState([]);
   
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait, selectedCareerName, setSelectedCareerName, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait, selectedCareerName, setSelectedCareerName, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment }}>
         <section className='main-section'>
           <Identity />
           <div className='detail-profil-container'>
             <PersonnalDetails />
             <Profil />            
           </div>
-          <CareerInfo selectedCareer={selectedCareer} />
+          <CareerInfo />
           {/* <Skills/>
           <Talents/> */}
         </section>
