@@ -1,12 +1,23 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 const CareerInfo = ({ selectedCareer }) => {
+
+    const [containerClass, setContainerClass] = useState('career-blank');
+
+    useEffect(() => {
+      if (selectedCareer) {
+        setContainerClass('career-container');
+      } else {
+        setContainerClass('career-blank');
+      }
+    }, [selectedCareer]);
+
     return (
-        <div>
+        <div className={containerClass} id='career-container'>
             {selectedCareer && (
                 <div className='selected-career'>
                     <h3>{selectedCareer.name}</h3>
-                    <p>{selectedCareer.description}</p>
+                    <p className='career-description'>{selectedCareer.description}</p>
                     <h3>Compétences</h3>
                     <p>
                         {selectedCareer.skills.mandatory && selectedCareer.skills.mandatory.join(', ')}

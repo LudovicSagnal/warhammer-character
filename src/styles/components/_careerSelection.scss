@@ -2,7 +2,17 @@
     @include center-child;
     flex-direction: column;
     gap: 10px;
+};
+
+.career-blank {
+    height: 0;
+}
+.career-container {
+    margin: auto;
+    width: 60%;
+    height: 500px;
+    position: relative;
     .selected-career {
-        width: 60%;
-    }
+        position: absolute;
+    };
 }
