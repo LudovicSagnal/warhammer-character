@@ -9,10 +9,15 @@ const CareerInfo = () => {
     useEffect(() => {
       if (selectedCareer) {
         setContainerClass('career-container');
+        setSelectedSkills([]);
+        setSelectedTalents([]);
+        setSelectedEquipment([]);
       } else {
         setContainerClass('career-blank');
       }
     }, [selectedCareer]);
+
+    console.log(selectedTalents);
 
     return (
         <div className={containerClass} id='career-container'>
@@ -31,29 +36,51 @@ const CareerInfo = () => {
                         </li>
                         ))}
                     </ul>
-                    <h3>TEST</h3>
-                    <ul>
-                        {selectedCareer.talents.choice.map((choice, index) => (
-                        <li key={index}>
-                            {choice.options.map((option, optionIndex) => (
-                            <label key={`${index}-${optionIndex}`}>
-                                <input type="checkbox"  />
-                                {option}
-                                {optionIndex !== choice.options.length - 1 && ' OU '}
-                            </label>
-                            ))}
-                        </li>
-                        ))}
-                    </ul>
                     <h3>Talents</h3>
                     <p>
                         {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}
                     </p>
-                    {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
-                    <p key={index}>
-                        {choice.options.join(' ou ')}
-                    </p>
-                    ))}
+                    <ul>
+                        {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
+                        <li key={index}>
+                            {choice.options.map((option, optionIndex) => (
+                            <label key={`${index}-${optionIndex}`}>
+                                <input
+                                type="checkbox"
+                                checked={selectedTalents.includes(option)}
+                                onChange={(event) => {
+                                    const newSelectedTalents = [...selectedTalents];
+                                    let currentChoiceSelections = 0;
+                                    for (let i = 0; i < choice.options.length; i++) {
+                                        if (newSelectedTalents.includes(choice.options[i])) {
+                                            currentChoiceSelections++;
+                                        }
+                                    }
+                                    if (event.target.checked) {
+                                        if (currentChoiceSelections < choice.quantity) {
+                                            newSelectedTalents.push(option);
+                                        } else {
+                                            alert('Vous ne pouvez sélectionner que ' + choice.quantity + ' options.');
+                                            event.target.checked = false;
+                                        }
+                                    } else {
+                                        const index = newSelectedTalents.indexOf(option);
+                                        if (index > -1) {
+                                            newSelectedTalents.splice(index, 1);
+                                        }
+                                    }
+                                    setSelectedTalents(newSelectedTalents);
+                                }}
+                                value={optionIndex}
+                                />
+                                {option}
+                                {optionIndex !== choice.options.length - 1 && ' ou '}
+                            </label>
+                            ))}
+                            <span> ({choice.quantity} au choix)</span>
+                        </li>
+                        ))}
+                    </ul>
                     <h3>Equipement</h3>
                     <p>
                         {selectedCareer.dotation.mandatory && selectedCareer.dotation.mandatory.join(', ')}

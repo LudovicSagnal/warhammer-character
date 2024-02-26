@@ -7,8 +7,6 @@ const PDFDocument = () => {
   const {
     race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait } = useContext(RaceContext);
 
-    (selectedCareer != null && console.log(selectedCareer.skills.mandatory));
-
     const canvasRef = useRef(null);
 
     const portraitPath = './portraits/';
