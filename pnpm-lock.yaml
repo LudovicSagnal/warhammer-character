@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@react-pdf-viewer/core':
+    specifier: ^3.12.0
+    version: 3.12.0(pdfjs-dist@3.11.174)(react-dom@18.2.0)(react@18.2.0)
   '@react-pdf/renderer':
     specifier: ^3.1.17
     version: 3.1.17(react@18.2.0)
@@ -17,6 +20,9 @@ dependencies:
   jspdf:
     specifier: ^2.5.1
     version: 2.5.1
+  jspdf-autotable:
+    specifier: ^3.8.1
+    version: 3.8.2(jspdf@2.5.1)
   pdf-lib:
     specifier: ^1.17.1
     version: 1.17.1
@@ -633,6 +639,18 @@ packages:
     resolution: {integrity: sha512-dQK2FUMQtowVP00mtIksrlZhdFXQZPC+taih1q4CvPZ5vqdxR/LKBaFg0oAfzd1GlHZXXSPdQfzQnt+ViGvEIQ==}
     dependencies:
       pako: 1.0.11
+    dev: false
+
+  /@react-pdf-viewer/core@3.12.0(pdfjs-dist@3.11.174)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-8MsdlQJ4jaw3GT+zpCHS33nwnvzpY0ED6DEahZg9WngG++A5RMhk8LSlxdHelwaFFHFiXBjmOaj2Kpxh50VQRg==}
+    peerDependencies:
+      pdfjs-dist: ^2.16.105 || ^3.0.279
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      pdfjs-dist: 3.11.174
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@react-pdf/fns@2.0.1:
@@ -2290,6 +2308,14 @@ packages:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+    dev: false
+
+  /jspdf-autotable@3.8.2(jspdf@2.5.1):
+    resolution: {integrity: sha512-zW1ix99/mtR4MbIni7IqvrpfHmuTaICl6iv6wqjRN86Nxtwaw/QtOeDbpXqYSzHIJK9JvgtLM283sc5x+ipkJg==}
+    peerDependencies:
+      jspdf: ^2.5.1
+    dependencies:
+      jspdf: 2.5.1
     dev: false
 
   /jspdf@2.5.1:
