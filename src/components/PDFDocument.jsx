@@ -11,7 +11,7 @@ const PDFDocument = () => {
 
     const portraitPath = './portraits/';
     const portraitToExport = portraitPath+choosenPortrait;
-    const backgroundToExport = './background/back-old-parchment.webp';
+    const backgroundToExport = './background/backOldParchment.webp';
   
     const addMultipleLines = (pdf, lines, x, y, lineHeight) => {
       lines.forEach((line) => {
