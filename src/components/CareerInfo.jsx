@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { RaceContext } from '../App';
+import ChoiceList from './ChoiceList';
 
 const CareerInfo = () => {
 
@@ -17,7 +18,21 @@ const CareerInfo = () => {
       }
     }, [selectedCareer]);
 
+    const handleTalentSelectionChange = (newSelectedTalents) => {
+        setSelectedTalents(newSelectedTalents);
+      };
+    
+      const handleSkillSelectionChange = (newSelectedSkills) => {
+        setSelectedSkills(newSelectedSkills);
+      };
+    
+      const handleEquipmentSelectionChange = (newSelectedEquipment) => {
+        setSelectedEquipment(newSelectedEquipment);
+      };
+
     console.log(selectedTalents);
+    console.log(selectedSkills);
+    console.log(selectedEquipment);
 
     return (
         <div className={containerClass} id='career-container'>
@@ -29,67 +44,29 @@ const CareerInfo = () => {
                     <p>
                         {selectedCareer.skills.mandatory && selectedCareer.skills.mandatory.join(', ')}
                     </p>
-                    <ul>
-                        {selectedCareer.skills.choice && selectedCareer.skills.choice.map((choice, index) => (
-                        <li key={index}>
-                            {choice.options.join(' ou ')}
-                        </li>
-                        ))}
-                    </ul>
+                    <ChoiceList
+                        choices={selectedCareer.skills.choice}
+                        selected={selectedSkills}
+                        onSelectionChange={handleSkillSelectionChange}
+                    />
                     <h3>Talents</h3>
                     <p>
                         {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}
                     </p>
-                    <ul>
-                        {selectedCareer.talents.choice && selectedCareer.talents.choice.map((choice, index) => (
-                        <li key={index}>
-                            {choice.options.map((option, optionIndex) => (
-                            <label key={`${index}-${optionIndex}`}>
-                                <input
-                                type="checkbox"
-                                checked={selectedTalents.includes(option)}
-                                onChange={(event) => {
-                                    const newSelectedTalents = [...selectedTalents];
-                                    let currentChoiceSelections = 0;
-                                    for (let i = 0; i < choice.options.length; i++) {
-                                        if (newSelectedTalents.includes(choice.options[i])) {
-                                            currentChoiceSelections++;
-                                        }
-                                    }
-                                    if (event.target.checked) {
-                                        if (currentChoiceSelections < choice.quantity) {
-                                            newSelectedTalents.push(option);
-                                        } else {
-                                            alert('Vous ne pouvez sélectionner que ' + choice.quantity + ' options.');
-                                            event.target.checked = false;
-                                        }
-                                    } else {
-                                        const index = newSelectedTalents.indexOf(option);
-                                        if (index > -1) {
-                                            newSelectedTalents.splice(index, 1);
-                                        }
-                                    }
-                                    setSelectedTalents(newSelectedTalents);
-                                }}
-                                value={optionIndex}
-                                />
-                                {option}
-                                {optionIndex !== choice.options.length - 1 && ' ou '}
-                            </label>
-                            ))}
-                            <span> ({choice.quantity} au choix)</span>
-                        </li>
-                        ))}
-                    </ul>
+                    <ChoiceList
+                        choices={selectedCareer.talents.choice}
+                        selected={selectedTalents}
+                        onSelectionChange={handleTalentSelectionChange}
+                    />
                     <h3>Equipement</h3>
                     <p>
                         {selectedCareer.dotation.mandatory && selectedCareer.dotation.mandatory.join(', ')}
                     </p>
-                    {selectedCareer.dotation.choice && selectedCareer.dotation.choice.map((dotation, index) => (
-                    <p key={index}>
-                        {dotation.options.join(' ou ')}
-                    </p>
-                    ))}
+                    <ChoiceList
+                        choices={selectedCareer.dotation.choice}
+                        selected={selectedEquipment}
+                        onSelectionChange={handleEquipmentSelectionChange}
+                    />
                     <h3>Accès</h3>
                     <p>
                         {selectedCareer.access && selectedCareer.access.join(', ')}
