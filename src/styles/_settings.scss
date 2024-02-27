@@ -33,7 +33,7 @@ main {
     @include center-child;
     flex-direction: column;
     gap: 10px;
-    background-image: url('./background/back_old_parchment.webp');
+    background-image: url('./background/backOldParchment.png');
     background-size: cover;
     padding-top: 2rem;
     h1, h2, h3 {
@@ -48,11 +48,11 @@ main {
         height: 60px;
         width: fit-content;
         -webkit-mask: 
-          url('./background/paper-top.webp')
+          url('./background/paperTop.webp')
             top   /auto 20px repeat-x,
           linear-gradient(white, white) no-repeat
             center/100% calc(100% - 2*50px),
-          url('./background/paper-bottom.webp')
+          url('./background/paperBottom.webp')
            bottom/auto 40px repeat-x;
     }
     .main-section {
