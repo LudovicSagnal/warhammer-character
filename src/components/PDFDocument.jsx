@@ -36,10 +36,12 @@ const PDFDocument = () => {
       const careerLine = [`Carrière : ${selectedCareerName}`];
 
       const infoLines = [`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Lieu de naissance : ${birthplace}`, `Nb de frères et soeurs : ${siblings}`, `Signes distinctifs : ${marks}`, `Signe astral : ${astral}`];
+      
 
-      const skillsLines = [`${selectedCareer.skills.mandatory}, ${selectedSkills}`]
-      const talentsLines = [`${selectedCareer.talents.mandatory}, ${selectedTalents}`]
-      const equipmentLines = [`${selectedCareer.dotation.mandatory}, ${selectedEquipment}`]
+      const skillsLines = [`${selectedCareer.skills.mandatory ? `${selectedCareer.skills.mandatory}, `: ''} ${selectedSkills}`]
+      const talentsLines = [` ${selectedCareer.talents.mandatory ? `${selectedCareer.talents.mandatory}, `: ''} ${selectedTalents}`]
+      const equipmentLines = [`${selectedCareer.dotation.mandatory ? `${selectedCareer.dotation.mandatory}, `: ''} ${selectedEquipment}`]
+      
 
       addMultipleLines(pdf, profilLines, 10, verticalPosition, lineHeight);
       if (race === 'humain') {
