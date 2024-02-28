@@ -2,8 +2,13 @@
     font-family: "font-1";
     src: url(../assets/fonts/Moria_DF.TTF);
 }
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/fonts/MorrisRoman-Black.ttf);
+}
 
 $font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
 
 $color-1: #dee2e5;
 $color-2: rgba(152, 192, 212, 0.7);
@@ -12,7 +17,7 @@ $color-2: rgba(152, 192, 212, 0.7);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1.05rem;
 }
 html {
     scroll-behavior: smooth;
@@ -36,8 +41,13 @@ main {
     background-image: url('../background/backOldParchment.webp');
     background-size: cover;
     padding-top: 2rem;
-    h1, h2, h3 {
+    h1 {
         font-family: font-1;
+        font-size: 3rem;
+    }
+    h2, h3 {
+        font-family: font-2;
+        font-size: 2.5rem;
     }
     h2 {
         font-size: 1.3rem;
@@ -62,8 +72,5 @@ main {
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 2fr; 
         }
-    }
-    p {
-        font-size: 0.8rem;
     }
 }

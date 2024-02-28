@@ -438,11 +438,13 @@ const careers = [
         },
       ],
     },
-    dotation: [
-      `Arme à deux mains (hache à deux mains)`,
-      `Armure légère (veste de cuir)`,
-      `Nécessaire antipoison`,
-    ],
+    dotation: {
+      mandatory: [
+        `Arme à deux mains (hache à deux mains)`,
+        `Armure légère (veste de cuir)`,
+        `Nécessaire antipoison`,
+      ],
+    },
     access: [`Charbonnier`, `Vagabond`],
     advanced: [`Chasseur`, `Hors-la-loi`, `Milicien`, `Pisteur`, `Vagabond`],
     stats: {
