@@ -13,6 +13,9 @@
         }
         .input-btn-container {
             @include center-child;
+            border: 1px solid black;
+            gap: 10px;
+            padding-right: 10px;
         }
         .input-container {
             position: relative;
