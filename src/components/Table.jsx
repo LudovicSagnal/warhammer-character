@@ -99,8 +99,7 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
   return (
     <div className='profils-container'>
       <div>
-        <span className='stat-short'>Générer des stats aléatoires : </span>
-        <RandomBtn onClick={ handleRandomAllStats }/>
+        <button onClick={ handleRandomAllStats } className='random-all-btn'>Générer des stats aléatoires</button>
       </div>
       <br />
       <h3>Profil principal</h3>

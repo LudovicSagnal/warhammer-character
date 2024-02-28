@@ -1,7 +1,14 @@
 .random-btn {
     background-color: beige;
     height: 28px;
-    width: 28px;
+    width: 24px;
     background-image: url('../images/d20_24px.webp');
+    background-color:#c7baba;
     background-position: center;
-}
+    background-repeat: no-repeat;
+    background-size: contain;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    &:hover {
+      cursor: pointer;
+    }
+  }

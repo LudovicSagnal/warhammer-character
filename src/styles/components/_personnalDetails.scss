@@ -1,0 +1,27 @@
+.detail-container {
+    @include center-child;
+    flex-direction: column;
+    width: 600px;
+    .div-container {
+        border: 2px solid black;
+        padding: 50px 20px 20px;
+        margin-top: -30px;
+        .label-div-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px
+        }
+        .input-btn-container {
+            @include center-child;
+        }
+        .input-container {
+            position: relative;
+            .input-suffix {
+                position: absolute;
+                top: 50%;
+                right: 20%;
+                transform: translateY(-50%);
+            } 
+        }
+    }
+}

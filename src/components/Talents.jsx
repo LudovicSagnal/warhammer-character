@@ -1,13 +1,6 @@
-import React, { useContext } from 'react';
-import { careers } from '../data/careers';
-import { skills } from '../data/skills';
 import { talents } from '../data/talents';
-import { RaceContext } from '../App';
 
 const Talents = () => {
-
-    const { race } = useContext(RaceContext);
-    const { career, setCareer } = useContext(RaceContext);
 
     return (
         <div className='talents'>
