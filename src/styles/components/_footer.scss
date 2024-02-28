@@ -1,7 +1,9 @@
 footer {
+    @include center-child;
     background-color: black;
     height: 100px;
     width: 100%;
+    margin-top: 20px;
     p {
         color: whitesmoke;
         text-align: center;

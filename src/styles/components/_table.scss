@@ -1,12 +1,15 @@
 .profils-container {
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: -100px;
     .random-all-btn{
         margin: 10px auto;
         width: 250px;
         letter-spacing: 2px;
         border-radius: 8px;
-        font-family: 'Skranji', cursive;
+        font-family: 'font-4', cursive;
         color: #ffc000;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 400;
         text-shadow: 0 1px 3px #000;
         text-align: center;
@@ -21,8 +24,8 @@
             background: radial-gradient(circle, #e52b2b, #8b0000);
             box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2);
             cursor: pointer;
-        }                   
-    }
+        };               
+    };
     table {
         border-collapse: collapse;
         margin: 1rem 0;

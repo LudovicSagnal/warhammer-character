@@ -53,7 +53,7 @@ const App = () => {
           {/* <Skills/>
           <Talents/> */}
         </section>
-        <PDFDocument/>
+        {/* <PDFDocument/> */}
         <Footer/>
       </RaceContext.Provider>
     </main>

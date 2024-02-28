@@ -4,7 +4,7 @@ const Select = ({ name, label, options, setValue, onValueChange }) => {
   const [value, setSelectedValue] = useState('');
 
   return (
-    <div>
+    <div className='select-div'>
       <label htmlFor={name}>{label}</label>
       <select name={name} value={value} onChange={(event) => {
           setSelectedValue(event.target.value);

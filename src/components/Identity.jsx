@@ -32,7 +32,7 @@ const Identity = () => {
           <Select name="gender" options={genderChoice} label={'Choisissez un genre'} value={gender} onValueChange={(e) => setGender(e.target.value)} setValue={setGender} />
           <div className='character-btn'>
             <button className='random-all-btn' onClick={handleRandomAll} >Générer un personnage</button>    
-            <button className='random-all-btn' onClick={handleRandomAllWithSelect} >Générer un personnage en gardant les select</button>  
+            <button className='random-all-btn' onClick={handleRandomAllWithSelect} >Générer un personnage en conservant vos choix</button>  
           </div>
         </div>
         <div className='display-container'>

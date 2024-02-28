@@ -1,23 +1,23 @@
 @font-face {
     font-family: "font-1";
     src: url(../assets/fonts/Moria_DF.TTF);
-}
+};
 @font-face {
     font-family: "font-2";
     src: url(../assets/fonts/MorrisRoman-Black.ttf);
-}
+};
 @font-face {
     font-family: "font-3";
     src: url(../assets/fonts/AARDV.TTF);
-}
+};
 @font-face {
     font-family: "font-4";
     src: url(../assets/fonts/BrianJames.ttf);
-}
+};
 @font-face {
     font-family: "font-5";
     src: url(../assets/fonts/BrianJames-Contour.ttf);
-}
+};
 
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", sans-serif;
@@ -33,21 +33,21 @@ $color-2: rgba(152, 192, 212, 0.7);
     padding: 0;
     box-sizing: border-box;
     font-size: 1.05rem;
-}
+};
 html {
     scroll-behavior: smooth;
-}
+};
 
 @mixin flex-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+};
 @mixin center-child {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+};
 
 main {
     @include center-child;
@@ -59,10 +59,16 @@ main {
     h1 {
         font-family: font-1;
         font-size: 3rem;
-    }
+        margin-top: 50px
+    };
     h2, h3 {
         font-family: font-2;
         font-size: 2.5rem;
+    };
+    h4 {
+        font-family: font-2;
+        font-size: 2rem;
+        text-align: center;
     }
     h2 {
         font-size: 1.8rem;
@@ -79,22 +85,47 @@ main {
             center/100% calc(100% - 2*100px),
           url('../background/paperBottom.webp')
            bottom/auto 60px repeat-x;
-    }
+    };
     h3 {
         text-decoration: underline;
-    }
+    };
     .main-section {
         padding-left: 2rem;
         .detail-profil-container {
             display: grid; 
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 2fr; 
-        }
-    }
+            margin-top: 50px;
+        };
+    };
     input, td {
         text-align: center;
-    }
+    };
     p, label, span, td, option, input, select {
         font-family: $font-4;
-    }
-}
+    };
+    .pdf-download-btn {
+        margin: 20px auto;
+        width: 250px;
+        letter-spacing: 2px;
+        border-radius: 8px;
+        font-family: 'font-4', cursive;
+        color: #ffc000;
+        font-size: 1rem;
+        font-weight: 400;
+        text-shadow: 0 1px 3px #000;
+        text-align: center;
+        padding: 10px 0;
+        background: radial-gradient(circle, #8b0000, #8b0000);
+        border-top: 4px ridge #ffb000;
+        border-left: 4px groove #ffb000;
+        border-right: 4px ridge #ffb000;
+        border-bottom: 4px groove #ffb000;
+        box-shadow: inset 0px 0px 5px 3px rgba(1,1,1,0.3);
+        &:hover{
+            background: radial-gradient(circle, #e52b2b, #8b0000);
+            box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2);
+            cursor: pointer;
+        };               
+    };
+};

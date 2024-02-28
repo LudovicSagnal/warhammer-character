@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { RaceContext } from '../App';
 import ChoiceList from './ChoiceList';
+import PDFDocument from './PDFDocument';
 
 const CareerInfo = () => {
 
@@ -75,6 +76,7 @@ const CareerInfo = () => {
                     <p>
                         {selectedCareer.access && selectedCareer.advanced.join(', ')}
                     </p>
+                    < PDFDocument/>
                 </div>
             )}
         </div>

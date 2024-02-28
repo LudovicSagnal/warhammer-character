@@ -1,4 +1,5 @@
 .profil, .career-profil-selector {
     @include center-child;
     flex-direction: column;
+    z-index: 10;
 }
