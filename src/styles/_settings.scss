@@ -6,9 +6,24 @@
     font-family: "font-2";
     src: url(../assets/fonts/MorrisRoman-Black.ttf);
 }
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/fonts/AARDV.TTF);
+}
+@font-face {
+    font-family: "font-4";
+    src: url(../assets/fonts/BrianJames.ttf);
+}
+@font-face {
+    font-family: "font-5";
+    src: url(../assets/fonts/BrianJames-Contour.ttf);
+}
 
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", sans-serif;
+$font-3: "font-3", sans-serif;
+$font-4: "font-4", sans-serif;
+$font-5: "font-5", sans-serif;
 
 $color-1: #dee2e5;
 $color-2: rgba(152, 192, 212, 0.7);
@@ -50,20 +65,20 @@ main {
         font-size: 2.5rem;
     }
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         color: white;
         background-color: black;
-        padding: 10px;
+        padding: 20px;
         width: auto;
-        height: 60px;
+        height: 80px;
         width: fit-content;
         -webkit-mask: 
           url('../background/paperTop.webp')
-            top   /auto 20px repeat-x,
+            top   /auto 30px repeat-x,
           linear-gradient(white, white) no-repeat
-            center/100% calc(100% - 2*50px),
+            center/100% calc(100% - 2*100px),
           url('../background/paperBottom.webp')
-           bottom/auto 40px repeat-x;
+           bottom/auto 60px repeat-x;
     }
     .main-section {
         padding-left: 2rem;
@@ -72,5 +87,11 @@ main {
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 2fr; 
         }
+    }
+    input, td {
+        text-align: center;
+    }
+    p, label, span, td, option, input, select {
+        font-family: $font-4;
     }
 }
