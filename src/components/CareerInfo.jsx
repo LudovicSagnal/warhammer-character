@@ -5,12 +5,15 @@ import PDFDocument from './PDFDocument';
 
 const CareerInfo = () => {
 
-    const { selectedCareer, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment } = useContext(RaceContext);
+    const { selectedCareer, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment } = useContext(RaceContext);
     const [containerClass, setContainerClass] = useState('career-blank');
 
     useEffect(() => {
       if (selectedCareer) {
         setContainerClass('career-container');
+        setMandatorySkills(selectedCareer.skills.mandatory);
+        setMandatoryTalents(selectedCareer.talents.mandatory);
+        setMandatoryEquipment(selectedCareer.dotation.mandatory);
         setSelectedSkills([]);
         setSelectedTalents([]);
         setSelectedEquipment([]);
@@ -18,6 +21,8 @@ const CareerInfo = () => {
         setContainerClass('career-blank');
       }
     }, [selectedCareer]);
+
+    console.log(mandatorySkills);
 
     const handleTalentSelectionChange = (newSelectedTalents) => {
         setSelectedTalents(newSelectedTalents);
@@ -31,10 +36,6 @@ const CareerInfo = () => {
         setSelectedEquipment(newSelectedEquipment);
       };
 
-    console.log(selectedTalents);
-    console.log(selectedSkills);
-    console.log(selectedEquipment);
-
     return (
         <div className={containerClass} id='career-container'>
             {selectedCareer && (
@@ -43,7 +44,7 @@ const CareerInfo = () => {
                     <p className='career-description'>{selectedCareer.description}</p>
                     <h3>Compétences</h3>
                     <p>
-                        {selectedCareer.skills.mandatory && selectedCareer.skills.mandatory.join(', ')}
+                        {mandatorySkills && mandatorySkills.join(',  ')}
                     </p>
                     <ChoiceList
                         choices={selectedCareer.skills.choice}
@@ -52,7 +53,7 @@ const CareerInfo = () => {
                     />
                     <h3>Talents</h3>
                     <p>
-                        {selectedCareer.talents.mandatory && selectedCareer.talents.mandatory.join(', ')}
+                        {mandatoryTalents && mandatoryTalents.join(',  ')}
                     </p>
                     <ChoiceList
                         choices={selectedCareer.talents.choice}
@@ -61,7 +62,7 @@ const CareerInfo = () => {
                     />
                     <h3>Equipement</h3>
                     <p>
-                        {selectedCareer.dotation.mandatory && selectedCareer.dotation.mandatory.join(', ')}
+                        {mandatoryEquipment && mandatoryEquipment.join(', ')}
                     </p>
                     <ChoiceList
                         choices={selectedCareer.dotation.choice}
