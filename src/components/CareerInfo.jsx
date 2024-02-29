@@ -22,8 +22,6 @@ const CareerInfo = () => {
       }
     }, [selectedCareer]);
 
-    console.log(mandatorySkills);
-
     const handleTalentSelectionChange = (newSelectedTalents) => {
         setSelectedTalents(newSelectedTalents);
       };

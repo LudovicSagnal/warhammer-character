@@ -5,7 +5,7 @@ import autoTable from 'jspdf-autotable';
 
 const PDFDocument = () => {
   const {
-    race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait, selectedSkills, selectedTalents, selectedEquipment } = useContext(RaceContext);
+    race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait, mandatorySkills, mandatoryTalents, mandatoryEquipment, selectedSkills, selectedTalents, selectedEquipment } = useContext(RaceContext);
 
     const canvasRef = useRef(null);
 
@@ -33,21 +33,21 @@ const PDFDocument = () => {
 
       const profilLines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`];
 
-      const careerLine = [`Carrière : ${selectedCareerName}`];
+      const careerLine = [`${selectedCareerName}`];
 
       const infoLines = [`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Lieu de naissance : ${birthplace}`, `Nb de frères et soeurs : ${siblings}`, `Signes distinctifs : ${marks}`, `Signe astral : ${astral}`];
       
 
-      const skillsLines = [`${selectedCareer.skills.mandatory ? `${selectedCareer.skills.mandatory}, `: ''} ${selectedSkills}`]
-      const talentsLines = [` ${selectedCareer.talents.mandatory ? `${selectedCareer.talents.mandatory}, `: ''} ${selectedTalents}`]
-      const equipmentLines = [`${selectedCareer.dotation.mandatory ? `${selectedCareer.dotation.mandatory}, `: ''} ${selectedEquipment}`]
+      const skillsLines = [`${mandatorySkills ? `${mandatorySkills}, `: ''} ${selectedSkills}`]
+      const talentsLines = [` ${mandatoryTalents ? `${mandatoryTalents}, `: ''} ${selectedTalents}`]
+      const equipmentLines = [`${mandatoryEquipment ? `${mandatoryEquipment}, `: ''} ${selectedEquipment}`]
       
 
       addMultipleLines(pdf, profilLines, 10, verticalPosition, lineHeight);
       if (race === 'humain') {
         pdf.text(`Origine: ${origin}`, 10, 50);
       }
-      pdf.text(careerLine, 100, 70);
+      pdf.text(careerLine, 110, 70);
       pdf.text('Compétences', 10, 140);
       pdf.text('Talents', 10, 160);
       pdf.text('Equipement', 10, 180);
