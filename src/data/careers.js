@@ -1833,6 +1833,73 @@ const careers = [
       B: `+ 2`,
     },
   },
+  {
+    name: `Initié`,
+    description: `La religion occupe aujourd'hui une place secondaire dans le cœur de nombreux habitants duVieux Monde,mais cela n'empêche pas de jeunes hommes et femmes de consacrer leur existence aux dieux.Pour devenir prêtre,il faut développer des trésors de dévouement et de discipline.Mais avant de pouvoir prétendre devenir prêtre,il faut avoir été un Initié. Des professeurs des plus stricts leur donnent une instruction rigoureuse, mais ils n'ont pas le droit de prêcher ou de conduire l'office avant d'être officiellement ordonnés. Leur instruction inclut littérature, calligraphie, étude des textes sacrés et art du sermon.Ils apprennent également les bases du maniement des armes pour être capables de défendre leur temple en cas de besoin. Note : au titre d'Initié, vous devez choisir une divinité tutélaire et une Église.Comme le précise la ligne Compétences et talents de la description de votre dieu, ce choix confère un talent ou une compétence supplémentaire.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Connaissances académiques (théologie)`,
+        `Langue (classique)`,
+        `Langue (reikspiel)`,
+        `Lire/écrire`,
+        `Perception`,
+        `Soins`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (astronomie)`, `Connaissances académiques (histoire)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Eloquence`,
+      ],
+      choice: [
+        {
+          options: [`Force accrue`, `Réflexes éclairs`],
+          quantity: 1,
+        },
+        {
+          options: [`Guerrier né`, `Sociable`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Symbole religieux`,
+      ],
+    },
+    access: [
+      `Chasseur de vampires`,
+      `Chevalier`,
+      `Etudiant`,
+      `Fanatique`,
+      `Répurgateur`,
+      `Scribe`,,
+      `Sorcier de village`,
+    ],
+    advanced: [
+      `Chirurgien barbier`,
+      `Démagogue`,
+      `Fanatique`,
+      `Moine`,
+      `Prêtre`,
+      `Scribe`,
+    ],
+    stats: {
+      CC: `+ 5%`,
+      CT: `+ 5%`,
+      E: `+ 5%`,
+      Int: `+ 10%`,
+      FM: `+ 10%`,
+      Soc: `+ 10%`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };
