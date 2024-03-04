@@ -1900,6 +1900,61 @@ const careers = [
       B: `+ 2`,
     },
   },
+  {
+    name: `Kossar kislévite`,
+    description: `Les Kossars sont originaires d'une tribu ungol qui vivait jadis dans le nord-est de l'Empire. Un peuple oriental, les Gospodars, envahit la région,soumit les Ungols et fonda la nation de Kislev. Durant ce conflit, les Kossars louèrent leurs services de mercenaires aux Gospodars et combattirent les autres tribus ungols. Leur style de combat sans pareil impressionna grandement la noblesse gospodar et depuis cette époque, des régiments de Kossars servent les tzars de Kislev. Aujourd'hui, les Kossars ne constituent plus une tribu, mais une vaste unité militaire étendue sur l'ensemble de Kislev. Ces hommes sont armés d'arcs et de grandes haches, ce qui les rend très polyvalents sur le champ de bataille. Las des guerres incessantes qui agitent leur patrie, nombre de Kossars se sont rendus dans l'Empire pour y mener une vie de mercenaires ou d'aventuriers.`,
+    skills: {
+      mandatory: [
+        `Connaissances générales (Kislev)`,
+        `Esquive`,
+        `Fouille`,
+        `Langue (kislévien)`,
+        `Perception`,
+        `Résistance à l'alcool`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Jeu`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups précis`,
+        `Maîtrise (armes lourdes)`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Arc et 10 flèches`,
+        `Arme à deux mains (hache à deux mains)`,
+        `Armure moyenne (manteau de mailles, veste de cuir et jambières de cuir)`,
+      ],
+    },
+    access: [
+      `Aucun`,
+    ],
+    advanced: [
+      `Chasseur de primes`,
+      `Combattant des tunnels`,
+      `Mercenaire`,
+      `Sergent`,
+      `Vétéran`,
+    ],
+    stats: {
+      CC: `+ 10%`,
+      CT: `+ 10%`,
+      E: `+ 10%`,
+      FM: `+ 10%`,
+      B: `+ 2`,
+    },
+    races: {
+      name: `humain`,
+      origin: `kislévite`,
+    },
+  },
 ];
 
 export { careers };
