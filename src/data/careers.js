@@ -1955,6 +1955,77 @@ const careers = [
       origin: `kislévite`,
     },
   },
+  {
+    name: `Marin`,
+    description: `La plupart des Marins impériaux sont originaires de la province du Nordland dont la côte s’ouvre sur la Mer des Griffes. Les caraques, loups impériaux et galères de la flotte impériale patrouillent ces eaux, protégeant l’Empire des drakkars norses, des flibustiers bretonniens et des terribles vaisseaux du Chaos. Des Marins endurcis travaillent à bord de ces navires pendant que leurs compatriotes manœuvrent des bateaux marchands, des vaisseaux pirates et autres embarcations privées. La Mer des Griffes abrite également des Marins elfes qui travaillent pour les grandes maisons marchandes. L’activité de la région tourne autour de Marienburg, le plus grand port du Vieux Monde.Cette ville et ses environs (connus sous le nom de Pays Perdu) faisaient jadis partie de la province impériale du Westerland, mais le port a acheté son indépendance il y a des années. Bien que Marienburg soit un terrain neutre d’un point de vue politique, la Mer des Griffes est le théâtre d’affrontements quotidiens. Sur les ponts couverts de sang, les Marins gagnent leur butin et leur ration de rhum journalière.`,
+    skills: {
+      mandatory: [
+        `Canotage`,
+        `Escalade`,
+        `Esquive`,
+        `Natation`,
+        `Navigation`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Bretonnie)`,`Connaissances générales (Norsca)`,`Connaissances générales (Pays Perdu)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (bretonnien)`, `Langue (norse)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+        {
+          options: [`Perception`, `Résistance à l'alcool`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Grand voyageur`,
+      ],
+      choice: [
+        {
+          options: [`Combat de rue`, `Dur à cuire`],
+          quantity: 1,
+        },
+        {
+          options: [`Combattant virevoltant`, `Coups puissants`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (gilet de cuir)`,
+        `Bouteille d'alcool fort de qualité médiocre`,
+      ],
+    },
+    access: [
+      `Batelier`,
+      `Berserk norse`,
+      `Contrebandier`,
+      `Emissaire elfe`,
+      `Passeur`,
+      `Pêcheur`,
+    ],
+    advanced: [
+      `Contrebandier`,
+      `Escroc`,
+      `Matelot`,
+      `Navigateur`,
+      `Officier en second`,
+    ],
+    stats: {
+      CC: `+ 10%`,
+      CT: `+ 5%`,
+      F: `+ 10%`,
+      Ag: `+ 10%`,
+      A: `+ 1`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };
