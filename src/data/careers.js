@@ -1957,7 +1957,7 @@ const careers = [
   },
   {
     name: `Marin`,
-    description: `La plupart des Marins impériaux sont originaires de la province du Nordland dont la côte s’ouvre sur la Mer des Griffes. Les caraques, loups impériaux et galères de la flotte impériale patrouillent ces eaux, protégeant l’Empire des drakkars norses, des flibustiers bretonniens et des terribles vaisseaux du Chaos. Des Marins endurcis travaillent à bord de ces navires pendant que leurs compatriotes manœuvrent des bateaux marchands, des vaisseaux pirates et autres embarcations privées. La Mer des Griffes abrite également des Marins elfes qui travaillent pour les grandes maisons marchandes. L’activité de la région tourne autour de Marienburg, le plus grand port du Vieux Monde.Cette ville et ses environs (connus sous le nom de Pays Perdu) faisaient jadis partie de la province impériale du Westerland, mais le port a acheté son indépendance il y a des années. Bien que Marienburg soit un terrain neutre d’un point de vue politique, la Mer des Griffes est le théâtre d’affrontements quotidiens. Sur les ponts couverts de sang, les Marins gagnent leur butin et leur ration de rhum journalière.`,
+    description: `La plupart des Marins impériaux sont originaires de la province du Nordland dont la côte s'ouvre sur la Mer des Griffes. Les caraques, loups impériaux et galères de la flotte impériale patrouillent ces eaux, protégeant l'Empire des drakkars norses, des flibustiers bretonniens et des terribles vaisseaux du Chaos. Des Marins endurcis travaillent à bord de ces navires pendant que leurs compatriotes manœuvrent des bateaux marchands, des vaisseaux pirates et autres embarcations privées. La Mer des Griffes abrite également des Marins elfes qui travaillent pour les grandes maisons marchandes. L'activité de la région tourne autour de Marienburg, le plus grand port du Vieux Monde.Cette ville et ses environs (connus sous le nom de Pays Perdu) faisaient jadis partie de la province impériale du Westerland, mais le port a acheté son indépendance il y a des années. Bien que Marienburg soit un terrain neutre d'un point de vue politique, la Mer des Griffes est le théâtre d'affrontements quotidiens. Sur les ponts couverts de sang, les Marins gagnent leur butin et leur ration de rhum journalière.`,
     skills: {
       mandatory: [
         `Canotage`,
@@ -2024,6 +2024,75 @@ const careers = [
       Ag: `+ 10%`,
       A: `+ 1`,
       B: `+ 2`,
+    },
+  },
+  {
+    name: `Matelot`,
+    description: `Les Matelots font office de soldats au sein de la flotte impériale mais également à bord de grands vaisseaux privés. Ils protègent leur navire des pirates, maraudeurs norses et autres pillards. Contrairement aux marins, dont le travail principal est d'assurer la bonne marche du navire, les Matelots sont formés au combat. À terre, ce sont de véritables sergents recruteurs qui se chargent de trouver un nouvel équipage. Leurs méthodes sont telles qu'il n'est pas rare qu'un citoyen imprudent se réveille en pleine mer après avoir reçu un bon coup de gourdin sur la nuque. En raison de ces activités et de leur propension à déclencher des bagarres quand ils sont ivres, les Matelots sont mal vus dans de nombreuses communautés côtières. Cependant, quand des pillards passent à l'attaque, ces mêmes citoyens sont les premiers à accepter l'aide des Matelots endurcis.`,
+    skills: {
+      mandatory: [
+        `Canotage`,
+        `Esquive`,
+        `Intimidation`,
+        `Natation`,
+        `Résistance à l'alcool`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Langage secret (langage de bataille)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Pays Perdu)`, `Jeu`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups assomants`,
+        `Coups puissants`,
+      ],
+      choice: [
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+        `Bouclier`,
+        `Grappin`,
+        `10 mètres de corde`,
+      ],
+      choice: [
+        {
+          options: [`Arc et 10 flèches`, `Arbalète et 10 carreaux`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Batelier`,
+      `Marin`,
+      `Pêcheur`,
+    ],
+    advanced: [
+      `Contrebandier`,
+      `Coupe-jarret`,
+      `Hors-la-loi`,
+      `Officier en second`,
+      `Sergent`,
+    ],
+    stats: {
+      CC: `+ 10%`,
+      CT: `+ 10%`,
+      F: `+ 10%`,
+      Ag: `+ 5%`,
+      A: `+ 1`,
+      B: `+ 3`,
     },
   },
 ];
