@@ -2095,6 +2095,84 @@ const careers = [
       B: `+ 3`,
     },
   },
+  {
+    name: `Mercanti`,
+    description: `Au sein de l'Empire, des armées sont en mouvement en permanence. Parmi ces forces, on trouve aussi bien des unités de milice locale qui parcourent les bois à la recherche de bandits que les armées de l'Empereur qui affrontent les peaux-vertes ou les forces du Chaos. Cependant, aucune armée ne voyage véritablement seule et chacune traîne dans son sillage une caravane de Mercantis. Ceux-ci incluent petits commerçants désireux d'arrondir leurs fins de mois, veuves de guerre tentant de louer leurs services de cuisinières ou de couturières et autres détrousseurs de cadavres espérant faire fortune sur les champs de bataille encore fumants. Si les nobles de nombreuses armées n'ont que mépris pour les Mercantis, ceuxci apportent un soutien indéniable aux troupes engagées sur le terrain.`,
+    skills: {
+      mandatory: [
+        `Commérage`,
+        `Fouille`,
+        `Marchandage`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Charisme`, `Evaluation`],
+          quantity: 1,
+        },
+        {
+          options: [`Conduite d'attelages`, `Soins des animaux`],
+          quantity: 1,
+        },
+        {
+          options: [`Escamotage`, `Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`, `Métier (arquebusier)`, `Métier (cartographe)`, `Métier (cuisinier)`, `Métier (fabricant d'arcs)`, `Métier (fabricant d'armes)`, `Métier (fabricant d'armures)`, `Métier (forgeron)`, `Métier (herboriste)`, `Métier (marchand)`, `Métier (tailleur)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Fuite`,
+      ],
+      choice: [
+        {
+          options: [`Combat de rue`, `Dur en affaires`],
+          quantity: 1,
+        },
+        {
+          options: [`Dur à cuire`, `Sociable`],
+          quantity: 1,
+        },
+        {
+          options: [`Grand voyageur`, `Resistance aux maladies`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Petit sac`,
+        `Tente`,
+      ],
+      choice: [
+        {
+          options: [`Porte-bonheur`, `Outils d'artisan`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Chiffonnier`,
+      `Serviteur`,
+    ],
+    advanced: [
+      `Artisan`,
+      `Charbonnier`,
+      `Charlatan`,
+      `Contrebandier`,
+      `Espion`,
+      `Serviteur`,
+      `Vagabond`,
+    ],
+    stats: {
+      E: `+ 5%`,
+      Ag: `+ 10%`,
+      Int: `+ 5%`,
+      FM: `+ 5%`,
+      Soc: `+ 10%`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };
