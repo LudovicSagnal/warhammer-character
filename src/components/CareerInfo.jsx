@@ -39,7 +39,7 @@ const CareerInfo = () => {
 
     return (
         <div className={containerClass} id='career-container'>
-            {selectedCareer && <SkillsAndTalents/>}
+            {/* {selectedCareer && <SkillsAndTalents/>} */}
             {selectedCareer && (
                 <div className='selected-career'>
                     <h3>{selectedCareer.name}</h3>
