@@ -2173,6 +2173,99 @@ const careers = [
       B: `+ 2`,
     },
   },
+  {
+    name: `Mercenaire`,
+    description: `Le Vieux Monde est en proie à des guerres incessantes et a par conséquent besoin de combattants. Bien que l'Empire dispose d'une armée régulière,ses forces sont très souvent accompagnées de Mercenaires. Nobles et riches marchands louent également les services de tels individus pour protéger leurs intérêts, certains disposants même de véritables armées privées. Le Mercenaire va du jeune homme en quête d'aventures au vétéran grisonnant qui a participé à de nombreux conflits. Les Mercenaires viennent de toutes les régions du monde, mais les compagnies de Tilée sont les plus réputées.Tout Mercenaire rêve de richesses fabuleuses, mais pour la plupart d'entre eux, la réalité prend souvent la forme d'une mort précoce et d'une pierre tombale anonyme.`,
+    skills: {
+      mandatory: [
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Marchandage`],
+          quantity: 1,
+        },
+        {
+          options: [`Conduite d'attelages`, `Equitation`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [`Fouille`, `Perception`],
+          quantity: 1,
+        },
+        {
+          options: [`Jeu`, `Soins des animaux`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (tiléen)`, `Natation`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Adresse au tir`, `Coups assommants`],
+          quantity: 1,
+        },
+        {
+          options: [`Coups puissants`, `Rechargement rapide`],
+          quantity: 1,
+        },
+        {
+          options: [`Désarmement`, `Sur ses garde`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Arbalète et 10 carreaux`,
+        `Bouclier`,
+        `Armure moyenne (gilet de mailles et veste de cuir)`,
+        `Potion de soins`,
+      ],
+    },
+    access: [
+      `Berserk norse`,
+      `Chasseur de primes`,
+      `Coupe-jarret`,
+      `Démagogue`,
+      `Eclaireur`,
+      `Garde`,
+      `Garde du corps`,
+      `Gladiateur`,
+      `Kossar kislevite`,
+      `Milicien`,
+      `Mineur`,
+      `Sentinelle halfling`,
+      `Soldat`,
+    ],
+    advanced: [
+      `Chasseur de primes`,
+      `Combattant des tunnels`,
+      `Garde du corps`,
+      `Hors-la-loi`,
+      `Sergent`,
+      `Véteran`,
+    ],
+    stats: {
+      CC: `+ 10%`,
+      CT: `+ 10%`,
+      F: `+ 5%`,
+      E: `+ 5%`,
+      Ag: `+ 5%`,
+      FM: `+ 5%`,
+      A: `+ 1`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };

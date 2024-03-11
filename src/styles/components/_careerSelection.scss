@@ -9,10 +9,11 @@
 }
 .career-container {
     margin: auto;
-    width: 80%;
+    width: 90vw;
     height: 950px;
     position: relative;
     .selected-career {
         position: absolute;
+        width: 80%;
     };
 }

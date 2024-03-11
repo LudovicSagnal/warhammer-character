@@ -2,6 +2,9 @@ import { useState, useEffect, useContext } from 'react';
 import { RaceContext } from '../App';
 import ChoiceList from './ChoiceList';
 import PDFDocument from './PDFDocument';
+import { talents } from '../data/talents';
+import { skills } from '../data/skills';
+import SkillsAndTalents from './SkillsAndTalents';
 
 const CareerInfo = () => {
 
@@ -36,6 +39,7 @@ const CareerInfo = () => {
 
     return (
         <div className={containerClass} id='career-container'>
+            {selectedCareer && <SkillsAndTalents/>}
             {selectedCareer && (
                 <div className='selected-career'>
                     <h3>{selectedCareer.name}</h3>

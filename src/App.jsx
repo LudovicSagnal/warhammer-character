@@ -3,9 +3,8 @@ import "./styles/index.scss";
 import Header from './components/Header';
 import Identity from './components/Identity';
 import Profil from './components/Profil';
-import Skills from './components/Skills';
 import Footer from './components/Footer';
-import Talents from './components/Talents';
+import SkillsAndTalents from './components/SkillsAndTalents';
 import PersonnalDetails from './components/PersonnalDetails';
 import CareerInfo from './components/CareerInfo';
 import PDFDocument from './components/PDFDocument';
@@ -55,6 +54,7 @@ const App = () => {
           <CareerInfo />
           {/* <Skills/>
           <Talents/> */}
+          {/* <SkillsAndTalents/> */}
         </section>
         {/* <PDFDocument/> */}
         <Footer/>
