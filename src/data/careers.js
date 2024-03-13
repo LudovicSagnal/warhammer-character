@@ -2266,6 +2266,70 @@ const careers = [
       B: `+ 2`,
     },
   },
+  {
+    name: `Messager`,
+    description: `Les distances séparant les villes et châteaux de l'Empire étant importantes, les Messagers constituent des moyens de communication indispensables. Nobles, marchands et officiers militaires y ont énormément recours,surtout quand il s'agit de Messagers montés. Ces courageux cavaliers parcourent seuls les routes de l'Empire, comptant sur leur célérité pour éviter le danger. Des patrouilleurs prêtent leur concours aux Messagers officiels aussi souvent que possible, mais il existe de vastes régions dans lesquelles ils ne doivent s'attendre à aucune aide. Enfin, après avoir évité de nombreuses embûches, il arrive qu'un Messager connaisse une triste fin en délivrant une missive particulièrement désagréable à son destinataire…`,
+    skills: {
+      mandatory: [
+        `Alphabet secret (pisteur)`,
+        `Équitation`,
+        `Langue (reikspiel)`,
+        `Natation`,
+        `Orientation`,
+        `Perception`,
+        `Soins des animaux`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Connaissances générales (Empire)`, `Connaissances générales (Pays Perdu)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Grand voyageur`,
+        `Sens de l'orientation`,
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+        `Etui à cartes`,
+        `Bouclier`,
+      ],
+      choice: [
+        {
+          options: [`Cheval de selle avec selle et harnais`, `Poney avec selle et harnais`],
+          quantity: 1,
+        }
+      ]
+    },
+    access: [
+      `Milicien`,
+      `Patrouilleur`,
+      `Serviteur`,
+    ],
+    advanced: [
+      `Cocher`,
+      `Eclaireur`,
+      `Gardien tribal`,
+      `Héraut`,
+      `Patrouilleur`,
+      `Pisteur`,
+      `Soldat`,
+    ],
+    stats: {
+      CC: `+ 5%`,
+      CT: `+ 5%`,
+      E: `+ 5%`,
+      Ag: `+ 10%`,
+      Int: `+ 5%`,
+      FM: `+ 5%`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };
