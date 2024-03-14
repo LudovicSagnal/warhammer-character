@@ -2330,6 +2330,83 @@ const careers = [
       B: `+ 2`,
     },
   },
+  {
+    name: `Milicien`,
+    description: `Les Miliciens font partie des forces de protection locales et sont en grande partie issus de la paysannerie. Chacun accepte de sacrifier un peu de son temps tous les ans (en général, il s'agit de sept jours) pour s'entraîner. Cette formation, aussi brève soit-elle, peut faire la différence sur les champs de bataille ensanglantés du Vieux Monde. Les capitaines de milice sont des responsables civils ou des militaires à la retraite. Certains Miliciens doivent se procurer leur équipement, mais il arrive que l'administration locale le leur fournisse.Ainsi, certaines unités de Miliciens disposent de beaux uniformes et d'un équipement entretenu, alors que d'autres n'ont rien de plus que leurs vêtements et un arc habituellement réservé à la chasse.`,
+    skills: {
+      mandatory: [
+        `Esquive`,
+        `Fouille`,
+        `Perception`,
+        `Soins des animaux`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [`Conduite d'attelages`, `Natation`],
+          quantity: 1,
+        },
+        {
+          options: [`Métier (arquebusier)`, `Métier (cartographe)`, `Métier (cuisinier)`, `Métier (fabricant d'arcs)`, `Métier (fabricant d'armes)`, `Métier (fabricant d'armures)`, `Métier (forgeron)`, `Métier (herboriste)`, `Métier (marchand)`, `Métier (tailleur)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups puissants`,
+      ],
+      choice: [
+        {
+          options: [`Maîtrise (armes lourdes)`, `Rechargement rapide`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir et calotte de cuir)`,
+        `Uniforme`,
+      ],
+      choice: [
+        {
+          options: [`Hallebarde`, `Arc et 10 flèches`],
+          quantity: 1,
+        }
+      ]
+    },
+    access: [
+      `Artisan`,
+      `Bourgeois`,
+      `Bûcheron`,
+      `Maître-artisan`,
+      `Marchand`,
+      `Paysan`,
+      `Pêcheur`,
+      `Régisseur`,
+    ],
+    advanced: [
+      `Hors-la-loi`,
+      `Maître-artisan`,
+      `Mercenaire`,
+      `Messager`,
+      `Sentinelle hafling`,
+      `Sergent`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: `+ 10%`,
+      CT: `+ 5%`,
+      F: `+ 5%`,
+      E: `+ 5%`,
+      Ag: `+ 10%`,
+      B: `+ 2`,
+    },
+  },
 ];
 
 export { careers };
