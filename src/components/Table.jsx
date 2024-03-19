@@ -126,7 +126,7 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
             <td className="descriptive-box">Carrière</td>
             {mainCharacteristics.map((stat, index) => (
               <td className="stat-box" key={stat.short_name + index}>
-                <p className="modified-stat">{careerModifier(stat.short_name)}</p>
+                <p className="modified-stat">{careerModifier(stat.short_name) && '+ '+careerModifier(stat.short_name)+'%'}</p>
               </td>
             ))}
           </tr>
@@ -166,7 +166,7 @@ const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondarySta
             <td className="descriptive-box">Carrière</td>
             {secondaryCharacteristics.map((stat, index) => (
               <td className="stat-box" key={stat.short_name + index}>
-                <p className="modified-stat">{careerModifier(stat.short_name)}</p>
+                <p className="modified-stat">{careerModifier(stat.short_name) && '+ '+careerModifier(stat.short_name)}</p>
               </td>
             ))}
           </tr>
