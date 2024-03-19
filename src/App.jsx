@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import SkillsAndTalents from './components/SkillsAndTalents';
 import PersonnalDetails from './components/PersonnalDetails';
 import CareerInfo from './components/CareerInfo';
-import PDFDocument from './components/PDFDocument';
 
 export const RaceContext = React.createContext();
 
@@ -52,11 +51,8 @@ const App = () => {
             <Profil />            
           </div>
           <CareerInfo />
-          {/* <Skills/>
-          <Talents/> */}
           {/* <SkillsAndTalents/> */}
         </section>
-        {/* <PDFDocument/> */}
         <Footer/>
       </RaceContext.Provider>
     </main>
