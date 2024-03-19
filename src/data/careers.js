@@ -2407,6 +2407,75 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Mineur`,
+    description: `L'Empire est flanqué de larges chaînes de montagnes. À l'est se dressent les Montagnes du Bord du Monde, au sud s'élèvent les Montagnes Noires et à l'est apparaissent les Montagnes Grises. Malgré les attaques permanentes de gobelins et autres monstruosités souterraines, nains et humains exploitent ces montagnes depuis des temps immémoriaux. Les Mineurs bravent ces conditions pour extraire du fer, de l'argent, de l'or, des gemmes et autres minerais précieux. D'autres préfèrent prospecter en surface, plus particulièrement dans les Monts du Milieu, qui chevauchent les provinces d'Ostland et d'Hochland. Bien que ces montagnes couvertes de forêt s'élèvent au sein de l'Empire, elles constituent un véritable nid à trolls, hommes-bêtes et autres créatures immondes. Il faut faire preuve d'un grand talent et d'une robustesse certaine pour survivre dans un tel environnement.`,
+    skills: {
+      mandatory: [
+        `Escalade`,
+        `Orientation`,
+        `Perception`,
+        `Soins des animaux`,
+      ],
+      choice: [
+        {
+          options: [`Conduite d'attelages`, `Dissimulation`],
+          quantity: 1,
+        },
+        {
+          options: [`Evaluation`, `Survie`],
+          quantity: 1,
+        },
+        {
+          options: [`Métier (mineur)`, `Métier (prospecteur)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Maîtrise (armes lourdes)`,
+        `Sens de l'orientation`,
+      ],
+      choice: [
+        {
+          options: [`Résistance accrue`, `Guerrier né`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Arme à deux mains (piolet à deux mains)`,
+        `Armure légère (veste de cuir)`,
+        `Piolet`,
+        `Pelle`,
+        `Lampe-tempête`,
+        `Huile pour lampe`,
+      ],
+    },
+    access: [
+      `Charbonnier`,
+      `Chasseur`,
+    ],
+    advanced: [
+      `Charbonnier`,
+      `Combattant des tunnels`,
+      `Contrebandier`,
+      `Ingénieur`,
+      `Mercenaire`,
+      `Pisteur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 10,
+      E: 5,
+      Int: 5,
+      FM: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
