@@ -1738,9 +1738,18 @@ const careers = [
         },
       ],
     },
-    access: [ `Berserk norse`, `Combattant des tunnels`, `Coupe-jarret`, `Spadassin`,
+    access: [
+      `Berserk norse`,
+      `Combattant des tunnels`,
+      `Coupe-jarret`,
+      `Spadassin`,
     ],
-    advanced: [ `Chasseur de primes`, `Mercenaire`, `Spadassin`, `Tueur de trolls`, `Vétéran`,
+    advanced: [
+      `Chasseur de primes`,
+      `Mercenaire`,
+      `Spadassin`,
+      `Tueur de trolls`,
+      `Vétéran`,
     ],
     stats: {
       CC: 15,
@@ -1848,15 +1857,16 @@ const careers = [
       ],
       choice: [
         {
-          options: [`Connaissances académiques (astronomie)`, `Connaissances académiques (histoire)`],
+          options: [
+            `Connaissances académiques (astronomie)`,
+            `Connaissances académiques (histoire)`,
+          ],
           quantity: 1,
         },
       ],
     },
     talents: {
-      mandatory: [
-        `Eloquence`,
-      ],
+      mandatory: [`Eloquence`],
       choice: [
         {
           options: [`Force accrue`, `Réflexes éclairs`],
@@ -1869,9 +1879,7 @@ const careers = [
       ],
     },
     dotation: {
-      mandatory: [
-        `Symbole religieux`,
-      ],
+      mandatory: [`Symbole religieux`],
     },
     access: [
       `Chasseur de vampires`,
@@ -1879,7 +1887,8 @@ const careers = [
       `Etudiant`,
       `Fanatique`,
       `Répurgateur`,
-      `Scribe`,,
+      `Scribe`,
+      ,
       `Sorcier de village`,
     ],
     advanced: [
@@ -1921,10 +1930,7 @@ const careers = [
       ],
     },
     talents: {
-      mandatory: [
-        `Coups précis`,
-        `Maîtrise (armes lourdes)`,
-      ],
+      mandatory: [`Coups précis`, `Maîtrise (armes lourdes)`],
     },
     dotation: {
       mandatory: [
@@ -1933,9 +1939,7 @@ const careers = [
         `Armure moyenne (manteau de mailles, veste de cuir et jambières de cuir)`,
       ],
     },
-    access: [
-      `Aucun`,
-    ],
+    access: [`Aucun`],
     advanced: [
       `Chasseur de primes`,
       `Combattant des tunnels`,
@@ -1959,16 +1963,15 @@ const careers = [
     name: `Marin`,
     description: `La plupart des Marins impériaux sont originaires de la province du Nordland dont la côte s'ouvre sur la Mer des Griffes. Les caraques, loups impériaux et galères de la flotte impériale patrouillent ces eaux, protégeant l'Empire des drakkars norses, des flibustiers bretonniens et des terribles vaisseaux du Chaos. Des Marins endurcis travaillent à bord de ces navires pendant que leurs compatriotes manœuvrent des bateaux marchands, des vaisseaux pirates et autres embarcations privées. La Mer des Griffes abrite également des Marins elfes qui travaillent pour les grandes maisons marchandes. L'activité de la région tourne autour de Marienburg, le plus grand port du Vieux Monde.Cette ville et ses environs (connus sous le nom de Pays Perdu) faisaient jadis partie de la province impériale du Westerland, mais le port a acheté son indépendance il y a des années. Bien que Marienburg soit un terrain neutre d'un point de vue politique, la Mer des Griffes est le théâtre d'affrontements quotidiens. Sur les ponts couverts de sang, les Marins gagnent leur butin et leur ration de rhum journalière.`,
     skills: {
-      mandatory: [
-        `Canotage`,
-        `Escalade`,
-        `Esquive`,
-        `Natation`,
-        `Navigation`,
-      ],
+      mandatory: [`Canotage`, `Escalade`, `Esquive`, `Natation`, `Navigation`],
       choice: [
         {
-          options: [`Connaissances générales (Bretonnie)`,`Connaissances générales (Norsca)`,`Connaissances générales (Pays Perdu)`, `Connaissances générales (Tilée)`],
+          options: [
+            `Connaissances générales (Bretonnie)`,
+            `Connaissances générales (Norsca)`,
+            `Connaissances générales (Pays Perdu)`,
+            `Connaissances générales (Tilée)`,
+          ],
           quantity: 1,
         },
         {
@@ -1982,9 +1985,7 @@ const careers = [
       ],
     },
     talents: {
-      mandatory: [
-        `Grand voyageur`,
-      ],
+      mandatory: [`Grand voyageur`],
       choice: [
         {
           options: [`Combat de rue`, `Dur à cuire`],
@@ -1994,7 +1995,7 @@ const careers = [
           options: [`Combattant virevoltant`, `Coups puissants`],
           quantity: 1,
         },
-      ]
+      ],
     },
     dotation: {
       mandatory: [
@@ -2049,16 +2050,13 @@ const careers = [
       ],
     },
     talents: {
-      mandatory: [
-        `Coups assomants`,
-        `Coups puissants`,
-      ],
+      mandatory: [`Coups assomants`, `Coups puissants`],
       choice: [
         {
           options: [`Désarmement`, `Sur ses gardes`],
           quantity: 1,
         },
-      ]
+      ],
     },
     dotation: {
       mandatory: [
@@ -2072,13 +2070,9 @@ const careers = [
           options: [`Arc et 10 flèches`, `Arbalète et 10 carreaux`],
           quantity: 1,
         },
-      ]
+      ],
     },
-    access: [
-      `Batelier`,
-      `Marin`,
-      `Pêcheur`,
-    ],
+    access: [`Batelier`, `Marin`, `Pêcheur`],
     advanced: [
       `Contrebandier`,
       `Coupe-jarret`,
@@ -2099,12 +2093,7 @@ const careers = [
     name: `Mercanti`,
     description: `Au sein de l'Empire, des armées sont en mouvement en permanence. Parmi ces forces, on trouve aussi bien des unités de milice locale qui parcourent les bois à la recherche de bandits que les armées de l'Empereur qui affrontent les peaux-vertes ou les forces du Chaos. Cependant, aucune armée ne voyage véritablement seule et chacune traîne dans son sillage une caravane de Mercantis. Ceux-ci incluent petits commerçants désireux d'arrondir leurs fins de mois, veuves de guerre tentant de louer leurs services de cuisinières ou de couturières et autres détrousseurs de cadavres espérant faire fortune sur les champs de bataille encore fumants. Si les nobles de nombreuses armées n'ont que mépris pour les Mercantis, ceuxci apportent un soutien indéniable aux troupes engagées sur le terrain.`,
     skills: {
-      mandatory: [
-        `Commérage`,
-        `Fouille`,
-        `Marchandage`,
-        `Perception`,
-      ],
+      mandatory: [`Commérage`, `Fouille`, `Marchandage`, `Perception`],
       choice: [
         {
           options: [`Charisme`, `Evaluation`],
@@ -2115,15 +2104,28 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Escamotage`, `Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`, `Métier (arquebusier)`, `Métier (cartographe)`, `Métier (cuisinier)`, `Métier (fabricant d'arcs)`, `Métier (fabricant d'armes)`, `Métier (fabricant d'armures)`, `Métier (forgeron)`, `Métier (herboriste)`, `Métier (marchand)`, `Métier (tailleur)`],
+          options: [
+            `Escamotage`,
+            `Langue (bretonnien)`,
+            `Langue (kislévien)`,
+            `Langue (tiléen)`,
+            `Métier (arquebusier)`,
+            `Métier (cartographe)`,
+            `Métier (cuisinier)`,
+            `Métier (fabricant d'arcs)`,
+            `Métier (fabricant d'armes)`,
+            `Métier (fabricant d'armures)`,
+            `Métier (forgeron)`,
+            `Métier (herboriste)`,
+            `Métier (marchand)`,
+            `Métier (tailleur)`,
+          ],
           quantity: 1,
         },
       ],
     },
     talents: {
-      mandatory: [
-        `Fuite`,
-      ],
+      mandatory: [`Fuite`],
       choice: [
         {
           options: [`Combat de rue`, `Dur en affaires`],
@@ -2137,24 +2139,18 @@ const careers = [
           options: [`Grand voyageur`, `Resistance aux maladies`],
           quantity: 1,
         },
-      ]
+      ],
     },
     dotation: {
-      mandatory: [
-        `Petit sac`,
-        `Tente`,
-      ],
+      mandatory: [`Petit sac`, `Tente`],
       choice: [
         {
           options: [`Porte-bonheur`, `Outils d'artisan`],
           quantity: 1,
         },
-      ]
+      ],
     },
-    access: [
-      `Chiffonnier`,
-      `Serviteur`,
-    ],
+    access: [`Chiffonnier`, `Serviteur`],
     advanced: [
       `Artisan`,
       `Charbonnier`,
@@ -2177,10 +2173,7 @@ const careers = [
     name: `Mercenaire`,
     description: `Le Vieux Monde est en proie à des guerres incessantes et a par conséquent besoin de combattants. Bien que l'Empire dispose d'une armée régulière,ses forces sont très souvent accompagnées de Mercenaires. Nobles et riches marchands louent également les services de tels individus pour protéger leurs intérêts, certains disposants même de véritables armées privées. Le Mercenaire va du jeune homme en quête d'aventures au vétéran grisonnant qui a participé à de nombreux conflits. Les Mercenaires viennent de toutes les régions du monde, mais les compagnies de Tilée sont les plus réputées.Tout Mercenaire rêve de richesses fabuleuses, mais pour la plupart d'entre eux, la réalité prend souvent la forme d'une mort précoce et d'une pierre tombale anonyme.`,
     skills: {
-      mandatory: [
-        `Esquive`,
-        `Langage secret (langage de bataille)`,
-      ],
+      mandatory: [`Esquive`, `Langage secret (langage de bataille)`],
       choice: [
         {
           options: [`Commérage`, `Marchandage`],
@@ -2191,7 +2184,11 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`],
+          options: [
+            `Connaissances générales (Bretonnie)`,
+            `Connaissances générales (Kislev)`,
+            `Connaissances générales (Tilée)`,
+          ],
           quantity: 1,
         },
         {
@@ -2222,7 +2219,7 @@ const careers = [
           options: [`Désarmement`, `Sur ses garde`],
           quantity: 1,
         },
-      ]
+      ],
     },
     dotation: {
       mandatory: [
@@ -2282,35 +2279,31 @@ const careers = [
       ],
       choice: [
         {
-          options: [`Commérage`, `Connaissances générales (Empire)`, `Connaissances générales (Pays Perdu)`],
+          options: [
+            `Commérage`,
+            `Connaissances générales (Empire)`,
+            `Connaissances générales (Pays Perdu)`,
+          ],
           quantity: 1,
         },
       ],
     },
     talents: {
-      mandatory: [
-        `Grand voyageur`,
-        `Sens de l'orientation`,
-      ]
+      mandatory: [`Grand voyageur`, `Sens de l'orientation`],
     },
     dotation: {
-      mandatory: [
-        `Armure légère (veste de cuir)`,
-        `Etui à cartes`,
-        `Bouclier`,
-      ],
+      mandatory: [`Armure légère (veste de cuir)`, `Etui à cartes`, `Bouclier`],
       choice: [
         {
-          options: [`Cheval de selle avec selle et harnais`, `Poney avec selle et harnais`],
+          options: [
+            `Cheval de selle avec selle et harnais`,
+            `Poney avec selle et harnais`,
+          ],
           quantity: 1,
-        }
-      ]
+        },
+      ],
     },
-    access: [
-      `Milicien`,
-      `Patrouilleur`,
-      `Serviteur`,
-    ],
+    access: [`Milicien`, `Patrouilleur`, `Serviteur`],
     advanced: [
       `Cocher`,
       `Eclaireur`,
@@ -2351,15 +2344,24 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Métier (arquebusier)`, `Métier (cartographe)`, `Métier (cuisinier)`, `Métier (fabricant d'arcs)`, `Métier (fabricant d'armes)`, `Métier (fabricant d'armures)`, `Métier (forgeron)`, `Métier (herboriste)`, `Métier (marchand)`, `Métier (tailleur)`],
+          options: [
+            `Métier (arquebusier)`,
+            `Métier (cartographe)`,
+            `Métier (cuisinier)`,
+            `Métier (fabricant d'arcs)`,
+            `Métier (fabricant d'armes)`,
+            `Métier (fabricant d'armures)`,
+            `Métier (forgeron)`,
+            `Métier (herboriste)`,
+            `Métier (marchand)`,
+            `Métier (tailleur)`,
+          ],
           quantity: 1,
         },
       ],
     },
     talents: {
-      mandatory: [
-        `Coups puissants`,
-      ],
+      mandatory: [`Coups puissants`],
       choice: [
         {
           options: [`Maîtrise (armes lourdes)`, `Rechargement rapide`],
@@ -2376,8 +2378,8 @@ const careers = [
         {
           options: [`Hallebarde`, `Arc et 10 flèches`],
           quantity: 1,
-        }
-      ]
+        },
+      ],
     },
     access: [
       `Artisan`,
@@ -2411,12 +2413,7 @@ const careers = [
     name: `Mineur`,
     description: `L'Empire est flanqué de larges chaînes de montagnes. À l'est se dressent les Montagnes du Bord du Monde, au sud s'élèvent les Montagnes Noires et à l'est apparaissent les Montagnes Grises. Malgré les attaques permanentes de gobelins et autres monstruosités souterraines, nains et humains exploitent ces montagnes depuis des temps immémoriaux. Les Mineurs bravent ces conditions pour extraire du fer, de l'argent, de l'or, des gemmes et autres minerais précieux. D'autres préfèrent prospecter en surface, plus particulièrement dans les Monts du Milieu, qui chevauchent les provinces d'Ostland et d'Hochland. Bien que ces montagnes couvertes de forêt s'élèvent au sein de l'Empire, elles constituent un véritable nid à trolls, hommes-bêtes et autres créatures immondes. Il faut faire preuve d'un grand talent et d'une robustesse certaine pour survivre dans un tel environnement.`,
     skills: {
-      mandatory: [
-        `Escalade`,
-        `Orientation`,
-        `Perception`,
-        `Soins des animaux`,
-      ],
+      mandatory: [`Escalade`, `Orientation`, `Perception`, `Soins des animaux`],
       choice: [
         {
           options: [`Conduite d'attelages`, `Dissimulation`],
@@ -2433,10 +2430,7 @@ const careers = [
       ],
     },
     talents: {
-      mandatory: [
-        `Maîtrise (armes lourdes)`,
-        `Sens de l'orientation`,
-      ],
+      mandatory: [`Maîtrise (armes lourdes)`, `Sens de l'orientation`],
       choice: [
         {
           options: [`Résistance accrue`, `Guerrier né`],
@@ -2454,10 +2448,7 @@ const careers = [
         `Huile pour lampe`,
       ],
     },
-    access: [
-      `Charbonnier`,
-      `Chasseur`,
-    ],
+    access: [`Charbonnier`, `Chasseur`],
     advanced: [
       `Charbonnier`,
       `Combattant des tunnels`,
@@ -2473,6 +2464,84 @@ const careers = [
       E: 5,
       Int: 5,
       FM: 5,
+      B: 2,
+    },
+  },
+  {
+    name: `Noble`,
+    description: `Les Nobles constituent la classe dirigeante de l'Empire. Ils détiennent le pouvoir, contrôlent les terres et promulguent les lois. Les familles de Nobles les plus importantes sont celles des Électeurs impériaux et de l'Empereur. Il en existe évidemment des centaines d'autres, qui toutes se disputent argent et pouvoir. Certaines font fortune grâce à la guerre, d'autres dans les affaires ou en politique.Aucune ne se salirait les mains en exerçant un métier ordinaire. Les Nobles les plus méprisables ne font rien et vivent de leurs rentes, réceptions, danses et galas constituant l'ordinaire de leurs journées. Cependant, les choses ne sont pas toujours aussi faciles pour les enfants cadets des nobles maisons. L'héritage allant à l'aîné, il leur faut souvent se tailler une place dans le monde, même s'ils doivent pour cela côtoyer les classes populaires et frayer avec des aventuriers et autres vauriens.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Connaissances générales (Empire)`,
+        `Equitation`,
+        `Langue (reikspiel)`,
+        `Lire/écrire`,
+      ],
+      choice: [
+        {
+          options: [`Baratin`, `Commandement`],
+          quantity: 1,
+        },
+        {
+          options: [`Commérage`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [
+            `Expression artistique (musicien)`,
+            `Résistance à l'alcool`,
+          ],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [`Étiquette`],
+      choice: [
+        {
+          options: [`Chance`, `Éloquence`],
+          quantity: 1,
+        },
+        {
+          options: [`Intelligence`, `Maîtrise (armes d'escrime)`],
+          quantity: 1,
+        },
+        {
+          options: [`Intrigant`, `Maîtrise (armes de parade)`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Fleuret`,
+        `Main gauche`,
+        `Atours de noble`,
+        `Cheval de selle avec selle et harnais`,
+        `1d10 co`,
+        `Bijoux d'une valeur de 6d10 co`,
+      ],
+    },
+    access: [
+      `Ecuyer`,
+      `Intendant`,
+    ],
+    advanced: [
+      `Courtisan`,
+      `Ecuyer`,
+      `Escroc`,
+      `Etudiant`,
+      `Pistolier`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 10,
+      CT: 5,
+      Ag: 5,
+      Int: 5,
+      FM: 5,
+      Soc: 10,
       B: 2,
     },
   },
