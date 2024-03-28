@@ -2545,6 +2545,73 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Passeur`,
+    description: `Des cours d'eau de toute taille quadrillent l'Empire. Bien qu'il soit possible d'en traverser certains à gué, d'autres sont infranchissables sans embarcation. Les Passeurs gagnent donc leur vie en transportant personnes et marchandises au gré des rivières et des fleuves de l'Empire. Ils apprécient plus particulièrement les barges à fond plat car elles présentent un faible tirant d'eau et offrent un grand espace. Les Passeurs qui travaillent dans les régions reculées ont un faible pour le tromblon. En effet, les bandits sont une menace permanente et cette arme les invite à passer leur chemin. Beaucoup de Passeurs sont également des extorqueurs de première qui modifient leurs tarifs selon la fortune apparente de leurs passagers et le désespoir qui anime ceux-ci.`,
+    skills: {
+      mandatory: [
+        `Canotage`,
+        `Charisme`,
+        `Connaissances générales (Empire)`,
+        `Marchandage`,
+        `Natation`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Intimidation`],
+          quantity: 1,
+        },
+        {
+          options: [`Evaluation`, `Langage secret (langue des rôdeurs)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Combat de rue`, `Maîtrise (armes à feu)`],
+          quantity: 1,
+        },
+        {
+          options: [`Sociable`, `Tireur d'élite`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+      ],
+      choice: [
+        {
+          options: [`Arbalète et 10 carreaux`, `Tromblon et poudre et munitions pour 10 tir`],
+        }
+      ],
+    },
+    access: [
+      `Cocher`,
+      `Collecteur de taxes`,
+      `Contrebandier`,
+    ],
+    advanced: [
+      `Bandit de grand chemin`,
+      `Batelier`,
+      `Contrebandier`,
+      `Marin`,
+      `Patrouilleur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 10,
+      E: 5,
+      Ag: 5,
+      Int: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
