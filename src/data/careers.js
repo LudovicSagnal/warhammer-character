@@ -2612,6 +2612,74 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Patrouilleur`,
+    description: `L'Empire est constitué de poches de civilisation vaguement reliées par des routes et des cours d'eau. La majeure partie du pays est recouverte de forêts denses qui abritent bandits, mutants, hommesbêtes et gobelins.Voyager d'une ville à une autre constitue une aventure en soi malgré la vigilance permanente des Patrouilleurs. Ces représentants de l'autorité parcourent les routes et les pistes de l'Empire, protégeant biens et voyageurs. Leur nombre restant modeste, ils œuvrent conjointement avec la milice locale et les soldats dès que se présente une menace sérieuse. Cependant, les dangers courants sont réglés par de petites unités de Patrouilleurs.`,
+    skills: {
+      mandatory: [
+        `Conduite d'attelages`,
+        `Équitation`,
+        `Fouille`,
+        `Orientation`,
+        `Perception`,
+        `Soins des animaux`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (pisteur)`, `Pistage`],
+          quantity: 1,
+        },
+        {
+          options: [`Commérage`, `Connaissances générales (Empire)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory : [`Maîtrise (armes à feu)`],
+      choice: [
+        {
+          options: [`Rechargement rapide`, `Sur ses gardes`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Pistolet avec 10 balles et poudre`,
+        `Armure moyenne (gilet de mailles et veste de cuir)`,
+        `Bouclier`,
+        `10 mètres de corde`,
+        `Cheval de guerre avec selle et harnais (ou poney pour les halflings)`,
+      ],
+    },
+    access: [
+      `Cocher`,
+      `Eclaireur`,
+      `Garde`,
+      `Messager`,
+      `Passeur`,
+    ],
+    advanced: [
+      `Bandit de grand chemin`,
+      `Collecteur de taxes,`,
+      `Eclaireur`,
+      `Hors-la-loi`,
+      `Messager`,
+      `Pisteur`,
+      `Sergent`,
+    ],
+    stats: {
+      CC: 10,
+      CT: 10,
+      F: 5,
+      Ag: 10,
+      Int: 5,
+      FM: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
