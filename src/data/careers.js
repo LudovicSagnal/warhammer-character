@@ -2663,7 +2663,7 @@ const careers = [
     ],
     advanced: [
       `Bandit de grand chemin`,
-      `Collecteur de taxes,`,
+      `Collecteur de taxes`,
       `Eclaireur`,
       `Hors-la-loi`,
       `Messager`,
@@ -2676,6 +2676,95 @@ const careers = [
       F: 5,
       Ag: 10,
       Int: 5,
+      FM: 5,
+      B: 2,
+    },
+  },
+  {
+    name: `Paysan`,
+    description: `La paysannerie constitue le gros de la population de l'Empire. Pendant que les nobles règnent et que les bourgeois commercent, les Paysans eux travaillent dur. Cette carrière regroupe les fermiers, les laboureurs et les gardiens de troupeaux en général. En temps de guerre, ils combattent et meurent pour le compte de l'Empire. De nombreux Paysans tentent de trouver une vie meilleure en ville, mais ils finissent généralement parmi les légions de mendiants affamés. La plupart des Paysans passent leur vie dans le village où ils sont nés, généralement entouré par une contrée hostile, et les nouvelles qu'ils reçoivent du monde extérieur sont rares. Bien qu'ils soient provinciaux et superstitieux, ils constituent le cœur de l'Empire.`,
+    skills: {
+      mandatory: [
+        `Dissimulation`,
+      ],
+      choice: [
+        {
+          options: [`Braconnage`, `Canotage`],
+          quantity: 1,
+        },
+        {
+          options: [`Charisme`, `Soins des animaux`],
+          quantity: 1,
+        },
+        {
+          options: [`Conduite d'attelages`, `Métier (fabricant d'arcs)`],
+          quantity: 1,
+        },
+        {
+          options: [`Déplacement silencieux`, `Escalade`],
+          quantity: 1,
+        },
+        {
+          options: [`Dressage`, `Natation`],
+          quantity: 1,
+        },
+        {
+          options: [`Emprise sur les animaux `, `Métier (cuisinier)`],
+          quantity: 1,
+        },
+        {
+          options: [`Expression artistique (chanteur)`, `Expression artistique (danseur)`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [`Métier (fermier)`, `Survie`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Camouflage rural`, `Dur à cuire`],
+          quantity: 1,
+        },
+        {
+          options: [`Fuite`, `u Maîtrise (lance-pierres)`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Flasque de cuir`,
+      ],
+      choice: [
+        {
+          options: [`Fronde`, `Bâton`],
+          quantity: 1,
+        }
+      ],
+    },
+    access: [
+      `Aucun`,
+    ],
+    advanced: [
+      `Artisan`,
+      `Charbonnier`,
+      `Chiffonnier`,
+      `Fanatique`,
+      `Hors-la-loi`,
+      `Milicien`,
+      `Pêcheur`,
+      `Politicien`,
+      `Serviteur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 5,
+      E: 10,
+      Ag: 5,
       FM: 5,
       B: 2,
     },
