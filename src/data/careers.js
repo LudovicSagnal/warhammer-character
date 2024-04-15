@@ -2729,7 +2729,7 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Fuite`, `u Maîtrise (lance-pierres)`],
+          options: [`Fuite`, `Maîtrise (lance-pierres)`],
           quantity: 1,
         },
       ],
@@ -2766,6 +2766,74 @@ const careers = [
       E: 10,
       Ag: 5,
       FM: 5,
+      B: 2,
+    },
+  },
+  {
+    name: `Pêcheur`,
+    description: `Les Pêcheurs s'en remettent à la générosité de la mer. Les nombreux villages de la côte du Nordland en abritent évidemment une multitude. Malgré la menace permanente que représentent les pirates et les pillards originaires de Norsca, ces individus robustes bravent les dangers de la Mer des Griffes dans de petites embarcations.Il existe également des communautés de pêche sur le continent, au bord de lacs et de cours d'eau, mais ces villages vivent également de l'agriculture. Les Pêcheurs sont des gens indépendants.Ils travaillent en petites équipes et toutes les décisions leur reviennent quand ils sillonnent les flots. Cette nature fougueuse explique que les tavernes situées sur les docks sont toujours animées.`,
+    skills: {
+      mandatory: [
+        `Canotage`,
+        `Natation`,
+        `Navigation`,
+        `Perception`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Pays Perdu)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (reikspiel)`, `Langue (norse)`],
+          quantity: 1,
+        },
+        {
+          options: [`Marchandage`, `Résistance à l'alcool`],
+          quantity: 1,
+        },
+        {
+          options: [`Métier (marchand)`, `Orientation`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Combat de rue`, `Sens de l'orientation`],
+          quantity: 1,
+        },
+        {
+          options: [`Dur à cuire`, `Intelligent`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Hameçon et ligne`,
+        `Lance`,
+      ],
+    },
+    access: [
+      `Batelier`,
+      `Paysan`,
+    ],
+    advanced: [
+      `Marchand`,
+      `Marin`,
+      `Matelot`,
+      `Milicien`,
+      `Navigateur`,
+    ],
+    stats: {
+      CT: 5,
+      F: 10,
+      E: 5,
+      Ag: 10,
+      Int: 5,
       B: 2,
     },
   },
