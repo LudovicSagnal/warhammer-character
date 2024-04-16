@@ -2837,6 +2837,80 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Pilleur de tombes`,
+    description: `Le Pilleur de tombes diffère du trafiquant de cadavres dans le sens où il s'intéresse davantage aux objets précieux que l'on trouve dans les cimetières qu'aux corps eux-mêmes. Bien que de moins en moins de tombes du Vieux Monde abritent des biens de valeur, d'anciens lieux de sépulture abritent encore des trésors fabuleux. Les Pilleurs de tombes sont passés maîtres dans l'art de dénicher de tels sites et de les dépouiller de leurs richesses. Cependant, les tombeaux secrets se trouvent généralement dans des régions dangereuses et inaccessibles. Ceux qui se trouvent au sein de l'Empire sont vénérés et protégés par les autochtones, et ils sont tout aussi dangereux. Des pièges ingénieux protègent les sépultures les plus riches et les Pilleurs de tombes doivent apprendre à les désamorcer ou à les franchir. Peu d'entre eux survivent à l'exploration de leur première tombe.`,
+    skills: {
+      mandatory: [
+        `Escalade`,
+        `Evaluation`,
+        `Fouille`,
+        `Lire/écrire`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (voleur)`, `Connaissances générales (Empire)`],
+          quantity: 1,
+        },
+        {
+          options: [`Crochetage`, `Déplacement silencieux`],
+          quantity: 1,
+        },
+        {
+          options: [`Dissimulation`, `Survie`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (classique)`, `Langue (khazalid)`, `Langue (eltharin)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Camouflage souterrain`, `Connaissance des pièges`],
+          quantity: 1,
+        },
+        {
+          options: [`Chance`, `Sixième sens`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+        `Pied-de-biche`,
+        `Lanterne`,
+        `Huile pour lanterne`,
+        `10 mètres de corde`,
+        `2 besaces`,
+      ],
+    },
+    access: [
+      `Combattant des tunnels`,
+      `Porterune`,
+      `Voleur`,
+    ],
+    advanced: [
+      `Chasseur de vampires`,
+      `Combattant des tunnels`,
+      `Etudiant`,
+      `Ratier`,
+      `Receleur`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 10,
+      Ag: 10,
+      Int: 10,
+      FM: 10,
+      Soc: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
