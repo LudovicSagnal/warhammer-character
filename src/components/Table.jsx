@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
 import RandomBtn from './RandomBtn';
-import { base_main_characteristics, base_secondary_characteristics } from '../data/characteristics';
 
-const Table = ({ race, selectedCareer, setModifiedStats, setModifiedSecondaryStats }) => {
-  const [mainCharacteristics, setMainCharacteristics] = useState(base_main_characteristics);
-  const [secondaryCharacteristics, setSecondaryCharacteristics] = useState(base_secondary_characteristics);
+const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, setModifiedStats, setModifiedSecondaryStats }) => {
 
   function roll2d10() {
     return Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 10) + 1;
