@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { RaceContext } from '../App';
 import ChoiceList from './ChoiceList';
-import PDFDocument from './PDFDocument';
 import { talents } from '../data/talents';
 import { skills } from '../data/skills';
 import SkillsAndTalents from './SkillsAndTalents';
@@ -79,7 +78,6 @@ const CareerInfo = () => {
                     <p>
                         {selectedCareer.access && selectedCareer.advanced.join(', ')}
                     </p>
-                    < PDFDocument/>
                 </div>
             )}
         </div>

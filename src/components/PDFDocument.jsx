@@ -73,7 +73,7 @@ const PDFDocument = () => {
     return (
       <>
         <canvas ref={canvasRef} style={{ display: 'none' }}></canvas>
-        <button className='pdf-download-btn' onClick={downloadPDF}>Télécharge le PDF</button>
+        <button className='bottom-btn' onClick={downloadPDF}>Télécharger le PDF</button>
       </>
     );
   };

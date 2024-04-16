@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import SkillsAndTalents from './components/SkillsAndTalents';
 import PersonnalDetails from './components/PersonnalDetails';
 import CareerInfo from './components/CareerInfo';
+import PDFDocument from './components/PDFDocument';
+import { Button } from '@react-pdf-viewer/core';
 
 export const RaceContext = React.createContext();
 
@@ -50,7 +52,11 @@ const App = () => {
             <PersonnalDetails />
             <Profil />            
           </div>
-          <CareerInfo />
+          {selectedCareer && <CareerInfo />}
+          <div className='bottom-btn-div'>
+            {selectedCareer && <button className='bottom-btn'>Ajouter une carrière</button>}
+            {selectedCareer && < PDFDocument/>}            
+          </div>
           {/* <SkillsAndTalents/> */}
         </section>
         <Footer/>
