@@ -42,7 +42,7 @@ const careers = [
     dotation: {
       mandatory: [
         `Armure légère (veste de cuir)`,
-        `vêtements confortables`,
+        `Vêtements confortables`,
         `2d10 tracts de diverses causes`,
       ],
     },
@@ -102,10 +102,10 @@ const careers = [
       ],
     },
     dotation: {
-      mandatory: [`bâton`, `sac à dos`, `livre imprimé`],
+      mandatory: [`Bâton`, `Sac à dos`, `Livre imprimé`],
     },
-    access: [`Érudit`, `Étudiant`, `Scribe`, `Sorcier de village`],
-    advanced: [`Compagnon sorcier`, `Érudit`, `Scribe`],
+    access: [`Erudit`, `Etudiant`, `Scribe`, `Sorcier de village`],
+    advanced: [`Compagnon sorcier`, `Erudit`, `Scribe`],
     stats: {
       Ag: 5,
       Int: 10,
@@ -2909,6 +2909,66 @@ const careers = [
       FM: 10,
       Soc: 5,
       B: 2,
+    },
+  },
+  {
+    name: `Porterune`,
+    description: `Undgrin Ankor, un réseau complexe de tunnels qui parcourait jadis les entrailles des Montagnes du Bord du Monde,relie les forteresses naines situées à l'est de l'Empire. La communication entre les royaumes nains est assurée par les Porterunes, de jeunes nains entraînés à cet effet qui risquent leur vie pour délivrer leurs messages (écrits dans la langue runique des nains). Lors des siècles derniers, de nombreuses forteresses naines sont tombées aux mains des gobelinoïdes et des tunnels ont été détruits, ce qui a rendu la tâche des Porterunes encore plus difficile. Ils doivent emprunter de nombreux détours, tous plus dangereux au fur et à mesure où leurs ennemis les découvrent. Souvent, les Porterunes quittent carrément les tunnels et font un crochet par les montagnes et les vallées de la surface. Les Porterunes spécialisés en longues distances portent parfois des messages entre les communautés naines de l'Empire et celles des montagnes.`,
+    skills: {
+      mandatory: [
+        `Alphabet secret (pisteur)`,
+        `Esquive`,
+        `Natation`,
+        `Orientation`,
+        `Perception`,
+        `Survie`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Fuite`,
+        `Rechargement rapide`,
+        `Sens de l'orientation`,
+      ],
+      choice: [
+        {
+          options: [`Course à pied`, `Sixième sens`],
+          quantity: 1,
+        },
+        {
+          options: [`Force accrue`, `Résistance accrue`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Arbalète et 10 carreaux`,
+        `Armure légère (gilet de cuir)`,
+        `Potion de soins`,
+        `Porte-bonheur`,
+      ],
+    },
+    access: [`Combattant des tunnels`],
+    advanced: [
+      `Combattant des tunnels`,
+      `Pilleur de tombes`,
+      `Pisteur`,
+      `Ratier`,
+      `Vétéran`,
+    ],
+    stats: {
+      CC: 10,
+      F: 5,
+      E: 5,
+      Ag: 10,
+      Int: 5,
+      FM: 5,
+      B: 2,
+      M: 1,
+    },
+    races: {
+      name: `nain`,
     },
   },
 ];
