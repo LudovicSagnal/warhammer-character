@@ -5,7 +5,7 @@ import { advanced_careers } from '../data/advanced_careers';
 
 const AdvancedCareer = () => {
 
-    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, modifiedStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats } = useContext(RaceContext);
+    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, modifiedStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment } = useContext(RaceContext);
 
     const [mainStats, setMainStats] = useState(mainCharacteristics);
     const [secondaryStats, setSecondaryStats] = useState(secondaryCharacteristics);
@@ -16,8 +16,8 @@ const AdvancedCareer = () => {
     }, [mainCharacteristics, secondaryCharacteristics]);
 
     const careerModifier = (statName) => {
-        if (selectedCareer && selectedCareer.stats[statName]) {
-          return selectedCareer.stats[statName];
+        if (advancedCareer && advancedCareer.stats[statName]) {
+          return advancedCareer.stats[statName];
         };
     };
 
@@ -58,6 +58,12 @@ const AdvancedCareer = () => {
       }
     }, [selectedCareer]);
 
+    
+    const firstDigitF  = totalStats[2];
+    const firstDigitE  = totalStats[3];
+    totalSecondaryStats[2] = Math.floor(firstDigitF / 10);
+    totalSecondaryStats[3] = Math.floor(firstDigitE / 10);
+
     return (
         <div className='advanced-profils-container'>
           <div>
@@ -65,7 +71,7 @@ const AdvancedCareer = () => {
             <select name="advanced-career" onChange={handleAdvancedCareer}>
                 <option value="-1">Choisir une nouvelle carrière</option>
                 {selectedCareer && selectedCareer.advanced.map((item, index) => (
-                    <option key={item+index} value={item}>{item}</option>
+                    <option key={index} value={item}>{item}</option>
                 ))}
             </select>
           </div>
@@ -76,7 +82,7 @@ const AdvancedCareer = () => {
                 <tr>
                   <th className='empty-head'></th>
                     {mainCharacteristics.map((item, index) => {
-                        return <th className='stat-short' key={item.short_name+index}>{item.short_name}</th>;
+                        return <th className='stat-short' key={index}>{item.short_name}</th>;
                     })}
                 </tr>
             </thead>
@@ -84,7 +90,7 @@ const AdvancedCareer = () => {
               <tr>
                 <td className='descriptive-box'>Base</td>
                 {totalStats.map((item, index) => (
-                  <td className="stat-box" key={item + index}>
+                  <td className="stat-box" key={index}>
                     <p className="modified-stat">{item} %</p>
                   </td>
                 ))}
@@ -92,7 +98,7 @@ const AdvancedCareer = () => {
               <tr>
                 <td className="descriptive-box">Carrière</td>
                 {mainCharacteristics.map((stat, index) => (
-                  <td className="stat-box" key={stat.short_name + index}>
+                  <td className="stat-box" key={index}>
                     <p className="modified-stat">{careerModifier(stat.short_name) && '+ '+careerModifier(stat.short_name)+'%'}</p>
                   </td>
                 ))}
@@ -105,7 +111,7 @@ const AdvancedCareer = () => {
                 <tr>
                   <th className='empty-head'></th>
                     {secondaryCharacteristics.map((item, index) => {
-                        return <th className='stat-short' key={item.short_name+index}>{item.short_name}</th>;
+                        return <th className='stat-short' key={index}>{item.short_name}</th>;
                     })}
                 </tr>
             </thead>
@@ -113,7 +119,7 @@ const AdvancedCareer = () => {
               <tr>
               <td className='descriptive-box'>Base</td>
                 {totalSecondaryStats.map((item, index) => (
-                  <td className="stat-box" key={item + index}>
+                  <td className="stat-box" key={index}>
                     <p className="modified-stat">{item}</p>
                   </td>
                 ))}
@@ -121,7 +127,7 @@ const AdvancedCareer = () => {
               <tr>
                 <td className="descriptive-box">Carrière</td>
                 {secondaryCharacteristics.map((stat, index) => (
-                  <td className="stat-box" key={stat.short_name + index}>
+                  <td className="stat-box" key={index}>
                     <p className="modified-stat">{careerModifier(stat.short_name) && '+ '+careerModifier(stat.short_name)}</p>
                   </td>
                 ))}

@@ -115,8 +115,7 @@ const careers = [
       Mag: 1,
     },
     races: {
-      name: `humain`,
-      name: `elfe`,
+      names: [`humain`, `elfe`],
     },
   },
   {
@@ -152,7 +151,7 @@ const careers = [
     },
     access: [`Bourgeois`, `Chirurgien barbier`, `Garde`, `Mercanti`, `Paysan`],
     advanced: [
-      `Émissaire elfe`,
+      `Emissaire elfe`,
       `Fanatique`,
       `Ingénieur`,
       `Maître-artisan`,
@@ -931,8 +930,8 @@ const careers = [
       B: 2,
     },
     races: {
-      name: `nain`,
-    },
+      names: [`nain`],
+    }
   },
   {
     name: `Contrebandier`,
@@ -1287,8 +1286,8 @@ const careers = [
       B: 2,
     },
     races: {
-      name: `elfe`,
-    },
+      names: [`elfe`],
+    }
   },
   {
     name: `Escroc`,
@@ -1645,8 +1644,8 @@ const careers = [
       B: 2,
     },
     races: {
-      name: `elfe`,
-    },
+      names: [`elfe`],
+    }
   },
   {
     name: `Geôlier`,
@@ -2968,8 +2967,8 @@ const careers = [
       M: 1,
     },
     races: {
-      name: `nain`,
-    },
+      names: [`nain`],
+    }
   },
 ];
 
