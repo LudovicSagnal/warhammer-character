@@ -57,10 +57,9 @@ const App = () => {
   return (
     <main>
       <Header/>
-      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait, selectedCareerName, setSelectedCareerName, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment, advancedCareer, setAdvancedCareer, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats }}>
+      <RaceContext.Provider value={{ race, setRace, origin, setOrigin, gender, setGender, career, setCareer, name, setName, firstname, setFirstname, age, setAge, height, setHeight, weight, setWeight, eyeColor, setEyeColor, hairColor, setHairColor, birthplace, setBirthplace, siblings, setSiblings, marks, setMarks, astral, setAstral, selectedCareer, setSelectedCareer, choosenPortrait, setChoosenPortrait, selectedCareerName, setSelectedCareerName, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment, advancedCareer, setAdvancedCareer, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats, newSelection }}>
         <section className='main-section'>
           <Identity />
-
             <div className='detail-profil-container'>
               <PersonnalDetails />
               {!newSelection ? <Profil /> : <AdvancedCareer />}       
