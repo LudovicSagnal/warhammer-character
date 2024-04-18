@@ -21,17 +21,23 @@ const AdvancedCareer = () => {
     };
 
     const handleAdvancedCareer = (e) => {
-        const selectedIndex = parseInt(e.target.value);
-        if (selectedIndex >= 0) {
-          const selected = careers[selectedIndex];
+      const selectedName = e.target.value;
+      if (selectedName !== "-1") {
+        const selected = careers.find((career) => career.name === selectedName);
+        if (!selected) {
+          const selected = advanced_careers.find((career) => career.name === selectedName);
           setAdvancedCareer(selected);
-          console.log(advancedCareer);
         } else {
-          setAdvancedCareer(null);
+          setAdvancedCareer(selected);
         }
+      } else {
+        setAdvancedCareer(null);
       };
+    };
 
-    console.log(advancedCareer);
+      useEffect(() => {
+        console.log(advancedCareer);
+      }, [advancedCareer]);
 
     let firstDigitF  = mainCharacteristics.find((char) => char.short_name === 'F').value;
     let firstDigitE  = mainCharacteristics.find((char) => char.short_name === 'E').value;
@@ -59,14 +65,15 @@ const AdvancedCareer = () => {
         });
       }
     }, [selectedCareer]);
-  
+
     return (
-        <div className='profils-container'>
+        <div className='advanced-profils-container'>
           <div>
+            <p>{selectedCareer.name}</p>
             <select name="advanced-career" onChange={handleAdvancedCareer}>
-                <option value="-1">Choisis une carrière</option>
-                {selectedCareer && selectedCareer.advanced.map((item) => (
-                    <option key={item.name} value={item.name}>{item.name}</option>
+                <option value="-1">Choisir une nouvelle carrière</option>
+                {selectedCareer && selectedCareer.advanced.map((item, index) => (
+                    <option key={item+index} value={item}>{item}</option>
                 ))}
             </select>
           </div>
@@ -76,8 +83,8 @@ const AdvancedCareer = () => {
             <thead>
                 <tr>
                   <th className='empty-head'></th>
-                    {mainCharacteristics.map((item) => {
-                        return <th className='stat-short' key={item.short_name}>{item.short_name}</th>;
+                    {mainCharacteristics.map((item, index) => {
+                        return <th className='stat-short' key={item.short_name+index}>{item.short_name}</th>;
                     })}
                 </tr>
             </thead>
@@ -105,8 +112,8 @@ const AdvancedCareer = () => {
             <thead>
                 <tr>
                   <th className='empty-head'></th>
-                    {secondaryCharacteristics.map((item) => {
-                        return <th className='stat-short' key={item.short_name}>{item.short_name}</th>;
+                    {secondaryCharacteristics.map((item, index) => {
+                        return <th className='stat-short' key={item.short_name+index}>{item.short_name}</th>;
                     })}
                 </tr>
             </thead>

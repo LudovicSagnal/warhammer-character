@@ -50,6 +50,9 @@ const App = () => {
 
   const ShowAdvancedCareer = ( () => {
     setNewSelection(true);
+    // setTimeout(() => {
+    //   setNewSelection(false);
+    // }, 500)
   });
   
   return (
@@ -66,7 +69,7 @@ const App = () => {
           }
           {!newSelection && selectedCareer && <CareerInfo />}
           <div className='bottom-btn-div'>
-            {selectedCareer && <button className='bottom-btn' onClick={ShowAdvancedCareer}>Ajouter une carrière</button>}
+            {selectedCareer && !newSelection && <button className='bottom-btn' onClick={ShowAdvancedCareer}>Ajouter une carrière</button>}
             {newSelection && <AdvancedCareer/>}
             {selectedCareer && < PDFDocument/>}            
           </div>
