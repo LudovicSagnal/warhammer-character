@@ -1,6 +1,7 @@
+import { useState, useEffect} from 'react';
 import RandomBtn from './RandomBtn';
 
-const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, setModifiedStats, setModifiedSecondaryStats }) => {
+const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats }) => {
 
   function roll2d10() {
     return Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 10) + 1;
@@ -92,6 +93,25 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
     return '';
   };
 
+  useEffect(() => {
+    const newTotalStats = modifiedStats.map((stat, index) => {
+      const careerBonus = careerModifier(mainCharacteristics[index].short_name) || 0;
+      return stat + careerBonus;
+    });
+    setTotalStats(newTotalStats);
+  }, [mainCharacteristics, modifiedStats]);
+
+  useEffect(() => {
+    const newTotalSecondaryStats = modifiedSecondaryStats.map((stat, index) => {
+      const careerBonus = careerModifier(secondaryCharacteristics[index].short_name) || 0;
+      return stat + careerBonus;
+    });
+    setTotalSecondaryStats(newTotalSecondaryStats);
+  }, [mainCharacteristics, modifiedSecondaryStats]);
+
+  console.log(totalSecondaryStats);
+
+
   return (
     <div className='profils-container'>
       <div>
@@ -140,23 +160,23 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
         </thead>
         <tbody>
           <tr>
-          <td className='descriptive-box'>Base</td>
-            {secondaryCharacteristics.map((item, index) => (
-              <td className="stat-box" key={item.short_name + index}>
-                {item.short_name === 'B' || item.short_name === 'PD' ? (
-                  <div>
-                    <p className="modified-stat">{item.value}</p>
-                    <RandomBtn onClick={() => handleRandomUniqueSecondaryStat(item.short_name)} />
-                  </div>
-                ) : item.short_name === 'BF' ? (
-                  <p className="modified-stat">{forceBonus || 0}</p>
-                ) : item.short_name === 'BE' ? (
-                  <p className="modified-stat">{toughnessBonus || 0}</p>
-                ) : (
-                  <p className="modified-stat">{Array.isArray(item.stats[race]) ? item.stats[race][0] : item.stats[race]}</p>
-                )}
-              </td>
-            ))}
+            <td className='descriptive-box'>Base</td>
+              {secondaryCharacteristics.map((item, index) => (
+                <td className="stat-box" key={item.short_name + index}>
+                  {item.short_name === 'B' || item.short_name === 'PD' ? (
+                    <div>
+                      <p className="modified-stat">{item.value}</p>
+                      <RandomBtn onClick={() => handleRandomUniqueSecondaryStat(item.short_name)} />
+                    </div>
+                  ) : item.short_name === 'BF' ? (
+                    <p className="modified-stat">{forceBonus || 0}</p>
+                  ) : item.short_name === 'BE' ? (
+                    <p className="modified-stat">{toughnessBonus || 0}</p>
+                  ) : (
+                    <p className="modified-stat">{Array.isArray(item.stats[race]) ? item.stats[race][0] : item.stats[race]}</p>
+                  )}
+                </td>
+              ))}
           </tr>
           <tr>
             <td className="descriptive-box">Carrière</td>

@@ -50,7 +50,7 @@ const careers = [
       `Bandit de grand chemin`,
       `Bourgeois`,
       `Capitaine`,
-      `Étudiant`,
+      `Etudiant`,
       `Fanatique`,
       `Héraut`,
       `Scribe`,

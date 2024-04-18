@@ -1,10 +1,11 @@
 import { useState, useContext, useEffect } from 'react';
 import { RaceContext } from '../App';
 import { careers } from '../data/careers';
+import { advanced_careers } from '../data/advanced_careers';
 
 const AdvancedCareer = () => {
 
-    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, setSelectedCareer, race, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats } = useContext(RaceContext);
+    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, race, modifiedStats, totalStats, setTotalStats } = useContext(RaceContext);
 
     const [mainStats, setMainStats] = useState(mainCharacteristics);
     const [secondaryStats, setSecondaryStats] = useState(secondaryCharacteristics);
@@ -39,8 +40,10 @@ const AdvancedCareer = () => {
         console.log(advancedCareer);
       }, [advancedCareer]);
 
-    let firstDigitF  = mainCharacteristics.find((char) => char.short_name === 'F').value;
-    let firstDigitE  = mainCharacteristics.find((char) => char.short_name === 'E').value;
+      console.log(totalStats);
+
+    let firstDigitF  = totalStats[2];
+    let firstDigitE  = totalStats[3];
     let forceBonus = Math.floor(firstDigitF / 10);
     let toughnessBonus = Math.floor(firstDigitE / 10);
   
@@ -65,6 +68,8 @@ const AdvancedCareer = () => {
         });
       }
     }, [selectedCareer]);
+
+    console.log(totalStats);
 
     return (
         <div className='advanced-profils-container'>
@@ -91,9 +96,9 @@ const AdvancedCareer = () => {
             <tbody>
               <tr>
                 <td className='descriptive-box'>Base</td>
-                {modifiedStats.map((item, index) => (
-                  <td className="stat-box" key={item+ index}>
-                    <p className="modified-stat">{item.value} %</p>
+                {totalStats.map((item, index) => (
+                  <td className="stat-box" key={item + index}>
+                    <p className="modified-stat">{item} %</p>
                   </td>
                 ))}
               </tr>
