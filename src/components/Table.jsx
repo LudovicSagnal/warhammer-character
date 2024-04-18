@@ -102,14 +102,27 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
   }, [mainCharacteristics, modifiedStats]);
 
   useEffect(() => {
-    const newTotalSecondaryStats = modifiedSecondaryStats.map((stat, index) => {
-      const careerBonus = careerModifier(secondaryCharacteristics[index].short_name) || 0;
-      return stat + careerBonus;
+    const careerBonus = {};
+    secondaryCharacteristics.forEach((item) => {
+      careerBonus[item.short_name] = careerModifier(item.short_name) || 0;
     });
+  
+    const newTotalSecondaryStats = modifiedSecondaryStats.map((stat, index) => {
+      return stat + careerBonus[secondaryCharacteristics[index].short_name];
+    });
+  
+    const AIndex = secondaryCharacteristics.findIndex((item) => item.short_name === 'A');
+    const MIndex = secondaryCharacteristics.findIndex((item) => item.short_name === 'M');
+    const MagIndex = secondaryCharacteristics.findIndex((item) => item.short_name === 'Mag');
+    const PFIndex = secondaryCharacteristics.findIndex((item) => item.short_name === 'PF');
+  
+    newTotalSecondaryStats[0] = secondaryCharacteristics[AIndex].stats[race] + careerBonus['A'] || 0;
+    newTotalSecondaryStats[4] = secondaryCharacteristics[MIndex].stats[race] + careerBonus['M'] || 0;
+    newTotalSecondaryStats[5] = secondaryCharacteristics[MagIndex].stats[race] + careerBonus['Mag'] || 0;
+    newTotalSecondaryStats[6] = secondaryCharacteristics[PFIndex].stats[race] + careerBonus['PF'] || 0;
+  
     setTotalSecondaryStats(newTotalSecondaryStats);
-  }, [mainCharacteristics, modifiedSecondaryStats]);
-
-  console.log(totalSecondaryStats);
+  }, [secondaryCharacteristics, modifiedSecondaryStats, race, selectedCareer]);
 
 
   return (

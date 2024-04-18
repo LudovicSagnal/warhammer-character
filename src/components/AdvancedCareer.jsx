@@ -5,7 +5,7 @@ import { advanced_careers } from '../data/advanced_careers';
 
 const AdvancedCareer = () => {
 
-    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, race, modifiedStats, totalStats, setTotalStats } = useContext(RaceContext);
+    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, modifiedStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats } = useContext(RaceContext);
 
     const [mainStats, setMainStats] = useState(mainCharacteristics);
     const [secondaryStats, setSecondaryStats] = useState(secondaryCharacteristics);
@@ -35,17 +35,6 @@ const AdvancedCareer = () => {
         setAdvancedCareer(null);
       };
     };
-
-      useEffect(() => {
-        console.log(advancedCareer);
-      }, [advancedCareer]);
-
-      console.log(totalStats);
-
-    let firstDigitF  = totalStats[2];
-    let firstDigitE  = totalStats[3];
-    let forceBonus = Math.floor(firstDigitF / 10);
-    let toughnessBonus = Math.floor(firstDigitE / 10);
   
     useEffect(() => {
       if (selectedCareer) {
@@ -69,12 +58,10 @@ const AdvancedCareer = () => {
       }
     }, [selectedCareer]);
 
-    console.log(totalStats);
-
     return (
         <div className='advanced-profils-container'>
           <div>
-            <p>{selectedCareer.name}</p>
+            <p>Ancienne(s) carrières(s) : {selectedCareer.name}</p>
             <select name="advanced-career" onChange={handleAdvancedCareer}>
                 <option value="-1">Choisir une nouvelle carrière</option>
                 {selectedCareer && selectedCareer.advanced.map((item, index) => (
@@ -125,19 +112,9 @@ const AdvancedCareer = () => {
             <tbody>
               <tr>
               <td className='descriptive-box'>Base</td>
-                {secondaryCharacteristics.map((item, index) => (
-                  <td className="stat-box" key={item.short_name + index}>
-                    {item.short_name === 'B' || item.short_name === 'PD' ? (
-                      <div>
-                        <p className="modified-stat">{item.value}</p>
-                      </div>
-                    ) : item.short_name === 'BF' ? (
-                      <p className="modified-stat">{forceBonus || 0}</p>
-                    ) : item.short_name === 'BE' ? (
-                      <p className="modified-stat">{toughnessBonus || 0}</p>
-                    ) : (
-                      <p className="modified-stat">{Array.isArray(item.stats[race]) ? item.stats[race][0] : item.stats[race]}</p>
-                    )}
+                {totalSecondaryStats.map((item, index) => (
+                  <td className="stat-box" key={item + index}>
+                    <p className="modified-stat">{item}</p>
                   </td>
                 ))}
               </tr>
