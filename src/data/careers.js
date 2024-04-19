@@ -2970,6 +2970,59 @@ const careers = [
       names: [`nain`],
     }
   },
+  {
+    name: `Ratier`,
+    description: `Le Ratier est un personnage bien connu au travers de l'Empire puisqu'on le trouve aussi bien dans les villages que dans les grandes villes. Ce curieux personnage gagne sa vie en éliminant la vermine qui infeste l'ensemble des communautés en cette ère insalubre. Les Ratiers sont généralement des voyageurs, mais les plus grandes villes en abritent de véritables contingents permanents. Les rats constituent bien évidemment leurs ennemis principaux, mais ils se chargent également des taupes, des souris et d'animaux tout aussi nuisibles. Les Ratiers citadins passent le plus clair de leur temps dans les égouts, évoluant dans des ruisseaux d'ordures pour traquer leurs proies. Certes, il s'agit d'un travail dégoûtant, mais il a le mérite de prévenir les épidémies.`,
+    skills: {
+      mandatory: [
+        `Braconnage`,
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Dressage`,
+        `Fouille`,
+        `Perception`,
+        `Soins des animaux`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Camouflage souterrain`,
+        `Maîtrise (lance-pierres)`,
+        `Résistance aux maladies`,
+        `Résistance aux poisons`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Fronde et munitions`,
+        `4 collets`,
+        `Perche et 1d10 rats morts`,
+        `Petit chien méchant`,
+      ],
+    },
+    access: [
+      `Geôlier`,
+      `Pilleur de tombes`,
+      `Porterune`,
+      `Trafiquant de cadavres`,
+    ],
+    advanced: [
+      `Chiffonnier`,
+      `Combattant des tunnels`,
+      `Geôlier`,
+      `Monte-en-l'air`,
+      `Trafiquant de cadavres`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 10,
+      E: 5,
+      Ag: 10,
+      FM: 10,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
