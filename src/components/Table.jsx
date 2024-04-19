@@ -99,7 +99,7 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
       return stat + careerBonus;
     });
     setTotalStats(newTotalStats);
-  }, [mainCharacteristics, modifiedStats]);
+  }, [mainCharacteristics, modifiedStats, race, selectedCareer]);
 
   useEffect(() => {
     const careerBonus = {};
