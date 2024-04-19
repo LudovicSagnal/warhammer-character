@@ -5,7 +5,6 @@ import { RaceContext } from '../App';
 import Portrait from './Portrait';
 import PortraitDisplayer from './PortraitDisplayer';
 import randomFunctions from '../functions/randomFunctions';
-// import { image } from 'html2canvas/dist/types/css/types/image';
 
 const Identity = () => {
 
