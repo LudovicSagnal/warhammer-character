@@ -3023,6 +3023,72 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Régisseur`,
+    description: `Les Régisseurs sont des administrateurs au service d'aristocrates. Bien qu'ils soient chargés de l'entretien des terres et des ressources de leur seigneur, ils jouent un rôle très différent aux yeux de la paysannerie. En effet, les Régisseurs sont chargés de collecter les divers impôts dans les villages qui entourent le manoir de leur maître. En outre, ils font en sorte que les paysans s'acquittent de leurs devoirs. Leur charge les rend donc fortement impopulaires auprès des villageois,surtout durant les périodes de vache maigre. Synonymes d'imposition seigneuriale, ils sont les premiers à tomber lorsque les paysans se soulèvent.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Connaissances académiques (droit)`,
+        `Equitation`,
+        `Lire/écrire`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commandement`, `Orientation`],
+          quantity: 1,
+        },
+        {
+          options: [`Commérage`, `Soin des animaux`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Intimidation`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Eloquence`,
+      ],
+      choice: [
+        {
+          options: [`Calcul mental`, `Etiquette`],
+          quantity:1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir et calotte de cuir)`,
+        `Cheval de selle avec selle et harnais`,
+        `Vêtements confortables`,
+      ],
+    },
+    access: [
+      `Garde du corps`,
+      `Geôlier`,
+    ],
+    advanced: [
+      `Collecteur de taxes`,
+      `Contrebandier`,
+      `Milicien`,
+      `Politicien`,
+      `Racketteur`,
+      `Spadassin`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 5,
+      Int: 10,
+      FM: 5,
+      Soc: 10,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
