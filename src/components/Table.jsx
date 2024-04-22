@@ -1,7 +1,7 @@
-import { useState, useEffect} from 'react';
+import { useEffect} from 'react';
 import RandomBtn from './RandomBtn';
 
-const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats }) => {
+const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristics, secondaryCharacteristics, setSecondaryCharacteristics, modifiedStats, setModifiedStats, modifiedSecondaryStats, setModifiedSecondaryStats, setTotalStats, setTotalSecondaryStats }) => {
 
   function roll2d10() {
     return Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 10) + 1;
@@ -60,6 +60,7 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
     });
   };
 
+  
   const handleRandomAllStats = () => {
     for (let i = 0; i < mainCharacteristics.length; i++) {
       handleRandomUniqueStat(i);
@@ -71,6 +72,10 @@ const Table = ({ race, selectedCareer, mainCharacteristics, setMainCharacteristi
       }
     }
   };
+
+  useEffect(() => {
+    handleRandomAllStats();
+  }, [race]);
 
   const updateModifiedStats = () => {
     const updatedStats = mainCharacteristics.map((char) => char.value);

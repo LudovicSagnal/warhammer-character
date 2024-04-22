@@ -70,8 +70,8 @@ const AdvancedCareer = () => {
             <p>Ancienne(s) carrières(s) : {selectedCareer.name}</p>
             <select name="advanced-career" onChange={handleAdvancedCareer}>
                 <option value="-1">Choisir une nouvelle carrière</option>
-                {selectedCareer && selectedCareer.advanced.map((item, index) => (
-                    <option key={index} value={item}>{item}</option>
+                {selectedCareer && selectedCareer.advanced.map((career, index) => (
+                    <option key={index} value={career}>{career}</option>
                 ))}
             </select>
           </div>

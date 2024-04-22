@@ -4,13 +4,13 @@ import Header from './components/Header';
 import Identity from './components/Identity';
 import Profil from './components/Profil';
 import Footer from './components/Footer';
-import SkillsAndTalents from './components/SkillsAndTalents';
+// import SkillsAndTalents from './components/SkillsAndTalents';
 import PersonnalDetails from './components/PersonnalDetails';
 import { base_main_characteristics, base_secondary_characteristics } from './data/characteristics';
 import CareerInfo from './components/CareerInfo';
 import AdvancedCareer from './components/AdvancedCareer';
 import PDFDocument from './components/PDFDocument';
-import { Button } from '@react-pdf-viewer/core';
+// import { Button } from '@react-pdf-viewer/core';
 
 export const RaceContext = React.createContext();
 

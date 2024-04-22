@@ -1,11 +1,11 @@
 const races = [
-    { value: 'humain', label: 'Humain', description: 'Un gadjo' },
+    { value: 'humain', label: 'Humain', description: '' },
     { value: 'elfe', label: 'Elfe' },
     { value: 'nain', label: 'Nain' },
 ];
 const origins = [
     { value: 'empire', label: 'Empire' },
-    { value: 'bretonien', label: 'Bretonnie', description: 'Un gadjo de Bretonnie' },
+    { value: 'bretonien', label: 'Bretonnie', description: '' },
     { value: 'estalien', label: 'Estalie' },
     { value: 'tiléen', label: 'Tilée' },
     { value: 'norse', label: 'Norsca' },
