@@ -2586,6 +2586,7 @@ const careers = [
       choice: [
         {
           options: [`Arbalète et 10 carreaux`, `Tromblon et poudre et munitions pour 10 tir`],
+          quantity: 1,
         }
       ],
     },
