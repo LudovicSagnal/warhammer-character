@@ -3090,6 +3090,66 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Scribe`,
+    description: `La plupart des citoyens de l'Empire étant illettrés, les services des Scribes sont très demandés.Tous les gouvernements, civils ou militaires, et les institutions religieuses engagent des Scribes à des fins d'archivage. Il existe également des Scribes publics qui gagnent leur vie en écrivant et en lisant des lettres pour les gens du peuple. Les Scribes sont cultivés et beaucoup deviennent des érudits ou des juristes. Enfin, certains se lassent de lire les aventures d'autrui et décident de vivre les leurs. Grâce à leurs grandes connaissances linguistiques, ils font de parfaits interprètes lors d'expéditions menées à l'étranger.`,
+    skills: {
+      mandatory: [
+        `Langage secret (langage de guilde)`,
+        `Langue (bretonnien)`,
+        `Langue (classique)`,
+        `Lire/écrire`,
+        `Métier (calligraphe)`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Connaissances générales (Empire)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances académiques (un au choix*)`, `filler*`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (reikspiel)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Linguistique`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Dague`,
+        `2 bougies de cire`,
+        `5 allumettes`,
+        `Livre enluminé`,
+        `Accessoires de calligraphie`,
+      ],
+    },
+    access: [
+      `Apprenti sorcier`,
+      `Initié`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Apprenti sorcier`,
+      `Erudit`,
+      `Initié`,
+      `Navigateur`,
+    ],
+    stats: {
+      Ag: 10,
+      Int: 10,
+      FM: 10,
+      Soc: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
