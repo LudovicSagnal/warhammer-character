@@ -5,7 +5,7 @@ import autoTable from 'jspdf-autotable';
 
 const PDFDocument = () => {
   const {
-    race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait, mandatorySkills, mandatoryTalents, mandatoryEquipment, selectedSkills, selectedTalents, selectedEquipment } = useContext(RaceContext);
+    race, origin, gender, selectedCareer, selectedCareerName, name, firstname, age, height, weight, eyeColor, hairColor, birthplace, siblings, marks, astral, choosenPortrait, mandatorySkills, mandatoryTalents, mandatoryEquipment, selectedSkills, selectedTalents, selectedEquipment, advancedCareer, advancedCareerName } = useContext(RaceContext);
 
     const canvasRef = useRef(null);
 
@@ -34,6 +34,8 @@ const PDFDocument = () => {
       const profilLines = [`Prénom: ${firstname}`, `Nom: ${name}`, `Race: ${race}`];
 
       const careerLine = [`${selectedCareerName}`];
+      const advancedCareerLine = [`${advancedCareerName}`];
+   
 
       const infoLines = [`Age : ${age} ans` ,`Taille : ${height} m` ,`Poids : ${weight} kg` ,`Yeux : ${eyeColor}` ,`Cheveux : ${hairColor}` , `Lieu de naissance : ${birthplace}`, `Nb de frères et soeurs : ${siblings}`, `Signes distinctifs : ${marks}`, `Signe astral : ${astral}`];
       
@@ -48,6 +50,11 @@ const PDFDocument = () => {
         pdf.text(`Origine: ${origin}`, 10, 50);
       }
       pdf.text(careerLine, 110, 70);
+      if (advancedCareerName != 'Aucune') {
+        pdf.setFontSize(20);
+        pdf.text(advancedCareerLine, 110, 77);
+      }
+      pdf.setFontSize(16);
       pdf.text('Compétences', 10, 140);
       pdf.text('Talents', 10, 160);
       pdf.text('Equipement', 10, 180);

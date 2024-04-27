@@ -5,7 +5,7 @@ import { advanced_careers } from '../data/advanced_careers';
 
 const AdvancedCareer = () => {
 
-    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, modifiedStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment } = useContext(RaceContext);
+    const { advancedCareer, setAdvancedCareer, mainCharacteristics, secondaryCharacteristics, selectedCareer, modifiedStats, totalStats, setTotalStats, totalSecondaryStats, setTotalSecondaryStats, mandatorySkills, setMandatorySkills, mandatoryTalents, setMandatoryTalents, mandatoryEquipment, setMandatoryEquipment, selectedSkills, setSelectedSkills, selectedTalents, setSelectedTalents, selectedEquipment, setSelectedEquipment, setAdvancedCareerName } = useContext(RaceContext);
 
     const [mainStats, setMainStats] = useState(mainCharacteristics);
     const [secondaryStats, setSecondaryStats] = useState(secondaryCharacteristics);
@@ -28,8 +28,10 @@ const AdvancedCareer = () => {
         if (!selected) {
           const selected = advanced_careers.find((career) => career.name === selectedName);
           setAdvancedCareer(selected);
+          setAdvancedCareerName(selected.name);
         } else {
           setAdvancedCareer(selected);
+          setAdvancedCareerName(selected.name);
         }
       } else {
         setAdvancedCareer(null);
