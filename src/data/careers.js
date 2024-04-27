@@ -3108,7 +3108,7 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Connaissances académiques (Arts)`, `Connaissances académiques (Astronomie)`, `Connaissances académiques (Démonologie )`, `Connaissances académiques (Généalogie/Héraldique)`, `Connaissances académiques (Histoire)`, `Connaissances académiques (Ingénierie)`, `Connaissances académiques (Loi)`, `Connaissances académiques (Magie)`, `Connaissances académiques (Philosophie)`, `Connaissances académiques (Runes)`, `Connaissances académiques (Science)`, `Connaissances académiques (Théologie)`],
+          options: [`Connaissances académiques (Arts)`, `Connaissances académiques (Astronomie)`, `Connaissances académiques (Démonologie )`, `Connaissances académiques (Généalogie/Héraldique)`, `Connaissances académiques (Histoire)`, `Connaissances académiques (Ingénierie)`, `Connaissances académiques (Loi)`, `Connaissances académiques (Magie)`, `Connaissances académiques (Philosophie)`,  `Connaissances académiques (Religion)`, `Connaissances académiques (Runes)`, `Connaissances académiques (Science)`, `Connaissances académiques (Théologie)`],
           quantity: 1,
         },
         {
