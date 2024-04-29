@@ -17,8 +17,11 @@ const ChoiceList = ({ choices, selected, onSelectionChange }) => {
       if (currentChoiceSelections < choice.quantity) {
         newSelectedItems.push(choice.options[event.target.value]);
       } else {
-        alert('Vous ne pouvez sélectionner que ' + choice.quantity + ' options.');
-        event.target.checked = false;
+        const previousIndex = newSelectedItems.findIndex(
+          (item) => item === choice.options[event.target.value - choice.quantity]
+        );
+        newSelectedItems.splice(previousIndex, 1);
+        newSelectedItems.push(choice.options[event.target.value]);
       }
     } else {
       const index = newSelectedItems.indexOf(choice.options[event.target.value]);
