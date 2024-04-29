@@ -124,6 +124,17 @@ const birthplace_dwarf = [
     {name: 'Barak Varr'},
 ];
 
+//////////////////////////////////   Halfling   /////////////////////////////////
+
+const birthplace_halfling = [
+
+    {name: 'Le Moot'},
+    {name: 'Altdorf'},
+    {name: 'Nuln'},
+    {name: 'Talabheim'},
+    {name: 'Averheim'},
+];
+
 ///////////////////////////////////   Astral Signs //////////////////////////////
 
 const astral_signs = [
@@ -142,4 +153,4 @@ const astral_signs = [
     {name: `Le Tambour`, desc: `Signe du Plaisir et des Excès`},
 ];
 
-export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human };
+export { astral_signs, birthplace_dwarf, birthplace_elf, birthplace_human, birthplace_halfling };

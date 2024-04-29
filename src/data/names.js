@@ -298,7 +298,12 @@ const names_elf = [
     { value: 'Vertefeuille' },
     { value: 'Sombrebois' },
     { value: 'Lunepâle' },
+    { value: 'Thilinus' },
+    { value: 'Faean' },
+    { value: 'Lorefhar' },
+    { value: 'Elsinore' },
 ];
+
 /////////////////////////////////////   DWARF   //////////////////////////////////////
 
 const firstnames_dwarf = [
@@ -323,6 +328,50 @@ const names_dwarf = [
     { value: 'Crachefer' },
     { value: 'Fièrebarbe' },
     { value: 'Poingmarteau' },
+    { value: 'Poingdacier' },
+    { value: 'Marteaupierre' },
+    { value: 'Briseroche' },
+    { value: 'Feuprofond' },
+    { value: 'Maitreforge' },
+    { value: 'Duracier' },
 ];
 
-export { names_human, names_elf, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf };
+/////////////////////////////////////   HALFLING   //////////////////////////////////////
+
+const firstnames_halfling = [
+
+    //male
+    { value: 'Adam', gender: 'male' },
+    { value: 'Albert', gender: 'male' },
+    { value: 'Edgar', gender: 'male' },
+    { value: 'Jakob', gender: 'male' },
+    { value: 'Oskar', gender: 'male' },
+    { value: 'Paul', gender: 'male' },
+    { value: 'Rudi', gender: 'male' },
+    { value: 'Udo', gender: 'male' },
+    //female
+    { value: 'Agnès', gender: 'female' },
+    { value: 'Alice', gender: 'female' },
+    { value: 'Heidi', gender: 'female' },
+    { value: 'Janna', gender: 'female' },
+    { value: 'Susi', gender: 'female' },
+    { value: 'Théda', gender: 'female' },
+    { value: 'Ulla', gender: 'female' },
+    { value: 'Wanda', gender: 'female' },
+];
+
+const names_halfling = [
+
+    { value: 'Fiercoeur' },
+    { value: 'Piedléger' },
+    { value: 'Vertpouce' },
+    { value: 'Bellecroupe' },
+    { value: 'Brosselapin' },
+    { value: 'Potagile' },
+    { value: 'Fortebranche' },
+    { value: 'Coeurvaillant' },
+    { value: 'Chantvif' },
+    { value: 'Grandpas' },
+];
+
+export { names_human, names_elf, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf, firstnames_halfling, names_halfling };

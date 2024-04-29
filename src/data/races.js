@@ -2,6 +2,7 @@ const races = [
     { value: 'humain', label: 'Humain', description: '' },
     { value: 'elfe', label: 'Elfe' },
     { value: 'nain', label: 'Nain' },
+    { value: 'halfling', label: 'Halfling' },
 ];
 const origins = [
     { value: 'empire', label: 'Empire' },

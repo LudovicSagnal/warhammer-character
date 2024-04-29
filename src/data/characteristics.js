@@ -9,6 +9,8 @@ const base_main_characteristics = [
           humain: 20,
           elfe: 20,
           nain: 30,
+          nain: 30,
+          halfling: 10,
         },
       },
     {
@@ -19,6 +21,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 30,
         nain: 20,
+        halfling: 30,
       },
     },
     {
@@ -29,6 +32,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 20,
         nain: 20,
+        halfling: 10,
       },
     },
     {
@@ -39,6 +43,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 20,
         nain: 30,
+        halfling: 10,
       },
     },
     {
@@ -49,6 +54,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 30,
         nain: 10,
+        halfling: 30,
       },
     },
     {
@@ -59,6 +65,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 20,
         nain: 20,
+        halfling: 20,
       },
     },
     {
@@ -69,6 +76,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 20,
         nain: 20,
+        halfling: 20,
       },
     },
     {
@@ -79,6 +87,7 @@ const base_main_characteristics = [
         humain: 20,
         elfe: 20,
         nain: 10,
+        halfling: 30,
       },
     },
 ];
@@ -94,6 +103,7 @@ const base_secondary_characteristics = [
         humain: 1,
         elfe: 1,
         nain: 1,
+        halfling: 1,
       },
     },
     {
@@ -104,6 +114,7 @@ const base_secondary_characteristics = [
         humain: [ 10, 11, 12, 13 ],
         elfe: [ 9, 10, 11, 12 ],
         nain: [ 11, 12, 13, 14 ],
+        halfling: [ 8, 9, 10, 11 ],
       },
     },
     {
@@ -126,6 +137,7 @@ const base_secondary_characteristics = [
         humain: 4,
         elfe: 5,
         nain: 3,
+        halfling: 4,
       },
     },
     {
@@ -136,6 +148,7 @@ const base_secondary_characteristics = [
         humain: 0,
         elfe: 0,
         nain: 0,
+        halfling: 0,
       },
     },
     {
@@ -146,6 +159,7 @@ const base_secondary_characteristics = [
         humain: 0,
         elfe: 0,
         nain: 0,
+        halfling: 0,
       },
     },
     {
@@ -156,8 +170,107 @@ const base_secondary_characteristics = [
         humain: [ 2, 3, 3 ],
         elfe: [ 1, 2, 2 ],
         nain: [ 1, 2, 3 ],
+        halfling: [ 2, 2, 3 ],
       },
     },
 ];
+
+/*  talents & skills rolls to add   */ 
+
+const base_skills = {
+  humain: {
+    empire: [
+      `Commérage`,
+      `Connaissances générales (Empire)`,
+      `Langue (reikspiel)`
+    ],
+    bretonien: [
+      "Compétence 3",
+      "Compétence 4"
+    ],
+    estalien: [
+      "Compétence 3",
+      "Compétence 4"
+    ],
+    tiléen: [
+      "Compétence 3",
+      "Compétence 4"
+    ],
+    norse: [
+      "Compétence 3",
+      "Compétence 4"
+    ],
+    kislévite: [
+      "Compétence 3",
+      "Compétence 4"
+    ],
+  },
+  elfe: [
+    `Connaissances générales (elfes)`,
+    `Langue (eltharin)`,
+    `Langue (reikspiel)`,
+  ],
+  nain: [
+    `Connaissances générales (nain)`,
+    `Langue (khazalid)`,
+    `Langue (reikspiel)`,
+  ],
+  halfling: [
+    `Commérage`,
+    `Connaissances académiques (généalogie/héraldique)`,
+    `Connaissances générales (halflings)`,
+    `Langue (halfling)`,
+    `Langue (reikspiel)`,
+  ]
+};
+
+const base_talents = {
+  humain: {
+    empire: [
+      `talents 1`,
+      `talent 2`,
+    ],
+    bretonien: [
+      `talents 1`,
+      `talent 2`,
+    ],
+    estalien: [
+      `talents 1`,
+      `talent 2`,
+    ],
+    tiléen: [
+      `talents 1`,
+      `talent 2`,
+    ],
+    norse: [
+      `talents 1`,
+      `talent 2`,
+    ],
+    kislévite: [
+      `talents 1`,
+      `talent 2`,
+    ],
+  },
+  elfe: [
+    `Acuité visuelle`,
+    `Vision nocturne`,
+    `talents 1`,
+    `talent 2`,
+  ],
+  nain: [
+    `Fureur vengeresse`,
+    `Résistance à la magie`,
+    `Robuste`,
+    `Savoir-faire nain`,
+    `Valeureux`,
+    `Vision nocturne`,
+  ],
+  halfling: [
+    `Maîtrise (lance-pierres)`,
+    `Résistance au Chaos`,
+    `Vision nocturne`,
+    `talents 1`,
+  ]
+};
 
 export { base_main_characteristics, base_secondary_characteristics };

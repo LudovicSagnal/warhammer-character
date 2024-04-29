@@ -1,9 +1,9 @@
 import { useContext, useEffect } from "react";
 import { RaceContext } from '../App';
 import { races, origins } from "../data/races";
-import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf } from '../data/names';
+import { names_elf, names_human, firstnames_human, firstnames_elf, firstnames_dwarf, names_dwarf, firstnames_halfling, names_halfling } from '../data/names';
 import { physical, eye_colors, hair_colors, distinctive_marks, siblings_number } from '../data/physical';
-import { birthplace_human, birthplace_dwarf, birthplace_elf, astral_signs } from '../data/birtplace&astral';
+import { birthplace_human, birthplace_dwarf, birthplace_elf, birthplace_halfling, astral_signs } from '../data/birtplace&astral';
 
 const randomFunctions = () => {
 
@@ -29,6 +29,8 @@ const randomFunctions = () => {
         firstnames = firstnames_elf.filter(firstname => firstname.gender === gender);
         }else if (race === 'nain') {
         firstnames = firstnames_dwarf.filter(firstname => firstname.gender === gender);
+        }else if (race === 'halfling') {
+        firstnames = firstnames_halfling.filter(firstname => firstname.gender === gender);
         }
         const randomIndex = Math.floor(Math.random() * firstnames.length);
         const selectedFirstName = firstnames[randomIndex]?.value || ''; 
@@ -48,6 +50,8 @@ const randomFunctions = () => {
         names = names_elf;
         }else if (race === 'nain') {
         names = names_dwarf;
+        }else if (race === 'halfling') {
+        names = names_halfling;
         }
         const randomIndex = Math.floor(Math.random() * names.length);
         const selectedName = names[randomIndex]?.value || '';
@@ -74,6 +78,14 @@ const randomFunctions = () => {
         case 'elfe':
         minAge = 30;
         maxAge = 150;
+        break;
+        case 'nain':
+        minAge = 20;
+        maxAge = 115;
+        break;
+        case 'halfling':
+        minAge = 20;
+        maxAge = 60;
         break;
         default:
         minAge = 18;
@@ -155,6 +167,8 @@ const randomFunctions = () => {
         birthplaces = birthplace_elf;
     }else if (race === 'nain') {
         birthplaces = birthplace_dwarf;
+    }else if (race === 'halfling') {
+        birthplaces = birthplace_halfling;
     }
     const randomIndex = Math.floor(Math.random() * birthplaces.length);
     const selectedBirthplace = birthplaces[randomIndex]?.name || '';
