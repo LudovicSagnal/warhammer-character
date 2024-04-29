@@ -16,7 +16,7 @@ const PortraitDisplayer = ({ gender, setChoosenPortrait, handleModalPortrait }) 
             {gender === 'female' && portraitsFemale.map((portrait, index) => (
                 <img key={index} src={portraitPath + portrait} className='portrait' alt="" onClick={() => handlePortrait(portrait)} />
             ))}
-            <img className='cross' src="./images/cross.webp" alt="" onClick={handleModalPortrait} />
+            <img className='cross' src="./images/white-cross.webp" alt="" onClick={handleModalPortrait} />
         </div>
     );
 };
