@@ -3150,6 +3150,74 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Sentinelle halfling`,
+    description: `Aux yeux des étrangers, le Moot est une région sûre, ce qui est en partie dû aux Sentinelles halflings. En effet, ces unités patrouillent le long des frontières du Moot et tiennent menaces et intrus à bonne distance de leur patrie. Il s'agit de combattants valeureux qui tirent profit de leur intime connaissance du Moot. Leur tactique préférée consiste à tendre une embuscade à leurs ennemis, usant ainsi de leurs projectiles pour compenser leur infériorité numérique et leur petite taille. Le Moot disposant d'une frontière avec la Sylvanie, les Sentinelles ont souvent affaire à des mortsvivants. De ce fait, les frondeurs halflings ont décimé plus d'une troupe de zombies pour protéger leur terre natale.`,
+    skills: {
+      mandatory: [
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Fouille`,
+        `Perception`,
+        `Pistage`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (nécromancie)`, `Connaissances générales (Empire)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Camouflage rural`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Course à pied`, `Intelligent`],
+          quantity: 1,
+        },
+        {
+          options: [`Rechargement rapide`, `Tir en puissance`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Fronde et munitions`,
+        `Lanterne`,
+        `Huile pour lampe`,
+        `Pelle`,
+        `Poney avec selle et harnais`,
+      ],
+    },
+    access: [
+      `Chasseur`,
+      `Collecteur de taxes`,
+      `Milicien`,
+    ],
+    advanced: [
+      `Chasseur de primes`,
+      `Chasseur de vampires`,
+      `Mercenaire`,
+      `Pisteur`,
+      `Vagabond`,
+    ],
+    stats: {
+      CC: 5,
+      Ct: 10,
+      E: 5,
+      Ag: 10,
+      FM: 10,
+      B: 2,
+    },
+    races: {
+      names: [`halfling`],
+    }
+  },
 ];
 
 export { careers };
