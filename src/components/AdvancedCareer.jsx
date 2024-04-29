@@ -16,9 +16,13 @@ const AdvancedCareer = () => {
     }, [mainCharacteristics, secondaryCharacteristics]);
 
     const careerModifier = (statName) => {
-        if (advancedCareer && advancedCareer.stats[statName]) {
-          return advancedCareer.stats[statName];
-        };
+      if (advancedCareer && advancedCareer.stats[statName]) {
+        const selectedCareerStat = selectedCareer.stats[statName] || 0;
+        const advancedCareerStat = advancedCareer.stats[statName];
+        const difference = advancedCareerStat - selectedCareerStat;
+        return difference > 0 ? difference : null;
+      }
+      return null;
     };
 
     const handleAdvancedCareer = (e) => {
@@ -28,7 +32,6 @@ const AdvancedCareer = () => {
         if (!selected) {
           const selected = advanced_careers.find((career) => career.name === selectedName);
           setAdvancedCareer(selected);
-          setAdvancedCareerName(selected.name);
         } else {
           setAdvancedCareer(selected);
           setAdvancedCareerName(selected.name);
