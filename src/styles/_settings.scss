@@ -59,7 +59,14 @@ main {
     h1 {
         font-family: font-1;
         font-size: 3rem;
-        margin-top: 50px
+        margin-top: 50px;
+        .war-hammer {
+            height: 50px;
+            width: 50px
+        }
+        .reverse {
+            transform: rotate(260deg)
+        }
     };
     h2, h3 {
         font-family: font-2;

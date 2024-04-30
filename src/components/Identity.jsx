@@ -18,7 +18,7 @@ const Identity = () => {
 
   return (
     <div className='identity'>
-      <h2>Personnage</h2>
+      <h2>Identité</h2>
       <div className='character-base'>
         { !newSelection ?      
           <div className='select-container'>
