@@ -1,27 +1,53 @@
 const portraitsFemale = [
     'default_woman.webp',
-    '26.webp',
-    '27.webp',
+    //Elfs
     '28.webp',
     '29.webp',
+    '103.webp',
+    '104.webp',
+    '105.webp',
+    '106.webp',
+    '108.webp',
+    //Humans
+    '26.webp',
+    '27.webp',
     '30.webp',
     '31.webp',
+    '94.webp',
+    '95.webp',
+    '96.webp',
+    '97.webp',
+    '98.webp',
+    '99.webp',
+    '100.webp',
     '37.webp',
     '38.webp',
     '39.webp',
+    '46.webp',
     '40.webp',
     '41.webp',
     '42.webp',
     '43.webp',
     '44.webp',
     '45.webp',
-    '46.webp',
+    //Dwarfs
+    '101.webp',
+    '102.webp',
+    //Halfling
+    '89.webp',
+    '90.webp',
+    '91.webp',
+    '92.webp',
 ];
 
 const portraitsMale = [
     'default_man.webp',
-    '1.webp',
+    //Elfs
     '2.webp',
+    '109.webp',
+    '110.webp',
+    '107.webp',
+    //Humans
     '3.webp',
     '4.webp',
     '5.webp',
@@ -33,11 +59,6 @@ const portraitsMale = [
     '11.webp',
     '12.webp',
     '13.webp',
-    '15.webp',
-    '16.webp',
-    '17.webp',
-    '18.webp',
-    '19.webp',
     '20.webp',
     '21.webp',
     '22.webp',
@@ -80,6 +101,18 @@ const portraitsMale = [
     '79.webp',
     '80.webp',
     '81.webp',
+    //Dwarfs
+    '1.webp',
+    '15.webp',
+    '16.webp',
+    '17.webp',
+    '18.webp',
+    '19.webp',
+    //Halflings
+    '86.webp',
+    '87.webp',
+    '88.webp',
+    '93.webp',
 ];
 
 export { portraitsFemale, portraitsMale };
