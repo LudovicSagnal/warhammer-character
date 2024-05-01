@@ -3218,6 +3218,84 @@ const careers = [
       names: [`halfling`],
     }
   },
+  {
+    name: `Serviteur`,
+    description: `Au bas de l'échelle sociale, on trouve les Serviteurs. Bien que leur travail soit nécessaire, ils sont souvent méprisés par tous ceux qui possèdent un statut social supérieur au leur. Pour le marmiton, le valet d'écurie et la serveuse, les perspectives d'avenir ne sont guère encourageantes. Ces malheureux sont chargés de toutes les corvées domestiques de leurs employeurs, qu'il s'agisse de nobles, de maîtres de guilde ou d'aubergistes. Le Serviteur peut gravir les échelons, mais l'ascension est difficile. Évidemment, personne ne souhaite bavarder avec le jeune homme qui est chargé de nettoyer les toilettes. De nombreux Serviteurs en viennent donc à abandonner leur maître pour se tourner vers l'aventure.`,
+    skills: {
+      mandatory: [
+        `Baratin`,
+        `Commérage`,
+        `Esquive`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Conduite d'attelages`, `Fouille`],
+          quantity: 1,
+        },
+        {
+          options: [`Escamotage`, `Lire/écrire`],
+          quantity: 1,
+        },
+        {
+          options: [`Evaluation`, `Marchandage`],
+          quantity: 1,
+        },
+        {
+          options: [`Métier (cuisinier)`, `Soins des animaux`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Acuité auditive`, `Fuite`],
+          quantity: 1,
+        },
+        {
+          options: [`Dur à cuire `, `Etiquette`],
+          quantity: 1,
+        },
+        {
+          options: [`Résistance accrue`, `Réflexes éclair`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Vêtements confortables`,
+        `Chope en étain`,
+        `Boîte d'amadou`,
+        `Lampe-tempête`,
+        `Huile pour lampe`,
+      ],
+    },
+    access: [
+      `Escroc`,
+      `Mercanti`,
+      `Paysan`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Aubergiste`,
+      `Bourgeois`,
+      `Espion`,
+      `Mercanti`,
+      `Messager`,
+      `Valet`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 5,
+      F: 5,
+      Ag: 10,
+      Int: 5,
+      Soc: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
