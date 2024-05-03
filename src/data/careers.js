@@ -3254,7 +3254,7 @@ const careers = [
           quantity: 1,
         },
         {
-          options: [`Dur à cuire `, `Etiquette`],
+          options: [`Dur à cuire`, `Etiquette`],
           quantity: 1,
         },
         {
@@ -3293,6 +3293,90 @@ const careers = [
       Ag: 10,
       Int: 5,
       Soc: 5,
+      B: 2,
+    },
+  },
+  {
+    name: `Soldat`,
+    description: `Les provinces et cités-états de l'Empire disposent de leur propre armée, entraînée et équipée à leurs frais. L'ensemble de ces forces régionales constitue l'armée impériale, qui est souvent complétée par des troupes de milice et de mercenaires. Ces Soldats sont des professionnels à temps plein généralement issus de la paysannerie et de la bourgeoisie. Ils sont en garnison dans les forteresses de l'Empire, patrouillent les frontières et repoussent les envahisseurs. La plupart des fantassins s'entraînent au maniement de la hallebarde et de l'arquebuse. Bien qu'elle soit dominée par la noblesse, l'armée impériale récompense le talent de chacun et il est possible de s'élever au sein de la hiérarchie (même si le sectarisme de la classe dirigeante rend l'opération difficile). Les nains et les halflings impériaux constituent habituellement des unités à part.`,
+    skills: {
+      mandatory: [
+        `Esquive`,
+        `Intimidation`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [`Conduite d'attelages`, `Equitation`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Perception`],
+          quantity: 1,
+        },
+        {
+          options: [`Soins`, `Soins des animaux`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Adresse au tir`, `Coups puissants`],
+          quantity: 1,
+        },
+        {
+          options: [`Coups assommants`, `Tir en puissance`],
+          quantity: 1,
+        },
+        {
+          options: [`Coups précis`, `Rechargement rapide`],
+          quantity: 1,
+        },
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes à feu)`, `Maîtrise (armes lourdes)`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Arme à deux mains (hallebarde)`,
+        `Arquebuse avec munitions pour 10 tirs,`,
+        `Bouclier`,
+        `Armure légère (armure de cuir complète)`,
+        `Uniforme`,
+      ],
+    },
+    access: [
+      `Chasseur`,
+      `Collecteur de taxes`,
+      `Flagellant`,
+      `Garde`,
+      `Messager`,
+    ],
+    advanced: [
+      `Eclaireur`,
+      `Garde`,
+      `Mercenaire`,
+      `Sergent`,
+      `Vagabond`,
+      `Vétéran`,
+    ],
+    stats: {
+      CC: 10,
+      CC: 10,
+      Ag: 10,
+      FM: 5,
+      A: 1,
       B: 2,
     },
   },
