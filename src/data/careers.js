@@ -3380,6 +3380,136 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Sorcier de village`,
+    description: `Les Sorciers de village sont dotés de talents magiques mais n'ont reçu aucune forme d'instruction en la matière. Comptant sur leur instinct,sur la chance et sur un folklore mystique, ils parviennent à lancer une poignée de sorts mineurs très spécialisés. Bien qu'ils n'en soient pas toujours conscients, les Sorciers de village jouent avec le feu à chaque fois qu'ils usent de leurs charmes et autres tours. C'est pour cette raison que les répurgateurs traquent et exécutent les malheureux qui,sans même le savoir, provoquent bien souvent catastrophes et apparition de démons dans le monde. Certains Sorciers de village entendent la voie de la raison et rallient les ordres de magie, mais d'autres dissimulent leur honteux secret.
+
+    Note : si vous souhaitez être capable de jeter des sorts rapidement, vous devez impérativement augmenter votre caractéristique de Magie à l'aide de la promotion gratuite octroyée à la création de personnage. Les halflings et les nains n'ont pas le droit de choisir cette carrière. La pratique de la magie vulgaire est dangereuse et illégale au sein de l'Empire. Si vous êtes pris, vous risquez donc d'être exécuté. Songez-y à deux fois avant d'entreprendre cette carrière.`,
+    skills: {
+      mandatory: [
+        `Focalisation`,
+        `Fouille`,
+        `Perception`,
+        `Sens de la magie`,
+      ],
+      choice: [
+        {
+          options: [`Charisme`, `Intimidation`],
+          quantity: 1,
+        },
+        {
+          options: [`Emprise sur les animaux`, `Métier (apothicaire)`],
+          quantity: 1,
+        },
+        {
+          options: [`Hypnotisme`, `Soins`],
+          quantity: 1,
+        },
+        {
+          options: [`Marchandage`, `Soins des animaux`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Magie commune (vulgaire)`,
+        `Magie vulgaire`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Potion de soins`,
+        `Capuchon`,
+      ],
+    },
+    access: [
+      `Aucun`,
+    ],
+    advanced: [
+      `Apprenti sorcier`,
+      `Charlatan`,
+      `Hors-la-loi`,
+      `Initié`,
+      `Vagabond`,
+    ],
+    stats: {
+      E: 5,
+      Ag: 5,
+      Int: 5,
+      FM: 10,
+      Soc: 10,
+      B: 2,
+      Mag: 1,
+    },
+    races: {
+      names: [`humain`, `elfe`],
+    }
+  },
+  {
+    name: `Spadassin`,
+    description: `Les Spadassins sont en quelque sorte des hommes de main. Ils louent leurs services et passent à tabac la cible de leur employeur. Souvent, ils ne disent pas qu'on les a engagés et trouvent une excuse ridicule pour déclencher une bagarre avec leur proie. Le commanditaire peut alors se payer le luxe d'assister à l'humiliation de son adversaire.Tabasser quelques autochtones est bon marché, mais les adversaires de taille et les blessures coûtent beaucoup plus cher. La plupart des Spadassins laissent les meurtres aux assassins, mais certains sont tout de même tentés par ce genre d'activité. Les Spadassins sans emploi choisissent leurs victimes et les détroussent. Il va sans dire que les gardes surveillent de près les Spadassins connus de leur service, qui ont alors tendance à changer d'air.`,
+    skills: {
+      mandatory: [
+        `Equitation`,
+        `Esquive`,
+        `Intimidation`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Marchandage`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Combat de rue`,
+        `Coups assomants`,
+        `Coups précis`,
+        `Coups puissants`,
+      ],
+      choice: [
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Menaçant`, `Sociable`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure moyenne (gilet de mailles et veste de cuir)`,
+        `Bouclier`,
+        `Cheval de selle avec selle et harnais`,
+      ],
+    },
+    access: [
+      `Chasseur de primes`,
+      `Diestro estalien`,
+      `Garde du corps`,
+      `Gladiateur`,
+      `Régisseur`,
+    ],
+    advanced: [
+      `Coupe-jarret`,
+      `Duelliste`,
+      `Gladiateur`,
+      `Racketteur`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 10,
+      F: 10,
+      Ag: 10,
+      FM: 10,
+      A: 1,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
