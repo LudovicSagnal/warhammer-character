@@ -3510,6 +3510,67 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Trafiquant de cadavres`,
+    description: `Les Trafiquants de cadavres gagnent leur vie grâce aux morts. Les professions magiques et médicales ont un besoin permanent de cadavres frais, les uns à des fins d'étude et les autres à des fins inavouables. L'obtention légale de tels corps est généralement difficile, ce qui explique que les médecins et les sorciers se tournent habituellement vers les Trafiquants de cadavres. Il s'agit d'une profession détestable mais lucrative. Les cadavres les plus frais s'échangent parfois contre des sommes exorbitantes. Toutefois, les risques inhérents à cette carrière sont réels. Gardes, prêtres de Morr (le dieu des morts) et répurgateurs surveillent attentivement les cimetières et punissent sévèrement les intrus.`,
+    skills: {
+      mandatory: [
+        `Alphabet secret (voleur)`,
+        `Conduite d'attelages`,
+        `Déplacement silencieux`,
+        `Escalade`,
+        `Fouille`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Marchandage`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Fuite`,
+        `Résistance aux maladies`,
+      ],
+      choice: [
+        {
+          options: [`Code de la rue`, `Sain d'esprit`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Lanterne`,
+        `Huile pour lampe`,
+        `Piolet`,
+        `Besace`,
+        `Pelle`,
+      ],
+    },
+    access: [
+      `Chiffonnier`,
+      `Chirurgien barbier`,
+      `Ratier`,
+    ],
+    advanced: [
+      `Etudiant`,
+      `Monte-en-l'air`,
+      `Ratier`,
+      `Receleur`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 5,
+      Ag: 10,
+      FM: 10,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
