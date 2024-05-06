@@ -76,6 +76,7 @@ const careers = [
   {
     name: `Apprenti sorcier`,
     description: `Les humains dotés de facultés magiques sont des individus dangereux et redoutés. En effet, le sorcier en herbe laisse parfois dans son sillage démons et catastrophes. Pour faire face à cette menace, l'Empire envoie ces individus dans l'un des huit ordres de magie. Durant leur apprentissage, les jeunes sorciers apprennent à manipuler la magie en toute sécurité et choisissent l'ordre qu'ils rejoindront définitivement. Certains apprentis sont voués à servir le sorcier qui a découvert leurs talents, mais d'autres partent à l'aventure pour gagner suffisamment d'argent et passer sous la tutelle des collèges de magie. Les elfes sont doués de talents magiques innés et se passent des services des institutions humaines puisqu'ils apprennent auprès de leurs propres maîtres.`,
+    note: `si vous souhaitez user de sorts dès le début du jeu, pensez à augmenter votre caractéristique de Magie à l'aide de la promotion gratuite acquise lors de la création de personnage. Les halflings et les nains n'ont pas le droit d'entreprendre cette carrière. Les utilisateurs de magie sont craints, voire haïs, aussi songez-y à deux fois avant de vous tourner vers cette carrière`,
     skills: {
       mandatory: [
         `Connaissances académiques (magie)`,
@@ -1844,6 +1845,7 @@ const careers = [
   {
     name: `Initié`,
     description: `La religion occupe aujourd'hui une place secondaire dans le cœur de nombreux habitants duVieux Monde,mais cela n'empêche pas de jeunes hommes et femmes de consacrer leur existence aux dieux.Pour devenir prêtre,il faut développer des trésors de dévouement et de discipline.Mais avant de pouvoir prétendre devenir prêtre,il faut avoir été un Initié. Des professeurs des plus stricts leur donnent une instruction rigoureuse, mais ils n'ont pas le droit de prêcher ou de conduire l'office avant d'être officiellement ordonnés. Leur instruction inclut littérature, calligraphie, étude des textes sacrés et art du sermon.Ils apprennent également les bases du maniement des armes pour être capables de défendre leur temple en cas de besoin. Note : au titre d'Initié, vous devez choisir une divinité tutélaire et une Église.Comme le précise la ligne Compétences et talents de la description de votre dieu, ce choix confère un talent ou une compétence supplémentaire.`,
+    note: `au titre d'Initié, vous devez choisir une divinité tutélaire et une Église.`,
     skills: {
       mandatory: [
         `Charisme`,
@@ -1878,7 +1880,10 @@ const careers = [
       ],
     },
     dotation: {
-      mandatory: [`Symbole religieux`],
+      mandatory: [
+        `Symbole religieux`,
+        `Robe`,
+      ],
     },
     access: [
       `Chasseur de vampires`,
@@ -3573,7 +3578,7 @@ const careers = [
   {
     name: `Tueurs de trolls`,
     description: `Les nains disgraciés, malheureux en amour ou humiliés renoncent à la société traditionnelle et recherchent la douce étreinte de la mort. Ils pourchassent les monstres les plus dangereux dans l'espoir de connaître une fin glorieuse. Beaucoup meurent rapidement, mais ceux qui survivent deviennent membres de l'étrange secte des Tueurs de trolls. Leur unique objectif est de mourir et de trouver la rédemption pour leurs erreurs passées. Ils se mettent donc en quête d'ennemis coriaces, les trolls constituant un bon choix en raison de leurs capacités meurtrières. Les Tueurs de trolls sont aisément reconnaissables à leur crête orangée, à leurs tatouages extravagants et à leurs bijoux tapageurs. Ils passent le plus clair de leur temps à vanter leurs exploits et à montrer leurs cicatrices. Ils mangent énormément, boivent pour deux et dorment peu.`,
-    note: `seuls les nains peuvent entreprendre cette carrière. Songez-y à deux fois avant d'emprunter cette voie car il s'agit d'un aller simple pour l'au-delà.`,
+    note: `songez-y à deux fois avant d'emprunter cette voie car il s'agit d'un aller simple pour l'au-delà.`,
     skills: {
       mandatory: [
         `Esquive`,
