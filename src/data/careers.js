@@ -3625,6 +3625,92 @@ const careers = [
       names: [`nain`],
     }
   },
+  {
+    name: `Vagabond`,
+    description: `Les Vagabonds adorent la vie sur les routes. À leurs yeux, la vie de bourgeois ou de paysan est pire que la prison. Qui aime réellement se réveiller dans la même ville tous les jours pour reprendre les mêmes activités que la veille ? Les Vagabonds se sentent libres comme l'air et voient chaque journée comme une nouvelle aventure. Il leur arrive d'accepter de singuliers emplois ici et là pour gagner quelques pièces, mais ils ne restent jamais bien longtemps au même endroit. La route finit toujours par leur faire signe de la suivre, leur promettant de nouvelles perspectives au-delà de la colline suivante. S'ils aiment voyager, ils n'en sont pas moins conscients des dangers de la route.Ainsi, on les trouve souvent en compagnie de voyageurs regroupés dans un souci de protection mutuelle. La justice ne les apprécie cependant guère et de nombreuses villes voient les Vagabonds comme de vulgaires criminels.`,
+    skills: {
+      mandatory: [
+        `Déplacement silencieux`,
+        `Orientation`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (rôdeur)`, `Alphabet secret (voleur)`, `Expression artistique (chanteur)`, `Expression artistique (conteur)`, `Expression artistique (danseur)`],
+          quantity: 1,
+        },
+        {
+          options: [`Commérage`, `Langage secret (langage des rôdeurs)`, `Langage secret (langage des voleurs)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Bretonnie)`, `Connaissances générales (Estalie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [`Marchandage`, `Natation`],
+          quantity: 1,
+        },
+        {
+          options: [`Perception`, `Soins`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Grand voyageur`,
+      ],
+      choice: [
+        {
+          options: [`Camouflage rural`, `Course à pied`],
+          quantity: 1,
+        },
+        {
+          options: [`Sens de l'orientation`, `Tireur d'élite`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Sac à dos`,
+        `Rations (1 semaine)`,
+        `Tente`,
+        `Outre`,
+      ],
+    },
+    access: [
+      `Bateleur`,
+      `Bûcheron`,
+      `Charbonnier`,
+      `Chirurgien barbier`,
+      `Emissaire elfe`,
+      `Gardien tribal`,
+      `Hors-la-loi`,
+      `Mercanti`,
+      `Monte-en-l'air`,
+      `Sentinelle halfling`,
+      `Soldat`,
+      `Sorcier de village`,
+    ],
+    advanced: [
+      `Bateleur`,
+      `Bûcheron`,
+      `Chiffonnier`,
+      `Moine`,
+      `Pisteur`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 10,
+      Ag: 10,
+      Int: 5,
+      Soc: 5,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
