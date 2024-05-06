@@ -3711,6 +3711,154 @@ const careers = [
       B: 2,
     },
   },
+  {
+    name: `Valet`,
+    description: `Le Valet est l'homme à tout faire personnel d'un noble, d'un officier de haut rang ou d'un riche bourgeois. Il est responsable du bien-être et de l'apparence de son maître, ce qui inclut sa toilette,sa garde-robe et sa présentation. Le Valet a un chapeau et un manteau en réserve quand il pleut, une canne s'il s'agit d'aller faire un tour à la campagne et une tenue de cérémonie pour les grandes occasions. Un Valet qualifié est indispensable pour un noble soucieux de son style. Bien que les serviteurs envient leur style de vie, la plupart des Valets méprisent la noblesse insipide qu'ils sont obligés de servir. Les femmes exerçant cette profession auprès de nobles dames sont qualifiées de servantes.`,
+    skills: {
+      mandatory: [
+        `Baratin`,
+        `Connaissances académiques (généalogie/héraldique)`,
+        `Evaluation`,
+        `Fouille`,
+        `Lire/écrire`,
+        `Marchandage`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commérage`, `Langue (bretonnien)`, `Langue (reikspiel)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Etiquette`,
+        `Résistance aux maladies`,
+      ],
+      choice: [
+        {
+          options: [`Dur en affaires`, `Grand voyageur`],
+          quantity: 1,
+        },
+        {
+          options: [`Sang-froid`, `Sociable`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Parfum`,
+        `Bourse`,
+        `2 beaux atours`,
+        `Uniforme`,
+      ],
+    },
+    access: [
+      `Bourgeois`,
+      `Serviteur`,
+    ],
+    advanced: [
+      `Ecuyer`,
+      `Escroc`,
+      `Etudiant`,
+      `Héraut`,
+      `Intendant`,
+    ],
+    stats: {
+      Ag: 10,
+      Int: 10,
+      FM: 5,
+      Soc: 10,
+      B: 2,
+    },
+  },
+  {
+    name: `Voleur`,
+    description: `L'Empire abrite de nombreux citoyens honnêtes et travailleurs, mais également des Voleurs prêts à leur dérober autant d'argent que possible. Ceuxci sont généralement des touche-à-tout enclins à saisir toute occasion visant à gagner de l'argent. Parmi les spécialistes, on trouve des maîtres chanteurs, des truands, des ravisseurs et des voleurs de bétail.Toutes les villes renferment une guilde de voleurs qui contrôle et organise les activités criminelles locales. Certaines en abritent même plusieurs, ce qui provoque généralement des conflits violents jusqu'à ce qu'une d'entre elles élimine ses rivales. Les meilleures guildes de voleurs possèdent tellement d'affaires légales qu'elles finissent par se transformer en guildes marchandes. Il est cependant rare qu'une telle guilde renonce totalement à ses activités illicites.`,
+    skills: {
+      mandatory: [
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Fouille`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (voleur)`, `Langage secret (langage des voleurs)`],
+          quantity: 1,
+        },
+        {
+          options: [`Charisme`, `Escalade`],
+          quantity: 1,
+        },
+        {
+          options: [`Crochetage`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [`Déguisement`, `Evaluation`],
+          quantity: 1,
+        },
+        {
+          options: [`Escamotage`, `Lire/écrire`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      choice: [
+        {
+          options: [`Calcul mental`, `Connaissance des pièges`],
+          quantity: 1,
+        },
+        {
+          options: [`Camouflage urbain`, `Code de la rue`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (gilet de cuir)`,
+        `Besace`,
+        `Outils de crochetage`,
+        `10 mètres de corde`,
+      ],
+    },
+    access: [
+      `Bateleur`,
+      `Bourreau`,
+      `Collecteur de taxes`,
+      `Contrebandier`,
+      `Escroc`,
+      `Hors-la-loi`,
+      `Milicien`,
+      `Pilleur de tombes`,
+      `Ratier`,
+      `Serviteur`,
+      `Spadassin`,
+      `Trafiquant de cadavres`,
+      `Vagabond`,
+    ],
+    advanced: [
+      `Bateleur`,
+      `Charlatan`,
+      `Escroc`,
+      `Monte-en-l'air`,
+      `Pilleur de tombes`,
+      `Receleur`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      Ag: 15,
+      Int: 5,
+      Soc: 10,
+      B: 2,
+    },
+  },
 ];
 
 export { careers };
