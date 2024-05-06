@@ -43,6 +43,7 @@ const CareerInfo = () => {
                 <div className='selected-career'>
                     <h3>{selectedCareer.name}</h3>
                     <p className='career-description'>{selectedCareer.description}</p>
+                    {selectedCareer.note && <p className='career-note'><span>Note</span> : {selectedCareer.note}</p>}
                     <h3>Compétences</h3>
                     <p>
                         {mandatorySkills && mandatorySkills.join(',  ')}

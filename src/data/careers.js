@@ -3382,9 +3382,8 @@ const careers = [
   },
   {
     name: `Sorcier de village`,
-    description: `Les Sorciers de village sont dotés de talents magiques mais n'ont reçu aucune forme d'instruction en la matière. Comptant sur leur instinct,sur la chance et sur un folklore mystique, ils parviennent à lancer une poignée de sorts mineurs très spécialisés. Bien qu'ils n'en soient pas toujours conscients, les Sorciers de village jouent avec le feu à chaque fois qu'ils usent de leurs charmes et autres tours. C'est pour cette raison que les répurgateurs traquent et exécutent les malheureux qui,sans même le savoir, provoquent bien souvent catastrophes et apparition de démons dans le monde. Certains Sorciers de village entendent la voie de la raison et rallient les ordres de magie, mais d'autres dissimulent leur honteux secret.
-    \n
-    Note : si vous souhaitez être capable de jeter des sorts rapidement, vous devez impérativement augmenter votre caractéristique de Magie à l'aide de la promotion gratuite octroyée à la création de personnage. Les halflings et les nains n'ont pas le droit de choisir cette carrière. La pratique de la magie vulgaire est dangereuse et illégale au sein de l'Empire. Si vous êtes pris, vous risquez donc d'être exécuté. Songez-y à deux fois avant d'entreprendre cette carrière.`,
+    description: `Les Sorciers de village sont dotés de talents magiques mais n'ont reçu aucune forme d'instruction en la matière. Comptant sur leur instinct,sur la chance et sur un folklore mystique, ils parviennent à lancer une poignée de sorts mineurs très spécialisés. Bien qu'ils n'en soient pas toujours conscients, les Sorciers de village jouent avec le feu à chaque fois qu'ils usent de leurs charmes et autres tours. C'est pour cette raison que les répurgateurs traquent et exécutent les malheureux qui,sans même le savoir, provoquent bien souvent catastrophes et apparition de démons dans le monde. Certains Sorciers de village entendent la voie de la raison et rallient les ordres de magie, mais d'autres dissimulent leur honteux secret.`,
+    note: `si vous souhaitez être capable de jeter des sorts rapidement, vous devez impérativement augmenter votre caractéristique de Magie à l'aide de la promotion gratuite octroyée à la création de personnage. Les halflings et les nains n'ont pas le droit de choisir cette carrière. La pratique de la magie vulgaire est dangereuse et illégale au sein de l'Empire. Si vous êtes pris, vous risquez donc d'être exécuté. Songez-y à deux fois avant d'entreprendre cette carrière.`,
     skills: {
       mandatory: [
         `Focalisation`,
@@ -3574,7 +3573,7 @@ const careers = [
   {
     name: `Tueurs de trolls`,
     description: `Les nains disgraciés, malheureux en amour ou humiliés renoncent à la société traditionnelle et recherchent la douce étreinte de la mort. Ils pourchassent les monstres les plus dangereux dans l'espoir de connaître une fin glorieuse. Beaucoup meurent rapidement, mais ceux qui survivent deviennent membres de l'étrange secte des Tueurs de trolls. Leur unique objectif est de mourir et de trouver la rédemption pour leurs erreurs passées. Ils se mettent donc en quête d'ennemis coriaces, les trolls constituant un bon choix en raison de leurs capacités meurtrières. Les Tueurs de trolls sont aisément reconnaissables à leur crête orangée, à leurs tatouages extravagants et à leurs bijoux tapageurs. Ils passent le plus clair de leur temps à vanter leurs exploits et à montrer leurs cicatrices. Ils mangent énormément, boivent pour deux et dorment peu.`,
-    note: `Note : seuls les nains peuvent entreprendre cette carrière. Songez-y à deux fois avant d'emprunter cette voie car il s'agit d'un aller simple pour l'au-delà.`,
+    note: `seuls les nains peuvent entreprendre cette carrière. Songez-y à deux fois avant d'emprunter cette voie car il s'agit d'un aller simple pour l'au-delà.`,
     skills: {
       mandatory: [
         `Esquive`,
