@@ -76,7 +76,7 @@ const careers = [
   {
     name: `Apprenti sorcier`,
     description: `Les humains dotés de facultés magiques sont des individus dangereux et redoutés. En effet, le sorcier en herbe laisse parfois dans son sillage démons et catastrophes. Pour faire face à cette menace, l'Empire envoie ces individus dans l'un des huit ordres de magie. Durant leur apprentissage, les jeunes sorciers apprennent à manipuler la magie en toute sécurité et choisissent l'ordre qu'ils rejoindront définitivement. Certains apprentis sont voués à servir le sorcier qui a découvert leurs talents, mais d'autres partent à l'aventure pour gagner suffisamment d'argent et passer sous la tutelle des collèges de magie. Les elfes sont doués de talents magiques innés et se passent des services des institutions humaines puisqu'ils apprennent auprès de leurs propres maîtres.`,
-    note: `si vous souhaitez user de sorts dès le début du jeu, pensez à augmenter votre caractéristique de Magie à l'aide de la promotion gratuite acquise lors de la création de personnage. Les halflings et les nains n'ont pas le droit d'entreprendre cette carrière. Les utilisateurs de magie sont craints, voire haïs, aussi songez-y à deux fois avant de vous tourner vers cette carrière`,
+    note: `si vous souhaitez user de sorts dès le début du jeu, pensez à augmenter votre caractéristique de Magie à l'aide de la promotion gratuite acquise lors de la création de personnage. Les halflings et les nains n'ont pas le droit d'entreprendre cette carrière. Les utilisateurs de magie sont craints, voire haïs, aussi songez-y à deux fois avant de vous tourner vers cette carrière.`,
     skills: {
       mandatory: [
         `Connaissances académiques (magie)`,
