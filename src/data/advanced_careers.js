@@ -284,6 +284,87 @@ const advanced_careers = [
     },
   },
   {
+    name: `Baron du crime`,
+    description: `La plupart des villes du Vieux Monde abritent une ou plusieurs organisations criminelles, comme une guilde de voleurs ou d'assassins. Les Barons du crime sont les chefs de ces groupes et ils constituent de dangereux individus. Pour compter parmi leurs rangs, il est nécessaire de faire montre d'ingéniosité, d'ambition et d'une nature impitoyable. Beaucoup partent du bas de l'échelle et apprennent les vilains tours du métier en gravissant les échelons. Les Barons du crime ne font confiance à personne. Ils sont particulièrement doués pour ce qui est de tirer le meilleur parti d'un individu ou d'une situation. Beaucoup s'impliquent sur la scène politique locale pour accroître leur influence.`,
+    skills: {
+      mandatory: [
+        `Alphabet secret (voleur)`,
+        `Charisme`,
+        `Commandement`,
+        `Commérage`,
+        `Connaissances générales (Empire)`,
+        `Esquive`,
+        `Evaluation`,
+        `Intimidation`,
+        `Langage secret (langage des voleurs)`,
+        `Marchandage`,
+        `Perception`,
+        `Torture`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Code de la rue`,
+        `Eloquence`,
+        `Menaçant`,
+        `Résistance aux poisons`,
+        `Sixième sens`,
+      ],
+      choice: [
+        {
+          options: [`Dur en affaires`, `Intrigant`],
+          quantity:1,
+        },
+        {
+          options: [`Maîtrise (arbalètes)`, `Maîtrise (armes de parade)`],
+          quantity:1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Vêtements confortables`,
+        `Nécessaire antipoison`,
+        `100 co`,
+        `Organisation criminelle`,
+      ],
+      choice: [
+        {       
+          options: [`Arbalète de poing avec 10 carreaux`, `Brise-lame`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Chef de bande`,
+      `Démagogue`,
+      `Intendant`,
+      `Maître de guilde`,
+      `Monte-en-l'air`,
+      `Politicien`,
+      `Prince des voleurs`,
+      `Receleur`,
+    ],
+    advanced: [
+      `Chef de bande`,
+      `Démagogue`,
+      `Politicien`,
+      `Prince des voleurs`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 20,
+      F: 15,
+      E: 15,
+      Ag: 20,
+      Int: 25,
+      FM: 20,
+      Soc: 30,
+      A: 1,
+      B: 6,
+    },
+  },
+  {
     name: `Charlatan`,
     description: `Les Charlatans sont des filous, d'extraordinaires menteurs capables de convaincre autrui de n'importe quoi. Leur langue bien pendue et leur ingéniosité leur permettent de manipuler les individus incrédules et de prendre la fuite avec leur argent. Un Charlatan ment comme il respire. La plupart se contentent de vendre des remèdes miracles et autres babioles sans valeur censés contrer les effets de la magie noire. Cependant, d'autres vont jusqu'à vendre des biens qui ne leur appartiennent pas. Les plus grands Charlatans montent des escroqueries qui plument complètement de riches nobles ou marchands.`,
     skills: {
