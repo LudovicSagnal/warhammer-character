@@ -506,6 +506,261 @@ const advanced_careers = [
     },
   },
   {
+    name: `Capitaine de navire`,
+    description: `Les Capitaines de navire sillonnent les océans du Vieux Monde en quête de profit et d'aventure. Les plus honorables d'entre eux sont des commerçants qui prennent la mer dans le but de dénicher les marchés les plus lucratifs. Cependant, les plus dangereux sont des pirates sanguinaires qui détroussent les navires et ne laissent derrière eux aucun survivant. La plupart des Capitaines de navire se situent néanmoins entre ces deux extrêmes. Sur une embarcation maritime, le verbe du Capitaine a force de loi. Toutefois, les marins se montrent parfois grincheux. Le Capitaine de navire doit donc faire montre d'ingéniosité, de détermination et de fermeté s'il souhaite rester aux commandes. Les plus célèbres Capitaines de navire viennent de Marienburg, de Tilée et de l'île elfique d'Ulthuan.`,
+    skills: {
+      mandatory: [
+        `Commandement`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Dressage`,
+        `Esquive`,
+        `Natation`,
+        `Navigation`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`,  `Connaissances générales (Kislev)`,`Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Pays Perdu)`, `Connaissances générales (halflings)`, `Connaissances générales (elfes)`, `Connaissances générales (nains)`,`Connaissances générales (Norsca)`, `Connaissances générales (Norsca)`,`Connaissances générales (ogres)`, `Connaissances générales (Principautés Frontalières)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`, `Langue (reikspiel)`, `Langue (estalien)`, `Langue (khazalid)`, `Langue (eltharin)`, `Langue (norse)`, `Langue (halfling)`, `Langue (grumbarth)`,],
+          quantity: 3,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Coups puissants`,
+        `Désarmement`,
+        `Grand voyageur`,
+        `Maîtrise (armes d'escrime)`,
+      ],
+      choice: [
+        {
+          options: [`Combattant virevoltant`, `Parade éclair`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Rapière`,
+        `Armure légère (veste de cuir)`,
+        `Longue-vue`,
+        `Navire`,
+      ],
+    },
+    access: [
+      `Aristocrate`,
+      `Explorateur`,
+      `Navigateur`,
+      `Officier en second`,
+    ],
+    advanced: [
+      `Aristocrate`,
+      `Erudit`,
+      `Espion`,
+      `Explorateur`,
+    ],
+    stats: {
+      CC: 25,
+      CT: 20,
+      F: 15,
+      E: 20,
+      Ag: 20,
+      Int: 20,
+      FM: 25,
+      Soc: 30,
+      A: 2,
+      B: 6,
+    },
+  },
+  {
+    name: `Capitaine`,
+    description: `Les Capitaines sont les chefs de guerre d'un Vieux Monde en proie à d'incessants conflits. Ils mènent soldats, miliciens, mercenaires et autres patrouilleurs sur des champs de bataille couverts de sang mais également dans des rues remplies de cadavres, dans l'Empire comme à l'étranger. La plupart des Capitaines sont de robustes soldats professionnels qui ont survécu à des dizaines de batailles pour arriver là où ils en sont. Il n'est donc pas surprenant de constater qu'ils n'apprécient guère de servir sous les ordres de nobles inexpérimentés, un sort qui leur est trop souvent réservé. Les Capitaines respectent l'expérience et le talent avant tout, et attachent moins d'importance à l'extraction et au statut social. Ils savent parfaitement ce qui compte sur un champ de bataille.`,
+    skills: {
+      mandatory: [
+        `Commandement`,
+        `Commérage`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Equitation`,
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+        `Lire/écrire`,
+        `Soins des animaux`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`,  `Connaissances générales (Kislev)`,`Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Pays Perdu)`, `Connaissances générales (halflings)`, `Connaissances générales (elfes)`, `Connaissances générales (nains)`,`Connaissances générales (Norsca)`, `Connaissances générales (Norsca)`,`Connaissances générales (ogres)`, `Connaissances générales (Principautés Frontalières)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Parade éclair`,
+      ],
+      choice: [
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de cavalerie)`, `Maîtrise (armes lourdes)`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de parade)`, `Maîtrise (fléaux)`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure moyenne (armure de mailles complète)`,
+        `Bouclier`,
+        `Destrier avec selle et harnais`,
+        `Unité de troupes`,
+      ],
+      choice: [
+        {
+          options: [`Brise-lame`, `Fléau d'armes`],
+          quantity: 1,
+        },
+        {
+          options: [`Arme à deux mains`, `Lance de cavalerie`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Aristocrate`,
+      `Chef de bande`,
+      `Chevalier`,
+      `Chevalier du Cercle Intérieur`,
+      `Explorateur`,
+      `Répurgateur`,
+      `Rôdeur fantôme`,
+      `Sergent`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Chef de bande`,
+      `Explorateur`,
+      `Marchand`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 30,
+      CT: 20,
+      F: 20,
+      E: 20,
+      Ag: 20,
+      Int: 15,
+      FM: 15,
+      Soc: 25,
+      A: 2,
+      B: 7,
+    },
+  },
+  {
+    name: `Capitaine`,
+    description: `Les Capitaines sont les chefs de guerre d'un Vieux Monde en proie à d'incessants conflits. Ils mènent soldats, miliciens, mercenaires et autres patrouilleurs sur des champs de bataille couverts de sang mais également dans des rues remplies de cadavres, dans l'Empire comme à l'étranger. La plupart des Capitaines sont de robustes soldats professionnels qui ont survécu à des dizaines de batailles pour arriver là où ils en sont. Il n'est donc pas surprenant de constater qu'ils n'apprécient guère de servir sous les ordres de nobles inexpérimentés, un sort qui leur est trop souvent réservé. Les Capitaines respectent l'expérience et le talent avant tout, et attachent moins d'importance à l'extraction et au statut social. Ils savent parfaitement ce qui compte sur un champ de bataille.`,
+    skills: {
+      mandatory: [
+        `Commandement`,
+        `Commérage`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Equitation`,
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+        `Lire/écrire`,
+        `Soins des animaux`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`,  `Connaissances générales (Kislev)`,`Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Pays Perdu)`, `Connaissances générales (halflings)`, `Connaissances générales (elfes)`, `Connaissances générales (nains)`,`Connaissances générales (Norsca)`, `Connaissances générales (Norsca)`,`Connaissances générales (ogres)`, `Connaissances générales (Principautés Frontalières)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Parade éclair`,
+      ],
+      choice: [
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de cavalerie)`, `Maîtrise (armes lourdes)`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de parade)`, `Maîtrise (fléaux)`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure moyenne (armure de mailles complète)`,
+        `Bouclier`,
+        `Destrier avec selle et harnais`,
+        `Unité de troupes`,
+      ],
+      choice: [
+        {
+          options: [`Brise-lame`, `Fléau d'armes`],
+          quantity: 1,
+        },
+        {
+          options: [`Arme à deux mains`, `Lance de cavalerie`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Aristocrate`,
+      `Chef de bande`,
+      `Chevalier`,
+      `Chevalier du Cercle Intérieur`,
+      `Explorateur`,
+      `Répurgateur`,
+      `Rôdeur fantôme`,
+      `Sergent`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Chef de bande`,
+      `Explorateur`,
+      `Marchand`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 30,
+      CT: 20,
+      F: 20,
+      E: 20,
+      Ag: 20,
+      Int: 15,
+      FM: 15,
+      Soc: 25,
+      A: 2,
+      B: 7,
+    },
+  },
+  {
     name: `Charlatan`,
     description: `Les Charlatans sont des filous, d'extraordinaires menteurs capables de convaincre autrui de n'importe quoi. Leur langue bien pendue et leur ingéniosité leur permettent de manipuler les individus incrédules et de prendre la fuite avec leur argent. Un Charlatan ment comme il respire. La plupart se contentent de vendre des remèdes miracles et autres babioles sans valeur censés contrer les effets de la magie noire. Cependant, d'autres vont jusqu'à vendre des biens qui ne leur appartiennent pas. Les plus grands Charlatans montent des escroqueries qui plument complètement de riches nobles ou marchands.`,
     skills: {
