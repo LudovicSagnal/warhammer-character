@@ -365,6 +365,55 @@ const advanced_careers = [
     },
   },
   {
+    name: `Bourreau`,
+    description: `Un Bourreau sait comment faire parler les gens. Il recourt à de désagréables méthodes psychologiques et physiques pour extirper des informations à ses «protégés». Les Bourreaux travaillent pour le compte de répurgateurs, de nobles et parfois de l'Église. Ils s'enorgueillissent de leur efficacité mais font parfois preuve d'une grande brutalité. Les meilleurs Bourreaux pensent que la découverte de la vérité est une forme d'art. Souvent, les gens mentent et disent n'importe quoi pour que l'on mette un terme à leurs souffrances. Il est facile d'obtenir une confession, mais la vérité est une tout autre affaire.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Intimidation`,
+        `Perception`,
+        `Soins`,
+        `Torture`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Lutte`,
+        `Maîtrise (fléaux)`,
+        `Menaçant`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `5 dagues`,
+        `Fléau d'armes`,
+        `3 paires de menottes`,
+      ],
+    },
+    access: [
+      `Chirurgien barbier`,
+      `Coupe-jarret`,
+      `Flagellant`,
+      `Garde du corps`,
+      `Geôlier`,
+    ],
+    advanced: [
+      `Médecin`,
+      `Racketteur`,
+      `Voleur`,
+    ],
+    stats: {
+      CC: 15,
+      F: 20,
+      E: 10,
+      Ag: 10,
+      Int: 10,
+      FM: 20,
+      Soc: 15,
+      B: 4,
+    },
+  },
+  {
     name: `Charlatan`,
     description: `Les Charlatans sont des filous, d'extraordinaires menteurs capables de convaincre autrui de n'importe quoi. Leur langue bien pendue et leur ingéniosité leur permettent de manipuler les individus incrédules et de prendre la fuite avec leur argent. Un Charlatan ment comme il respire. La plupart se contentent de vendre des remèdes miracles et autres babioles sans valeur censés contrer les effets de la magie noire. Cependant, d'autres vont jusqu'à vendre des biens qui ne leur appartiennent pas. Les plus grands Charlatans montent des escroqueries qui plument complètement de riches nobles ou marchands.`,
     skills: {
