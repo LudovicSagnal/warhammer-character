@@ -577,95 +577,66 @@ const advanced_careers = [
     },
   },
   {
-    name: `Capitaine`,
-    description: `Les Capitaines sont les chefs de guerre d'un Vieux Monde en proie à d'incessants conflits. Ils mènent soldats, miliciens, mercenaires et autres patrouilleurs sur des champs de bataille couverts de sang mais également dans des rues remplies de cadavres, dans l'Empire comme à l'étranger. La plupart des Capitaines sont de robustes soldats professionnels qui ont survécu à des dizaines de batailles pour arriver là où ils en sont. Il n'est donc pas surprenant de constater qu'ils n'apprécient guère de servir sous les ordres de nobles inexpérimentés, un sort qui leur est trop souvent réservé. Les Capitaines respectent l'expérience et le talent avant tout, et attachent moins d'importance à l'extraction et au statut social. Ils savent parfaitement ce qui compte sur un champ de bataille.`,
+    name: `Champion`,
+    description: `Les Champions sont des guerriers qui consacrent leur vie au combat et qui n'ont pas leur pareil au champ de bataille. Ce ne sont pas des meneurs d'hommes, mais des combattants hors pair. Ils vivent pour ces rares instants où leurs talents sont mis à rude épreuve car c'est alors seulement qu'ils prennent conscience de ce qu'ils valent véritablement. De nombreux Champions servent au sein d'une armée, d'une compagnie ou de quelque ordre militaire, mais d'autres parcourent l'Empire, louant leur épée au plus offrant. Leurs armes comptent parmi les meilleures du Vieux Monde.`,
     skills: {
       mandatory: [
-        `Commandement`,
-        `Commérage`,
-        `Connaissances académiques (stratégie/tactique)`,
-        `Equitation`,
         `Esquive`,
-        `Langage secret (langage de bataille)`,
-        `Lire/écrire`,
-        `Soins des animaux`,
+        `Evaluation`,
+        `Intimidation`,
+        `Perception`,
       ],
-      choice: [
-        {
-          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`,  `Connaissances générales (Kislev)`,`Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Pays Perdu)`, `Connaissances générales (halflings)`, `Connaissances générales (elfes)`, `Connaissances générales (nains)`,`Connaissances générales (Norsca)`, `Connaissances générales (Norsca)`,`Connaissances générales (ogres)`, `Connaissances générales (Principautés Frontalières)`],
-          quantity: 3,
-        },
-        {
-          options: [`Langue (kislevien)`, `Langue (tiléen)`],
-          quantity: 1,
-        },
-      ]
     },
     talents: {
       mandatory: [
+        `Lutte`,
+        `Maître artilleur`,
         `Parade éclair`,
+        `Rechargement rapide`,
+        `Sur ses gardes`,
+        `Tir en puissance`,
       ],
       choice: [
         {
-          options: [`Désarmement`, `Sur ses gardes`],
+          options: [`Course à pied`, `Réflexes éclair`],
           quantity: 1,
         },
         {
-          options: [`Maîtrise (armes de cavalerie)`, `Maîtrise (armes lourdes)`],
-          quantity: 1,
-        },
-        {
-          options: [`Maîtrise (armes de parade)`, `Maîtrise (fléaux)`],
-          quantity: 1,
+          options: [`Maîtrise (arme à deux mains)`, `Maîtrise (arme à une main)`, `Maîtrise (bouclier)`, `Maîtrise (fléau d'armes)`, `Maîtrise (hallebarde)`, `Maîtrise (lance)`, `Maîtrise (rapière)`, `Maîtrise (arc)`, `Maîtrise (arbalète)`, `Maîtrise (arquebuse)`],
+          quantity: 3,
         },
       ]
     },
     dotation: {
       mandatory: [
-        `Armure moyenne (armure de mailles complète)`,
-        `Bouclier`,
-        `Destrier avec selle et harnais`,
-        `Unité de troupes`,
+        `Six armes au choix (toutes de qualité exceptionnelle)`,
+        `Armure moyenne (gilet de mailles et veste de cuir)`,
       ],
-      choice: [
-        {
-          options: [`Brise-lame`, `Fléau d'armes`],
-          quantity: 1,
-        },
-        {
-          options: [`Arme à deux mains`, `Lance de cavalerie`],
-          quantity: 1,
-        },
-      ]
     },
     access: [
-      `Aristocrate`,
-      `Chef de bande`,
-      `Chevalier`,
+      `Assassin`,
+      `Champion de justice`,
       `Chevalier du Cercle Intérieur`,
-      `Explorateur`,
+      `Duelliste`,
+      `Franc-archer`,
       `Répurgateur`,
-      `Rôdeur fantôme`,
-      `Sergent`,
+      `Vétéran`,
     ],
     advanced: [
-      `Agitateur`,
-      `Chef de bande`,
-      `Explorateur`,
-      `Marchand`,
-      `Politicien`,
+      `Assassin`,
+      `Pisteur`,
+      `Répurgateur`,
+      `Sergent`,
     ],
     stats: {
-      CC: 30,
-      CT: 20,
-      F: 20,
-      E: 20,
-      Ag: 20,
-      Int: 15,
-      FM: 15,
-      Soc: 25,
+      CC: 40,
+      CT: 40,
+      F: 25,
+      E: 25,
+      Ag: 30,
+      FM: 20,
       A: 2,
-      B: 7,
+      B: 8,
     },
   },
   {
