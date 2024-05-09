@@ -414,6 +414,98 @@ const advanced_careers = [
     },
   },
   {
+    name: `Capitaine`,
+    description: `Les Capitaines sont les chefs de guerre d'un Vieux Monde en proie à d'incessants conflits. Ils mènent soldats, miliciens, mercenaires et autres patrouilleurs sur des champs de bataille couverts de sang mais également dans des rues remplies de cadavres, dans l'Empire comme à l'étranger. La plupart des Capitaines sont de robustes soldats professionnels qui ont survécu à des dizaines de batailles pour arriver là où ils en sont. Il n'est donc pas surprenant de constater qu'ils n'apprécient guère de servir sous les ordres de nobles inexpérimentés, un sort qui leur est trop souvent réservé. Les Capitaines respectent l'expérience et le talent avant tout, et attachent moins d'importance à l'extraction et au statut social. Ils savent parfaitement ce qui compte sur un champ de bataille.`,
+    skills: {
+      mandatory: [
+        `Commandement`,
+        `Commérage`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Equitation`,
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+        `Lire/écrire`,
+        `Soins des animaux`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`,  `Connaissances générales (Kislev)`,`Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Pays Perdu)`, `Connaissances générales (halflings)`, `Connaissances générales (elfes)`, `Connaissances générales (nains)`,`Connaissances générales (Norsca)`, `Connaissances générales (Norsca)`,`Connaissances générales (ogres)`, `Connaissances générales (Principautés Frontalières)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+      ]
+    },
+    talents: {
+      mandatory: [
+        `Parade éclair`,
+      ],
+      choice: [
+        {
+          options: [`Désarmement`, `Sur ses gardes`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de cavalerie)`, `Maîtrise (armes lourdes)`],
+          quantity: 1,
+        },
+        {
+          options: [`Maîtrise (armes de parade)`, `Maîtrise (fléaux)`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure moyenne (armure de mailles complète)`,
+        `Bouclier`,
+        `Destrier avec selle et harnais`,
+        `Unité de troupes`,
+      ],
+      choice: [
+        {
+          options: [`Brise-lame`, `Fléau d'armes`],
+          quantity: 1,
+        },
+        {
+          options: [`Arme à deux mains`, `Lance de cavalerie`],
+          quantity: 1,
+        },
+      ]
+    },
+    access: [
+      `Aristocrate`,
+      `Chef de bande`,
+      `Chevalier`,
+      `Chevalier du Cercle Intérieur`,
+      `Explorateur`,
+      `Répurgateur`,
+      `Rôdeur fantôme`,
+      `Sergent`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Chef de bande`,
+      `Explorateur`,
+      `Marchand`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 30,
+      CT: 20,
+      F: 20,
+      E: 20,
+      Ag: 20,
+      Int: 15,
+      FM: 15,
+      Soc: 25,
+      A: 2,
+      B: 7,
+    },
+  },
+  {
     name: `Charlatan`,
     description: `Les Charlatans sont des filous, d'extraordinaires menteurs capables de convaincre autrui de n'importe quoi. Leur langue bien pendue et leur ingéniosité leur permettent de manipuler les individus incrédules et de prendre la fuite avec leur argent. Un Charlatan ment comme il respire. La plupart se contentent de vendre des remèdes miracles et autres babioles sans valeur censés contrer les effets de la magie noire. Cependant, d'autres vont jusqu'à vendre des biens qui ne leur appartiennent pas. Les plus grands Charlatans montent des escroqueries qui plument complètement de riches nobles ou marchands.`,
     skills: {
