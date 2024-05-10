@@ -783,6 +783,79 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Chasseur de vampires`,
+    description: `Les Chasseurs de vampires sont des individus obnubilés par l'anéantissement des mortsvivants de tout poil. En effet, beaucoup ont perdu des amis ou de la famille aux griffes des non-morts,souvent pour rallier leurs rangs. Les morts-vivants constituant un véritable sujet tabou au sein de l'Empire, les Chasseurs de vampires sont donc des autodidactes. Ils se réunissent en toute discrétion, partagent les maigres connaissances qu'ils parviennent à glaner lors de leurs rencontres avec les morts errants dans l'espoir de trouver un jour le moyen de tuer les plus puissants d'entre eux, les vampires.`,
+    skills: {
+      mandatory: [
+        `Connaissances générales (Empire)`,
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Escalade`,
+        `Esquive`,
+        `Filature`,
+        `Fouille`,
+        `Langue (classique)`,
+        `Perception`,
+        `Pistage`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (histoire)`, `Connaissances académiques (nécromancie)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Camouflage souterrain`,
+        `Coups précis`,
+        `Coups puissants`,
+        `Maîtrise (arbalètes)`,
+        `Valeureux`,
+      ],
+      choice: [
+        {
+          options: [`Rechargement rapide`, `Tir en puissance`],
+          quantity: 1,
+        },
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Arbalète à répétition avec 10 carreaux`,
+        `Armure moyenne (armure de mailles complète)`,
+        `Aau bénite`,
+        `4 pieux`,
+      ],
+    },
+    access: [
+      `Chasseur de primes`,
+      `Chevalier`,
+      `Pilleur de tombes`,
+      `Pisteur`,
+      `Rôdeur fantôme`,
+      `Sentinelle halfling`,
+    ],
+    advanced: [
+      `Chevalier`,
+      `Démagogue`,
+      `Franc-archer`,
+      `Initié`,
+      `Répurgateur`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 20,
+      F: 10,
+      E: 20,
+      Ag: 15,
+      Int: 15,
+      FM: 20,
+      A: 1,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
