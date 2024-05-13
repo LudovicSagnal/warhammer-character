@@ -931,6 +931,164 @@ const advanced_careers = [
       B: 6,
     },
   },
+  {
+    name: `Chevalier`,
+    description: `Les Chevaliers sont des soldats professionnels, généralement des nobles. Ils combattent en armure lourde et manient des armes de grande taille,souvent à cheval, et constituent les troupes d'élite de toute armée. De nombreux Chevaliers ont juré de protéger les classes populaires, mais ce n'est pas le cas de tous. Nombre d'ordres de chevalerie sont originaires de Bretonnie et de l'Empire, parmi lesquels les Chevaliers du Loup Blanc, les Chevaliers Panthères, les Chevaliers de Reiksguard et les Chevaliers du Graal. Les Chevaliers issus d'ordres religieux sont connus sous le nom de templiers.`,
+    skills: {
+      mandatory: [
+        `Connaissances académiques (stratégie/tactique)`,
+        `Equitation`,
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances académiques (religion)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (reikspiel)`, `Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`, `Langue (estalien)`, `Langue (norse)`, `Langue (khazalid)`, `Langue (eltharin)`],
+          quantity: 2,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups puissants`,
+        `Maîtrise (armes de cavalerie)`,
+        `Maîtrise (armes lourdes)`,
+        `Maîtrise (fléaux)`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Lance de cavalerie`,
+        `Armure lourde (armure de plaques complète)`,
+        `Bouclier`,
+        `Symbole religieux`,
+        `25 co`,
+        `Destrier avec selle et harnais`,
+      ],
+      choice: [
+        {
+          options: [`Fléau d'armes`, `Morgenstern`],
+          quantity: 1,
+        },
+      ],
+    },
+    access: [
+      `Aristocrate`,
+      `Chasseur de vampires`,
+      `Ecuyer`,
+      `Pistolier`,
+      `Sergent`,
+    ],
+    advanced: [
+      `Aristocrate`,
+      `Capitaine`,
+      `Chasseur de vampires`,
+      `Chevalier du Cercle Intérieur`,
+      `Initié`,
+    ],
+    stats: {
+      CC: 25,
+      F: 15,
+      E: 15,
+      Ag: 15,
+      Int: 5,
+      FM: 15,
+      Soc: 5,
+      A: 1,
+      B: 4,
+    },
+  },
+  {
+    name: `Chevalier du Cercle Intérieur`,
+    description: `Au sein de chaque ordre de chevalerie, les meilleurs combattants se regroupent dans la même unité.Ces hommes ont prouvé leur vaillance et leur loyauté à maintes reprises et font désormais partie du cercle intérieur de leur ordre.Ils mènent leurs frères chevaliers sur le terrain,représentent leur ordre à la cour et prennent d'importantes décisions. Ils comptent parmi les plus grands guerriers que le Vieux Monde puisse offrir. Beaucoup apprennent de terribles secrets sur le Vieux Monde, ce qui leur permet de mieux connaître leurs ennemis. Les plus valeureux d'entre eux prétendent par la suite à des postes de grande importance, et surtout à la place tant convoitée de grand maître des chevaliers.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Commandement`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Dressage`,
+        `Equitation`,
+        `Esquive`,
+        `Langage secret (langage de bataille)`,
+        `Lire/écrire`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (pisteur)`, `Alphabet secret (templier)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances académiques (religion)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (reikspiel)`, `Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`, `Langue (estalien)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`],
+          quantity: 3,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups assommants`,
+        `Coups précis`,
+        `Etiquette`,
+        `Grand voyageur`,
+        `Maîtrise (armes d'escrime')`,
+        `Maîtrise (armes de parade)`,
+        `Parade éclair`,
+        `Valeureux`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Armure lourde (armure de plaques complète de qualité exceptionnelle)`,
+        `Symbole religieux`,
+        `25 co`,
+      ],
+      choice: [
+        {
+          options: [`Rondache`, `Main gauche`],
+          quantity: 1,
+        },
+        {
+          options: [`Rapière`, `Fleuret`],
+          quantity: 1,
+        },
+      ],
+    },
+    access: [
+      `Chevalier`,
+      `Répurgateur`,
+    ],
+    advanced: [
+      `Aristocrate`,
+      `Capitaine`,
+      `Champion`,
+      `Répurgateur`,
+    ],
+    stats: {
+      CC: 35,
+      CT: 10,
+      F: 20,
+      E: 20,
+      Ag: 20,
+      Int: 15,
+      FM: 25,
+      Soc: 15,
+      A: 2,
+      B: 8,
+    },
+  },
 ];
 
 export { advanced_careers };
