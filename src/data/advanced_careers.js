@@ -825,7 +825,7 @@ const advanced_careers = [
       mandatory: [
         `Arbalète à répétition avec 10 carreaux`,
         `Armure moyenne (armure de mailles complète)`,
-        `Aau bénite`,
+        `Eau bénite`,
         `4 pieux`,
       ],
     },
@@ -854,6 +854,81 @@ const advanced_careers = [
       FM: 20,
       A: 1,
       B: 4,
+    },
+  },
+  {
+    name: `Chef de bande`,
+    description: `Toutes les bandes de brigands ont besoin d'un chef.Ainsi, le hors-laloi qui fait montre de courage et d'ingéniosité peut s'élever au rang de Chef de bande. Cependant, prendre la tête d'un groupe d'hommes sans foi ni loi n'est pas chose aisée, d'autant que les dangereuses forêts du Vieux Monde ne facilitent pas la tâche. Les Chefs de bande ont la part du lion des butins acquis par le groupe, mais ils sont également responsables des échecs de la bande, ce qui peut parfois leur coûter leur place, et leur vie. Les groupes de hors-la-loi sont connus pour ne pas laisser leurs membres prendre leur retraite,si bien que les Chefs de bande ont parfois du mal à quitter leur fonction.`,
+    skills: {
+      mandatory: [
+        `Commandement`,
+        `Connaissances académiques (stratégie/tactique)`,
+        `Connaissances générales (Empire)`,
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Equitation`,
+        `Escalade`,
+        `Langage secret (langage de bataille)`,
+        `Langage secret (langage des voleurs)`,
+        `Perception`,
+        `Pistage`,
+      ],
+      choice: [
+        {
+          options: [`Alphabet secret (pisteur)`, `Alphabet secret (voleur)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Parade éclair`,
+        `Rechargement rapide`,
+        `Sur ses gardes`,
+        `Tir de précision`,
+        `Tir en puissance`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Armure moyenne (chemise de mailles et veste de cuir)`,
+        `Cheval de selle avec selle et harnais`,
+        `Groupe de hors-la-loi`,
+      ],
+      choice: [
+        {
+          options: [`Arc avec 10 flèches`, `Arbalète avec 10 carreaux`],
+          quantity: 1,
+        },
+      ],
+    },
+    access: [
+      `Bandit de grand chemin`,
+      `Baron du crime`,
+      `Démagogue`,
+      `Pisteur`,
+      `Prince des voleurs`,
+      `Racketteur`,
+      `Rôdeur fantôme`,
+      `Vétéran`,
+    ],
+    advanced: [
+      `Assassin`,
+      `Baron du crime`,
+      `Capitaine`,
+      `Démagogue`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 30,
+      F: 10,
+      E: 20,
+      Ag: 10,
+      Int: 10,
+      FM: 10,
+      Soc: 20,
+      A: 2,
+      B: 6,
     },
   },
 ];
