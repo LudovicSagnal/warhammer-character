@@ -1089,6 +1089,98 @@ const advanced_careers = [
       B: 8,
     },
   },
+  {
+    name: `Compagnon sorcier`,
+    description: `Les Compagnons sorciers humains ont achevé leur apprentissage et rejoint les ordres de magie.Ils ont désormais accès à tous les sorts de leur domaine, mais ils doivent encore trouver un juste équilibre entre leurs pouvoirs et leurs facultés de contrôle naissantes. La majorité des Compagnons doivent des sommes considérables à leur collège pour leur enseignement, et ils partent souvent à l'aventure pour rembourser leur dette. En échange d'or, de connaissances ou de soutien politique, ils louent leurs services au plus offrant, souvent à la demande de l'ordre. Bien entendu, les elfes œuvrent en dehors du système de collèges et ne doivent rien.`,
+    note: `si vous êtes humain, vous devez payer 40 co au moment d'entreprendre cette carrière.Cette somme vous permet d'obtenir votre licence.À moins d'être riche, vous devez également verser 1 couronne au collège chaque fois que vous en gagnez 10, et ce pour la durée de cette carrière.Rien ne vous empêche de tenter de vous soustraire à cette obligation, mais rares sont les individus qui parviennent à frauder l'ordre bien longtemps.`,
+    skills: {
+      mandatory: [
+        `Commérage`,
+        `Connaissances académiques (magie)`,
+        `Focalisation`,
+        `Langage mystique (magick)`,
+        `Lire/écrire`,
+        `Sens de la magie`,
+      ],
+      choice: [
+        {
+          options: [`Charisme`, `Intimidation`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances académiques (religion)`, `Connaissances académiques (histoire)`, `Connaissances académiques (astronomie)`, `Connaissances académiques (démonologie)`, `Connaissances académiques (nécromancie)`, `Connaissances académiques (runes)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`],
+          quantity: 2,
+        },
+        {
+          options: [`Langue (reikspiel)`, `Langue (bretonnien)`, `Langue (kislévien)`, `Langue (tiléen)`, `Langue (norse)`, `Langue (eltharin)`, `Langue (khazalid)`],
+          quantity: 2,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups assommants`,
+        `Coups précis`,
+        `Etiquette`,
+        `Grand voyageur`,
+        `Maîtrise (armes d'escrime')`,
+        `Maîtrise (armes de parade)`,
+        `Parade éclair`,
+        `Valeureux`,
+      ],
+      choice :[
+        {
+          options: [`Harmonie aethyrique`, `Magie Noire`],
+          quantity: 1,
+        },
+        {
+          options: [`Magie mineure (alarme magique)`, `Magie mineure (arme consacrée)`, `Magie mineure (armure aethyrique)`, `Magie mineure (dissipation)`, `Magie mineure (manipulation distante)`, `Magie mineure (marche dans les airs)`, `Magie mineure (silence)`, `Magie mineure (verrou magique)`],
+          quantity: 2,
+        },
+        {
+          options: [`Mains agiles`, `Résistance accrue`],
+          quantity: 1,
+        },
+        {
+          options: [`Méditation`, `Projectile puissant`],
+          quantity: 1,
+        },
+        {
+          options: [`Science de la magie (bête)`, `Science de la magie (cieux)`, `Science de la magie (feu)`, `Science de la magie (lumière)`, `Science de la magie (métal)`, `Science de la magie (mort)`, `Science de la magie (ombre)`, `Science de la magie (vie)`, `Sombre savoir (Chaos)`, `Sombre savoir (nécromancie)`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Grimoire`,
+        `Accessoires de calligraphie`,
+      ],
+    },
+    access: [
+      `Apprenti sorcier`,
+    ],
+    advanced: [
+      `Charlatan`,
+      `Erudit`,
+      `Maître sorcier`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      E: 5,
+      Ag: 10,
+      Int: 20,
+      FM: 25,
+      Soc: 10,
+      B: 3,
+      Mag: 2,
+    },
+  },
 ];
 
 export { advanced_careers };
