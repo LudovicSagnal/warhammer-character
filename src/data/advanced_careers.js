@@ -1181,6 +1181,89 @@ const advanced_careers = [
       Mag: 2,
     },
   },
+  {
+    name: `Courtisan`,
+    description: `Les Courtisans flattent les seigneurs et les dames de la noblesse dans l'espoir de connaître une ascension sociale. Leurs rangs regroupent des flagorneurs qui cherchent à plaire à tout prix mais également des intrigants en quête de richesse et de prestige. Généralement, les Courtisans sont cultivés et font de bons orateurs. Les nobles font souvent appel à eux car ils ont un avis d'érudit sur tous les sujets. Cependant, quel que soit son talent, aucun Courtisan n'occupe une place sûre et chacun a un rival qui ne souhaite qu'une chose, assurer sa chute. Les femmes qui entreprennent cette carrière sont généralement qualifiées de dames d'honneur.`,
+    skills: {
+      mandatory: [
+        `Baratin`,
+        `Charisme`,
+        `Commérage`,
+        `Equitation`,
+        `Evaluation`,
+        `Langue (reikspiel)`,
+        `Lire/écrire`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Commandement`, `Expression artistique (acrobate)`,  `Expression artistique (acteur)`, `Expression artistique (bouffon)`, `Expression artistique (chanteur)`, `Expression artistique (chiromancien)`, `Expression artistique (clown)`, `Expression artistique (comédien)`, `Expression artistique (conteur)`, `Expression artistique (cracheur de feu)`, `Expression artistique (danseur)`, `Expression artistique (jongleur)`, `Expression artistique (mime)`, `Expression artistique (musicien)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances académiques (arts)`, `Connaissances académiques (histoire)`, `Jeu`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Bretonnie)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [ `Langue (bretonnien)`, `Langue (tiléen)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Eloquence`,
+      ],
+      choice :[
+        {
+          options: [`Dur en affaires`, `Etiquette`],
+          quantity: 1,
+        },
+        {
+          options: [`Intelligent`, `Sociable`],
+          quantity: 1,
+        },
+        {
+          options: [`Intrigant`, `Maîtrise (armes d'escrime)`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `4 atours de noble`,
+        `100 co`,
+        `Valet`,
+      ],
+    },
+    access: [
+      `Héraut`,
+      `Noble`,
+      `Pistolier`,
+      `Politicien`,
+    ],
+    advanced: [
+      `Aristocrate`,
+      `Charlatan`,
+      `Duelliste`,
+      `Espion`,
+      `Intendant`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      Ag: 10,
+      Int: 20,
+      FM: 20,
+      Soc: 20,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
