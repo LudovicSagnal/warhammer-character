@@ -1264,6 +1264,80 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Démagogue`,
+    description: `Les Démagogues sont les agitateurs les plus populaires, des orateurs tellement doués qu'ils sont capables d'ébranler des nations entières à l'aide de leur verbe. Ils comptent toujours parmi les meneurs de la cause dont ils se font les champions. Les autorités se méfient toujours d'eux car ils sont susceptibles de semer le vent de la révolte et de la discorde contre le gouvernement ou l'Église. Cependant, quand on les guide à bon escient, ils sont utiles pour rallier le peuple contre le Chaos et toute autre menace. Les autorités traitent donc les Démagogues populaires avec prudence et tentent parfois de s'attirer leurs grâces.`,
+    skills: {
+      mandatory: [
+        `Baratin`,
+        `Charisme`,
+        `Commandement`,
+        `Commérage`,
+        `Connaissances académiques (droit)`,
+        `Connaissances académiques (histoire)`,
+        `Connaissances générales (Empire)`,
+        `Déguisement`,
+        `Dissimulation`,
+        `Esquive`,
+        `Intimidation`,
+        `Langue (reikspiel)`,
+        `Perception`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Combat de rue`,
+        `Eloquence`,
+        `Orateur né`,
+      ],
+      choice :[
+        {
+          options: [`Code de la rue`, `Etiquette`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir et calotte de cuir)`,
+      ],
+    },
+    access: [
+      `Agitateur`,
+      `Baron du crime`,
+      `Charlatan`,
+      `Chasseur de vampires`,
+      `Chef de bande`,
+      `Escroc`,
+      `Flagellant`,
+      `Hors-la-loi`,
+      `Initié`,
+      `Maître-artisan`,
+      `Ménestrel`,
+      `Moine`,
+      `Politicien`,
+      `Prêtre consacré`,
+      `Répurgateur`,
+    ],
+    advanced: [
+      `Baron du crime`,
+      `Chef de bande`,
+      `Mercenaire`,
+      `Moine`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 10,
+      CT: 10,
+      E: 10,
+      Ag: 15,
+      Int: 20,
+      FM: 15,
+      Soc: 30,
+      A: 1,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
