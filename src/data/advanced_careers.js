@@ -1410,6 +1410,75 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Erudit`,
+    description: `Les Érudits sont des académiciens qui consacrent leur existence à la recherche de connaissances. On trouve parmi eux des sages qui explorent des théories philosophiques et scientifiques, des moines qui se spécialisent en savoir théologique et des précepteurs qui s'efforcent d'instruire les enfants de riches marchands et nobles. Certains Érudits se mettent également en quête de connaissances ésotériques ou proscrites. Une telle voie requiert néanmoins une grande force mentale et a de grandes chances d'attirer les foudres de répurgateurs et autres fanatiques. Dans le Vieux Monde, Ceux qui étudient la loi, comme les clercs et les juristes,sont considérés comme des Érudits spécialisés.`,
+    skills: {
+      mandatory: [
+        `Langue (classique)`,
+        `Lire/écrire`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances académiques (religion)`, `Connaissances académiques (histoire)`, `Connaissances académiques (astronomie)`, `Connaissances académiques (arts)`, `Connaissances académiques (droit)`, `Connaissances académiques (ingénierie)`, `Connaissances académiques (philosophie)`, `Connaissances académiques (science)`, `Connaissances académiques (théologie)`, `Connaissances académiques (démonologie)`, `Connaissances académiques (nécromancie)`, `Connaissances académiques (runes)`],
+          quantity: 3,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`, `Langue (reikspiel)`, `Langue (estalien)`, `Langue (khazalid)`, `Langue (eltharin)`, `Langue (norse)`, `Langue (halfling)`, `Langue (grumbarth)`],
+          quantity: 3,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Linguistique`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Accessoires de calligraphie`,
+      ],
+    },
+    access: [
+      `Apprenti sorcier`,
+      `Aristocrate`,
+      `Capitaine de navire`,
+      `Compagnon sorcier`,
+      `Etudiant`,
+      `Grand prêtre`,
+      `Maître sorcier`,
+      `Médecin`,
+      `Moine`,
+      `Navigateur`,
+      `Prêtre`,
+      `Prêtre consacré`,
+      `Scribe`,
+    ],
+    advanced: [
+      `Apprenti sorcier`,
+      `Explorateur`,
+      `Intendant`,
+      `Marchand`,
+      `Médecin`,
+      `Moine`,
+    ],
+    stats: {
+      CC: 5,
+      CT: 5,
+      F: 5,
+      E: 5,
+      Ag: 10,
+      Int: 30,
+      FM: 15,
+      Soc: 15,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
