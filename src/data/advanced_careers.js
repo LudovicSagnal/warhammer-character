@@ -1338,6 +1338,78 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Duelliste`,
+    description: `Un système de duel parfaitement légal fut institué au sein de l'Empire il y a bien longtemps. Les Duellistes manient l'épée et le pistolet avec une efficacité redoutable. Ils s'enorgueillissent de défendre l'honneur d'autrui, mais beaucoup sont de jeunes nobles qui se contentent de défendre leurs intérêts. Il existe deux types de duellistes: les fanfarons qui ne voient que l'aventure dans leurs exploits et les combattants aguerris qui n'hésitent pas à laver le plus petit affront dans le sang.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Commandement`,
+        `Commérage`,
+        `Escamotage`,
+        `Esquive`,
+        `Intimidation`,
+        `Jeu`,
+        `Perception`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Adresse au tir`,
+        `Combattant virevoltant`,
+        `Coups précis`,
+        `Coups puissants`,
+        `Etiquette`,
+        `Maître artilleur`,
+        `Maîtrise (armes d'escrime)`,
+        `Maîtrise (armes à feu)`,
+        `Maîtrise (armes de parade)`,
+        `Sur ses gardes`,
+        `Tir en puissance`,
+      ],
+      choice :[
+        {
+          options: [`Ambidextre`, `Désarmement`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Main gauche`,
+        `Pistolet avec poudre et munitions pour 10 tirs`,
+        `Rapière`,
+      ],
+    },
+    access: [
+      `Bandit de grand chemin`,
+      `Courtisan`,
+      `Diestro estalien`,
+      `Franc-archer`,
+      `Pistolier`,
+      `Sergent`,
+      `Spadassin`,
+    ],
+    advanced: [
+      `Assassin`,
+      `Bandit de grand chemin`,
+      `Champion`,
+      `Escroc`,
+      `Sergent`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 20,
+      F: 10,
+      E: 20,
+      Ag: 20,
+      Int: 15,
+      FM: 15,
+      Soc: 10,
+      A: 1,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
