@@ -1479,6 +1479,86 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Espion`,
+    description: `Les Espions sont des agents secrets chargés de recueillir des informations pour le compte de leur employeur ou du plus offrant. Ils sont passés maîtres dans l'art du déguisement et risquent souvent leur vie en travaillant clandestinement en territoire ennemi. Certains infiltrent même des groupes subversifs et les étudient pendant des mois de l'intérieur. Un Espion qui ose se joindre à une secte du Chaos risque bien plus que la mort, mais nombre de groupes d'influence du Vieux Monde ont besoin des informations que ces courageux individus peuvent offrir.Toutes les nations du Vieux Monde ont recours aux services d'Espions, généralement pour surveiller les manœuvres militaires et politiques de leurs rivaux.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Commérage`,
+        `Crochetage`,
+        `Déguisement`,
+        `Déplacement silencieux`,
+        `Dissimulation`,
+        `Escamotage`,
+        `Expression artistique (acteur)`,
+        `Filature`,
+        `Lecture sur les lèvres`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`],
+          quantity: 2,
+        },
+        {
+          options: [`Langage secret (langage de bataille)`, `Langage secret (langage de guilde)`, `Langage secret (langage des rôdeurs)`, `Langage secret (langage des voleurs)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`, `Langue (reikspiel)`, `Langue (estalien)`, `Langue (khazalid)`, `Langue (eltharin)`, `Langue (norse)`, `Langue (halfling)`, `Langue (grumbarth)`],
+          quantity: 3,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Fuite`,
+        `Intrigant`,
+        `Linguistique`,
+      ],
+      choice: [
+        {
+          options: [`Sixième sens`, `Sociable`],
+          quantity: 1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Accessoires de déguisement`,
+        `4 pigeons voyageurs`,
+      ],
+    },
+    access: [
+      `Capitaine de navire`,
+      `Charlatan`,
+      `Courtisan`,
+      `Explorateur`,
+      `Marchand`,
+      `Médecin`,
+      `Ménestrel`,
+      `Mercanti`,
+      `Serviteur`,
+    ],
+    advanced: [
+      `Assassin`,
+      `Explorateur`,
+      `Prince des voleurs`,
+      `Racketteur`,
+    ],
+    stats: {
+      CC: 15,
+      CT: 15,
+      F: 5,
+      E: 10,
+      Ag: 20,
+      Int: 20,
+      FM: 35,
+      Soc: 20,
+      A: 1,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
