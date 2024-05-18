@@ -1559,6 +1559,105 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Explorateur`,
+    description: `Les Explorateurs ont la manie des voyages et parcourent le Vieux Monde. Ils assouvissent leur soif de découverte en dénichant de nouvelles contrées et des routes commerciales jusqu'alors inexploitées. Les Explorateurs s'aventurent régulièrement dans l'inconnu, ce qui fait d'eux de fins guerriers et diplomates ou des morts en sursis.Ni la mer ni la terre ne leur font peur.Ce sont habituellement des individus compétents dans ce qu'ils entreprennent. En effet, la diversité des rôles qu'il leur faut jouer leur confère une grande polyvalence, la faculté de mener des troupes et de négocier au moyen de langues qu'ils connaissent à peine.`,
+    skills: {
+      mandatory: [
+        `Alphabet secret (pisteur)`,
+        `Commandement`,
+        `Conduite d'attelages`,
+        `Equitation`,
+        `Escalade`,
+        `Evaluation`,
+        `Langage secret (langage des rôdeurs)`,
+        `Lire/écrire`,
+        `Métier (cartographe)`,
+        `Natation`,
+        `Orientation`,
+        `Perception`,
+        `Pistage`,
+        `Survie`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (droit)`, `Connaissances académiques (histoire)`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`, `Connaissances générales (ogres)`, `Connaissances générales (Cathay)`, `Connaissances générales (Ind)`],
+          quantity: 3,
+        },
+        {
+          options: [`Langage secret (langage de bataille)`, `Langage secret (langage de guilde)`, `Langage secret (langage des rôdeurs)`, `Langage secret (langage des voleurs)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`, `Langue (reikspiel)`, `Langue (estalien)`, `Langue (khazalid)`, `Langue (eltharin)`, `Langue (norse)`, `Langue (halfling)`, `Langue (grumbarth)`, `Langue (cathayan)`],
+          quantity: 3,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Grand voyageur`,
+      ],
+      choice: [
+        {
+          options: [`Linguistique`, `Sens de l'orientation`],
+          quantity: 1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Arme à une main`,
+        `Armure moyenne (gilet de mailles et veste de cuir)`,
+        `Bouclier`,
+        `6 cartes`,
+        `1000 co en pièces et marchandises`,
+        `Cheval de selle avec selle et harnais`,
+      ],
+      choice: [
+        {
+          options: [`Arc avec 10 flèches`, `Arbalète avec 10 carreaux`],
+          quantity: 1,
+        }
+      ]
+    },
+    access: [
+      `Capitaine`,
+      `Capitaine de navire`,
+      `Erudit`,
+      `Espion`,
+      `Héraut`,
+      `Ingénieur`,
+      `Maître sorcier`,
+      `Navigateur`,
+      `Officier en second`,
+      `Pisteur`,
+      `Prince des voleurs`,
+      `Seigneur sorcier`,
+    ],
+    advanced: [
+      `Capitaine`,
+      `Capitaine de navire`,
+      `Espion`,
+      `Marchand`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 20,
+      F: 10,
+      E: 15,
+      Ag: 15,
+      Int: 25,
+      FM: 20,
+      Soc: 15,
+      A: 1,
+      B: 6,
+    },
+  },
 ];
 
 export { advanced_careers };
