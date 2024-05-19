@@ -1658,6 +1658,69 @@ const advanced_careers = [
       B: 6,
     },
   },
+  {
+    name: `Flagellant`,
+    description: `Les Flagellants sont des fanatiques religieux qui sont prêts à sacrifier leur vie pour porter un coup au Chaos et à tout ce qu'ils apparentent au mal. Habituellement, il s'agit d'individus très charismatiques qui prennent la tête de malheureux, leur personnalité et leurs incroyables convictions religieuses attirant à eux de nombreux fanatiques. Ils s'équipent toujours d'armes lourdes pour infliger un maximum de dégâts à leurs ennemis, mais ils renoncent au port de l'armure car ils ont le sentiment que leur dieu les protégera jusqu'à ce que sonne leur heure. Les gens sains d'esprit tendent à fuir leur compagnie.`,
+    note: `vous devez être atteint d'au moins une folie pour
+    entreprendre cette carrière.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Connaissances académiques (théologie)`,
+        `Intimidation`,
+        `Langue (classique)`,
+        `Soins`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Coups puissants`,
+        `Sans peur`,
+      ],
+      choice: [
+        {
+          options: [`Maîtrise (armes lourdes)`, `Maîtrise (fléaux)`],
+          quantity: 1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Bouteille d'alcool fort de bonne qualité`,
+        `Symbole religieux`,
+        `Relique religieuse`,
+      ],
+      choice: [
+        {
+          options: [`Arme à deux mains`, `Fléau d'armes`],
+          quantity: 1,
+        }
+      ]
+    },
+    access: [
+      `Fanatique`,
+      `Moine`,
+      `Prêtre`,
+      `Prêtre consacré`,
+    ],
+    advanced: [
+      `Bourreau`,
+      `Démagogue`,
+      `Prêtre`,
+      `Soldat`,
+      `Vétéran`,
+    ],
+    stats: {
+      CC: 15,
+      F: 10,
+      E: 15,
+      Ag: 5,
+      FM: 20,
+      Soc: 10,
+      A: 1,
+      B: 6,
+    },
+  },
 ];
 
 export { advanced_careers };
