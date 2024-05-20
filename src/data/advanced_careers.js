@@ -1721,6 +1721,70 @@ const advanced_careers = [
       B: 6,
     },
   },
+  {
+    name: `Franc-archer`,
+    description: `Les Francs-archers perfectionnent leur adresse au tir. Habituellement, ils manient le redoutable arc long, mais certains se tournent vers l'arbalète. Ils voyagent de foire en foire, divertissant les foules au moyen de démonstrations et mesurant leur adresse lors d'épreuves organisées au pied levé. De nombreux nobles organisent des tournois de tir à l'arc, le gagnant remportant généralement une bourse bien remplie. Du reste, c'est ainsi que certains Francs-archers gagnent leur vie. En cette sinistre époque, les Francs-archers sont prisés auprès des armées et autres compagnies de mercenaires.`,
+    skills: {
+      mandatory: [
+        `Commérage`,
+        `Connaissances générales (Empire)`,
+        `Escamotage`,
+        `Fouille`,
+        `Perception`,
+        `Survie`,
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Adresse au tir`,
+        `Maîtrise (arcs longs)`,
+        `Rechargement rapide`,
+        `Tir de précision`,
+        `Tir en puissance`,
+      ],
+      choice: [
+        {
+          options: [`Maîtrise (arbalètes)`, `Maîtrise (armes de jet)`],
+          quantity: 1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+      ],
+      choice: [
+        {
+          options: [`Arbalète avec 10 carreaux`, `Arc long avec 10 flèches`],
+          quantity: 1,
+        }
+      ]
+    },
+    access: [
+      `Chasseur`,
+      `Chasseur de primes`,
+      `Prince des voleurs`,
+      `Rôdeur fantôme`,
+      `Vétéran`,
+    ],
+    advanced: [
+      `Assassin`,
+      `Champion`,
+      `Duelliste`,
+      `Sergent`,
+    ],
+    stats: {
+      CT: 35,
+      F: 10,
+      E: 10,
+      Ag: 25,
+      Int: 10,
+      FM: 20,
+      Soc: 15,
+      A: 1,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
