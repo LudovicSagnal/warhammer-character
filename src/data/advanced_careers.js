@@ -1785,6 +1785,84 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Grand prêtre`,
+    description: `Dans le Vieux Monde, le Grand prêtre est l'incarnation d'un dieu. Ces personnages sont rares car peu d'individus ont la force de caractère et la foi nécessaire pour occuper une telle position. À quelques exceptions près, les Grands prêtres opèrent généralement à l'écart des centres religieux de leur foi. Certains pèlerins sont prêts à traverser l'Empire pour parler à un tel personnage pendant quelques secondes. Les Grands prêtres ont tendance à rejeter en bloc le monde matériel et se retirent souvent dans un monastère. D'autres se tournent néanmoins vers le pouvoir temporel et deviennent des personnages importants dans les affaires séculières.`,
+    skills: {
+      mandatory: [
+        `Charisme`,
+        `Commérage`,
+        `Connaissances académiques (théologie)`,
+        `Focalisation`,
+        `Intimidation`,
+        `Langage mystique (magick)`,
+        `Sens de la magie`,
+        `Soins`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances académiques (généalogie/héraldique)`, `Connaissances académiques (religion)`, `Connaissances académiques (histoire)`, `Connaissances académiques (astronomie)`, `Connaissances académiques (arts)`, `Connaissances académiques (droit)`, `Connaissances académiques (ingénierie)`, `Connaissances académiques (philosophie)`, `Connaissances académiques (science)`, `Connaissances académiques (démonologie)`, `Connaissances académiques (nécromancie)`, `Connaissances académiques (runes)`],
+          quantity: 3,
+        },
+        {
+          options: [`Connaissances générales (Empire)`, `Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`, `Connaissances générales (Estalie)`, `Connaissances générales (Norsca)`, `Connaissances générales (nains)`, `Connaissances générales (elfes)`, `Connaissances générales (ogres)`],
+          quantity: 2,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`, `Langue (reikspiel)`, `Langue (estalien)`, `Langue (khazalid)`, `Langue (eltharin)`, `Langue (norse)`, `Langue (halfling)`, `Langue (grumbarth)`],
+          quantity: 3,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Etiquette`,
+      ],
+      choice: [
+        {
+          options: [`Harmonie aethyrique`, `Méditation`],
+          quantity: 1,
+        },
+        {
+          options: [`Incantation de bataille`, `Projectile puissant`],
+          quantity: 1,
+        },
+        {
+          options: [`Magie mineure (alarme magique)`, `Magie mineure (arme consacrée)`, `Magie mineure (armure aethyrique)`, `Magie mineure (dissipation)`, `Magie mineure (manipulation distante)`, `Magie mineure (marche dans les airs)`, `Magie mineure (silence)`, `Magie mineure (verrou magique)`],
+          quantity: 2,
+        },
+        {
+          options: [`Mains agiles`, `Sain d'esprit`],
+          quantity: 1,
+        },
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Relique sacrée`,
+      ],
+    },
+    access: [
+      `Prêtre consacré`,
+    ],
+    advanced: [
+      `Erudit`,
+      `Politicien`,
+      `Répurgateur`,
+    ],
+    stats: {
+      CC: 20,
+      CT: 20,
+      F: 15,
+      E: 15,
+      Ag: 15,
+      Int: 20,
+      FM: 30,
+      Soc: 25,
+      A: 1,
+      B: 6,
+    },
+  },
 ];
 
 export { advanced_careers };
