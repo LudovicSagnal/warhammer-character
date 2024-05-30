@@ -1863,6 +1863,73 @@ const advanced_careers = [
       B: 6,
     },
   },
+  {
+    name: `Héraut`,
+    description: `Le Héraut est le porteparole de la noblesse. Il est chargé d'annoncer l'arrivée de son seigneur et rapporte parfois des nouvelles importantes. C'est un orateur de marque, intelligent et très cultivé. Il est censé reconnaître les armes de centaines de familles de la noblesse d'un simple coup d'œil, d'où son nom. Le Héraut est rarement noble, mais son statut le place en quelque sorte au même niveau que la petite noblesse. Les Hérauts attachent une grande importance à leur apparence car elle reflète le seigneur qu'ils servent.`,
+    skills: {
+      mandatory: [
+        `Baratin`,
+        `Charisme`,
+        `Commérage`,
+        `Connaissances académiques (généalogie/héraldique)`,
+        `Connaissances académiques (histoire)`,
+        `Connaissances générales (Empire)`,
+        `Equitation`,
+        `Evaluation`,
+        `Lire/écrire`,
+        `Marchandage`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Connaissances générales (Bretonnie)`, `Connaissances générales (Kislev)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (kislevien)`, `Langue (tiléen)`, `Langue (bretonnien)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Eloquence`,
+        `Etiquette`,
+        `Orateur né`,
+      ],
+    },
+    dotation: {
+      mandatory: [
+        `Parfum`,
+        `Bourse`,
+        `2 beaux atours`,
+        `Uniforme`,
+      ],
+    },
+    access: [
+      `Messager`,
+      `Valet`,
+    ],
+    advanced: [
+      `Agitateur`,
+      `Bateleur`,
+      `Courtisan`,
+      `Ecuyer`,
+      `Explorateur`,
+      `Politicien`,
+    ],
+    stats: {
+      CC: 10,
+      CT: 10,
+      F: 5,
+      E: 5,
+      Ag: 15,
+      Int: 15,
+      FM: 10,
+      Soc: 20,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
