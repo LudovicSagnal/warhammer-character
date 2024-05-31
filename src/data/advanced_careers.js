@@ -1930,6 +1930,75 @@ const advanced_careers = [
       B: 4,
     },
   },
+  {
+    name: `Ingénieur`,
+    description: `Les nains furent les premiers à introduire l'ingénierie dans le Vieux Monde. La guilde des ingénieurs est profondément respectée et ses œuvres sont tenues en haute estime, du moins tant qu'elle respecte les valeurs et méthodes traditionnelles. L'humanité a pris aux nains ce qu'ils avaient à offrir, ce qui inclut la poudre et la plupart des innovations en rapport avec les armes. L'école impériale des ingénieurs d'Altdorf est connue pour ses inventions singulières, très utiles quand elles fonctionnent convenablement. À l'étranger, les Tiléens sont connus pour leurs idées en matière d'ingénierie.`,
+    skills: {
+      mandatory: [
+        `Connaissances académiques (ingénierie)`,
+        `Connaissances académiques (science)`,
+        `Connaissances générales (Empire)`,
+        `Lire/écrire`,
+        `Métier (arquebusier)`,
+        `Perception`,
+      ],
+      choice: [
+        {
+          options: [`Conduite d'attelages`, `Equitation`],
+          quantity: 1,
+        },
+        {
+          options: [`Connaissances générales (nains)`, `Connaissances générales (Tilée)`],
+          quantity: 1,
+        },
+        {
+          options: [`Langue (tiléen)`, `Langue (khazalid)`],
+          quantity: 1,
+        },
+      ],
+    },
+    talents: {
+      mandatory: [
+        `Maître artilleur`,
+      ],
+      choice: [
+        {
+          options: [`Maîtrise (armes à feu)`, `Maîtrise (armes mécaniques)`],
+          quantity: 1,
+        }
+      ]
+    },
+    dotation: {
+      mandatory: [
+        `Armure légère (veste de cuir)`,
+        `Matériel d'ingénieur`,
+        `6 pointes`,
+      ],
+    },
+    access: [
+      `Artisan`,
+      `Etudiant`,
+      `Maître-artisan`,
+      `Mineur`,
+    ],
+    advanced: [
+      `Contrebandier`,
+      `Explorateur`,
+      `Maître-artisan`,
+      `Maître de guilde`,
+      `Pistolier`,
+    ],
+    stats: {
+      CC: 10,
+      CT: 15,
+      F: 5,
+      E: 5,
+      Ag: 10,
+      Int: 20,
+      FM: 10,
+      B: 4,
+    },
+  },
 ];
 
 export { advanced_careers };
